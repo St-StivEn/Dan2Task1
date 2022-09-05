@@ -16,5 +16,10 @@ namespace Dan2Task1
         {
             InitializeComponent();
         }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
