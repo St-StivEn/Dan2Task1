@@ -576,7 +576,7 @@
             this.guna2DateTimePicker2.ForeColor = System.Drawing.Color.Black;
             this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.guna2DateTimePicker2.IndicateFocus = true;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(487, 260);
+            this.guna2DateTimePicker2.Location = new System.Drawing.Point(487, 258);
             this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
@@ -780,7 +780,7 @@
             this.guna2GradientPanel14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.guna2GradientPanel14.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientPanel14.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.guna2GradientPanel14.Location = new System.Drawing.Point(129, 118);
+            this.guna2GradientPanel14.Location = new System.Drawing.Point(137, 119);
             this.guna2GradientPanel14.Name = "guna2GradientPanel14";
             this.guna2GradientPanel14.Size = new System.Drawing.Size(218, 90);
             this.guna2GradientPanel14.TabIndex = 3;
@@ -815,7 +815,7 @@
             this.guna2GradientPanel13.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.guna2GradientPanel13.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientPanel13.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.guna2GradientPanel13.Location = new System.Drawing.Point(129, 15);
+            this.guna2GradientPanel13.Location = new System.Drawing.Point(137, 6);
             this.guna2GradientPanel13.Name = "guna2GradientPanel13";
             this.guna2GradientPanel13.Size = new System.Drawing.Size(218, 90);
             this.guna2GradientPanel13.TabIndex = 2;
@@ -854,7 +854,7 @@
             this.DateTime2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.DateTime2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.DateTime2.IndicateFocus = true;
-            this.DateTime2.Location = new System.Drawing.Point(370, 151);
+            this.DateTime2.Location = new System.Drawing.Point(370, 153);
             this.DateTime2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.DateTime2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.DateTime2.Name = "DateTime2";
@@ -1887,7 +1887,7 @@
             this.guna2GradientButton3.HoverState.FillColor = System.Drawing.Color.Black;
             this.guna2GradientButton3.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.guna2GradientButton3.HoverState.Font = new System.Drawing.Font("Segoe UI", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.guna2GradientButton3.Location = new System.Drawing.Point(487, 255);
+            this.guna2GradientButton3.Location = new System.Drawing.Point(514, 263);
             this.guna2GradientButton3.Name = "guna2GradientButton3";
             this.guna2GradientButton3.Size = new System.Drawing.Size(129, 45);
             this.guna2GradientButton3.TabIndex = 11;
@@ -2073,7 +2073,7 @@
             this.guna2GradientPanel26.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.guna2GradientPanel26.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientPanel26.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.guna2GradientPanel26.Location = new System.Drawing.Point(24, 250);
+            this.guna2GradientPanel26.Location = new System.Drawing.Point(48, 255);
             this.guna2GradientPanel26.Name = "guna2GradientPanel26";
             this.guna2GradientPanel26.Size = new System.Drawing.Size(393, 60);
             this.guna2GradientPanel26.TabIndex = 13;
@@ -2127,7 +2127,7 @@
             this.guna2GradientPanel27.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.guna2GradientPanel27.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientPanel27.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.guna2GradientPanel27.Location = new System.Drawing.Point(163, 353);
+            this.guna2GradientPanel27.Location = new System.Drawing.Point(154, 361);
             this.guna2GradientPanel27.Name = "guna2GradientPanel27";
             this.guna2GradientPanel27.Size = new System.Drawing.Size(441, 104);
             this.guna2GradientPanel27.TabIndex = 14;
@@ -2269,9 +2269,9 @@
             this.guna2GradientPanel31.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.guna2GradientPanel31.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientPanel31.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.guna2GradientPanel31.Location = new System.Drawing.Point(33, 225);
+            this.guna2GradientPanel31.Location = new System.Drawing.Point(12, 225);
             this.guna2GradientPanel31.Name = "guna2GradientPanel31";
-            this.guna2GradientPanel31.Size = new System.Drawing.Size(685, 281);
+            this.guna2GradientPanel31.Size = new System.Drawing.Size(725, 281);
             this.guna2GradientPanel31.TabIndex = 16;
             // 
             // guna2HtmlLabel48
@@ -2366,7 +2366,7 @@
             this.guna2GradientPanel30.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.guna2GradientPanel30.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientPanel30.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.guna2GradientPanel30.Location = new System.Drawing.Point(13, 8);
+            this.guna2GradientPanel30.Location = new System.Drawing.Point(36, 8);
             this.guna2GradientPanel30.Name = "guna2GradientPanel30";
             this.guna2GradientPanel30.Size = new System.Drawing.Size(657, 60);
             this.guna2GradientPanel30.TabIndex = 15;
@@ -2383,9 +2383,9 @@
             this.guna2GradientPanel32.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.guna2GradientPanel32.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientPanel32.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.guna2GradientPanel32.Location = new System.Drawing.Point(14, 206);
+            this.guna2GradientPanel32.Location = new System.Drawing.Point(36, 206);
             this.guna2GradientPanel32.Name = "guna2GradientPanel32";
-            this.guna2GradientPanel32.Size = new System.Drawing.Size(656, 60);
+            this.guna2GradientPanel32.Size = new System.Drawing.Size(657, 60);
             this.guna2GradientPanel32.TabIndex = 16;
             this.guna2GradientPanel32.UseTransparentBackground = true;
             // 
@@ -2400,7 +2400,7 @@
             this.guna2GradientPanel33.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.guna2GradientPanel33.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientPanel33.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.guna2GradientPanel33.Location = new System.Drawing.Point(13, 140);
+            this.guna2GradientPanel33.Location = new System.Drawing.Point(36, 140);
             this.guna2GradientPanel33.Name = "guna2GradientPanel33";
             this.guna2GradientPanel33.Size = new System.Drawing.Size(657, 60);
             this.guna2GradientPanel33.TabIndex = 17;
@@ -2417,7 +2417,7 @@
             this.guna2GradientPanel34.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.guna2GradientPanel34.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientPanel34.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.guna2GradientPanel34.Location = new System.Drawing.Point(13, 74);
+            this.guna2GradientPanel34.Location = new System.Drawing.Point(36, 74);
             this.guna2GradientPanel34.Name = "guna2GradientPanel34";
             this.guna2GradientPanel34.Size = new System.Drawing.Size(657, 60);
             this.guna2GradientPanel34.TabIndex = 17;
