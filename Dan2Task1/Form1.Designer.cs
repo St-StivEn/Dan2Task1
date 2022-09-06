@@ -51,8 +51,28 @@
             this.PanelLeapCounter = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2GradientButton10 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.PanelDateWorking = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2GradientButton9 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2GradientPanel18 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2HtmlLabel24 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2GradientPanel17 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2HtmlLabel26 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PanelDateComparer = new Guna.UI2.WinForms.Guna2Panel();
+            this.ResultDateComparerButton = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientPanel16 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.TotalDaysLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel27 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2GradientPanel15 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.TotaTimeLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel25 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2GradientPanel14 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2HtmlLabel23 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel19 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2GradientPanel13 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2HtmlLabel22 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel18 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DateTime2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.DateTime1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.PanelInfo = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2GradientPanel7 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2HtmlLabel21 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -85,12 +105,32 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
+            this.guna2GradientPanel19 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2HtmlLabel28 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2CheckBox8 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.guna2CheckBox2 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.guna2CheckBox3 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.guna2CheckBox4 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.guna2CheckBox5 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.guna2CheckBox6 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.guna2GradientPanel20 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2HtmlLabel29 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel30 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PanelVkladok.SuspendLayout();
             this.PanelBody.SuspendLayout();
             this.PanelBirhday.SuspendLayout();
             this.PanelTimeConverter.SuspendLayout();
             this.PanelLeapCounter.SuspendLayout();
             this.PanelDateWorking.SuspendLayout();
+            this.guna2GradientPanel18.SuspendLayout();
+            this.guna2GradientPanel17.SuspendLayout();
+            this.PanelDateComparer.SuspendLayout();
+            this.guna2GradientPanel16.SuspendLayout();
+            this.guna2GradientPanel15.SuspendLayout();
+            this.guna2GradientPanel14.SuspendLayout();
+            this.guna2GradientPanel13.SuspendLayout();
             this.PanelInfo.SuspendLayout();
             this.guna2GradientPanel7.SuspendLayout();
             this.guna2GradientPanel12.SuspendLayout();
@@ -104,6 +144,8 @@
             this.guna2GradientPanel8.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
+            this.guna2GradientPanel19.SuspendLayout();
+            this.guna2GradientPanel20.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -472,47 +514,344 @@
             // PanelDateWorking
             // 
             this.PanelDateWorking.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.PanelDateWorking.Controls.Add(this.guna2GradientButton9);
+            this.PanelDateWorking.BorderRadius = 8;
+            this.PanelDateWorking.BorderThickness = 2;
+            this.PanelDateWorking.Controls.Add(this.guna2GradientPanel20);
+            this.PanelDateWorking.Controls.Add(this.guna2GradientPanel19);
+            this.PanelDateWorking.Controls.Add(this.guna2DateTimePicker2);
+            this.PanelDateWorking.Controls.Add(this.guna2DateTimePicker1);
+            this.PanelDateWorking.Controls.Add(this.guna2GradientPanel18);
+            this.PanelDateWorking.Controls.Add(this.guna2GradientPanel17);
+            this.PanelDateWorking.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PanelDateWorking.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelDateWorking.ForeColor = System.Drawing.Color.White;
             this.PanelDateWorking.Location = new System.Drawing.Point(0, 1018);
             this.PanelDateWorking.Name = "PanelDateWorking";
             this.PanelDateWorking.Size = new System.Drawing.Size(754, 509);
             this.PanelDateWorking.TabIndex = 2;
             // 
-            // guna2GradientButton9
+            // guna2DateTimePicker2
             // 
-            this.guna2GradientButton9.Animated = true;
-            this.guna2GradientButton9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton9.BorderRadius = 8;
-            this.guna2GradientButton9.BorderThickness = 2;
-            this.guna2GradientButton9.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton9.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
-            this.guna2GradientButton9.FillColor2 = System.Drawing.Color.Black;
-            this.guna2GradientButton9.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.guna2GradientButton9.ForeColor = System.Drawing.Color.Black;
-            this.guna2GradientButton9.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.guna2GradientButton9.HoverState.FillColor = System.Drawing.Color.Black;
-            this.guna2GradientButton9.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
-            this.guna2GradientButton9.HoverState.Font = new System.Drawing.Font("Segoe UI", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.guna2GradientButton9.Location = new System.Drawing.Point(313, 232);
-            this.guna2GradientButton9.Name = "guna2GradientButton9";
-            this.guna2GradientButton9.Size = new System.Drawing.Size(129, 45);
-            this.guna2GradientButton9.TabIndex = 6;
-            this.guna2GradientButton9.Text = "Date Working Counter";
-            this.guna2GradientButton9.UseTransparentBackground = true;
+            this.guna2DateTimePicker2.Animated = true;
+            this.guna2DateTimePicker2.AutoRoundedCorners = true;
+            this.guna2DateTimePicker2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2DateTimePicker2.BorderRadius = 17;
+            this.guna2DateTimePicker2.BorderThickness = 2;
+            this.guna2DateTimePicker2.Checked = true;
+            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(116)))), ((int)(((byte)(8)))));
+            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePicker2.ForeColor = System.Drawing.Color.Black;
+            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker2.IndicateFocus = true;
+            this.guna2DateTimePicker2.Location = new System.Drawing.Point(487, 251);
+            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
+            this.guna2DateTimePicker2.Size = new System.Drawing.Size(165, 36);
+            this.guna2DateTimePicker2.TabIndex = 6;
+            this.guna2DateTimePicker2.UseTransparentBackground = true;
+            this.guna2DateTimePicker2.Value = new System.DateTime(2022, 9, 6, 15, 27, 5, 37);
+            // 
+            // guna2DateTimePicker1
+            // 
+            this.guna2DateTimePicker1.Animated = true;
+            this.guna2DateTimePicker1.AutoRoundedCorners = true;
+            this.guna2DateTimePicker1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2DateTimePicker1.BorderRadius = 17;
+            this.guna2DateTimePicker1.BorderThickness = 2;
+            this.guna2DateTimePicker1.Checked = true;
+            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(116)))), ((int)(((byte)(8)))));
+            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePicker1.ForeColor = System.Drawing.Color.Black;
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker1.IndicateFocus = true;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(487, 107);
+            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(165, 36);
+            this.guna2DateTimePicker1.TabIndex = 5;
+            this.guna2DateTimePicker1.UseTransparentBackground = true;
+            this.guna2DateTimePicker1.Value = new System.DateTime(2022, 9, 6, 15, 27, 5, 37);
+            // 
+            // guna2GradientPanel18
+            // 
+            this.guna2GradientPanel18.BorderColor = System.Drawing.Color.Black;
+            this.guna2GradientPanel18.BorderRadius = 12;
+            this.guna2GradientPanel18.BorderThickness = 2;
+            this.guna2GradientPanel18.Controls.Add(this.guna2HtmlLabel24);
+            this.guna2GradientPanel18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
+            this.guna2GradientPanel18.FillColor2 = System.Drawing.Color.Black;
+            this.guna2GradientPanel18.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.guna2GradientPanel18.Location = new System.Drawing.Point(360, 195);
+            this.guna2GradientPanel18.Name = "guna2GradientPanel18";
+            this.guna2GradientPanel18.Size = new System.Drawing.Size(292, 50);
+            this.guna2GradientPanel18.TabIndex = 4;
+            // 
+            // guna2HtmlLabel24
+            // 
+            this.guna2HtmlLabel24.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel24.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.guna2HtmlLabel24.ForeColor = System.Drawing.Color.Black;
+            this.guna2HtmlLabel24.Location = new System.Drawing.Point(18, 6);
+            this.guna2HtmlLabel24.Name = "guna2HtmlLabel24";
+            this.guna2HtmlLabel24.Size = new System.Drawing.Size(253, 33);
+            this.guna2HtmlLabel24.TabIndex = 0;
+            this.guna2HtmlLabel24.Text = "Укажите вторую дату :";
+            // 
+            // guna2GradientPanel17
+            // 
+            this.guna2GradientPanel17.BorderColor = System.Drawing.Color.Black;
+            this.guna2GradientPanel17.BorderRadius = 12;
+            this.guna2GradientPanel17.BorderThickness = 2;
+            this.guna2GradientPanel17.Controls.Add(this.guna2HtmlLabel26);
+            this.guna2GradientPanel17.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
+            this.guna2GradientPanel17.FillColor2 = System.Drawing.Color.Black;
+            this.guna2GradientPanel17.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.guna2GradientPanel17.Location = new System.Drawing.Point(360, 51);
+            this.guna2GradientPanel17.Name = "guna2GradientPanel17";
+            this.guna2GradientPanel17.Size = new System.Drawing.Size(292, 50);
+            this.guna2GradientPanel17.TabIndex = 3;
+            // 
+            // guna2HtmlLabel26
+            // 
+            this.guna2HtmlLabel26.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel26.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.guna2HtmlLabel26.ForeColor = System.Drawing.Color.Black;
+            this.guna2HtmlLabel26.Location = new System.Drawing.Point(17, 7);
+            this.guna2HtmlLabel26.Name = "guna2HtmlLabel26";
+            this.guna2HtmlLabel26.Size = new System.Drawing.Size(255, 33);
+            this.guna2HtmlLabel26.TabIndex = 0;
+            this.guna2HtmlLabel26.Text = "Укажите первую дату :";
             // 
             // PanelDateComparer
             // 
             this.PanelDateComparer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.PanelDateComparer.Controls.Add(this.ResultDateComparerButton);
+            this.PanelDateComparer.Controls.Add(this.guna2GradientPanel16);
+            this.PanelDateComparer.Controls.Add(this.guna2GradientPanel15);
+            this.PanelDateComparer.Controls.Add(this.guna2GradientPanel14);
+            this.PanelDateComparer.Controls.Add(this.guna2GradientPanel13);
+            this.PanelDateComparer.Controls.Add(this.DateTime2);
+            this.PanelDateComparer.Controls.Add(this.DateTime1);
             this.PanelDateComparer.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelDateComparer.Location = new System.Drawing.Point(0, 509);
             this.PanelDateComparer.Name = "PanelDateComparer";
             this.PanelDateComparer.Size = new System.Drawing.Size(754, 509);
             this.PanelDateComparer.TabIndex = 1;
+            // 
+            // ResultDateComparerButton
+            // 
+            this.ResultDateComparerButton.Animated = true;
+            this.ResultDateComparerButton.BackColor = System.Drawing.Color.Transparent;
+            this.ResultDateComparerButton.BorderRadius = 8;
+            this.ResultDateComparerButton.BorderThickness = 2;
+            this.ResultDateComparerButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.ResultDateComparerButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.ResultDateComparerButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.ResultDateComparerButton.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.ResultDateComparerButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.ResultDateComparerButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
+            this.ResultDateComparerButton.FillColor2 = System.Drawing.Color.Black;
+            this.ResultDateComparerButton.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.ResultDateComparerButton.ForeColor = System.Drawing.Color.Black;
+            this.ResultDateComparerButton.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.ResultDateComparerButton.HoverState.FillColor = System.Drawing.Color.Black;
+            this.ResultDateComparerButton.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
+            this.ResultDateComparerButton.HoverState.Font = new System.Drawing.Font("Segoe UI", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.ResultDateComparerButton.Location = new System.Drawing.Point(293, 237);
+            this.ResultDateComparerButton.Name = "ResultDateComparerButton";
+            this.ResultDateComparerButton.Size = new System.Drawing.Size(129, 45);
+            this.ResultDateComparerButton.TabIndex = 6;
+            this.ResultDateComparerButton.Text = "Result";
+            this.ResultDateComparerButton.UseTransparentBackground = true;
+            this.ResultDateComparerButton.Click += new System.EventHandler(this.ResultDateComparerButton_Click);
+            // 
+            // guna2GradientPanel16
+            // 
+            this.guna2GradientPanel16.BorderColor = System.Drawing.Color.Black;
+            this.guna2GradientPanel16.BorderRadius = 12;
+            this.guna2GradientPanel16.BorderThickness = 2;
+            this.guna2GradientPanel16.Controls.Add(this.TotalDaysLabel);
+            this.guna2GradientPanel16.Controls.Add(this.guna2HtmlLabel27);
+            this.guna2GradientPanel16.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
+            this.guna2GradientPanel16.FillColor2 = System.Drawing.Color.Black;
+            this.guna2GradientPanel16.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.guna2GradientPanel16.Location = new System.Drawing.Point(129, 439);
+            this.guna2GradientPanel16.Name = "guna2GradientPanel16";
+            this.guna2GradientPanel16.Size = new System.Drawing.Size(441, 57);
+            this.guna2GradientPanel16.TabIndex = 5;
+            // 
+            // TotalDaysLabel
+            // 
+            this.TotalDaysLabel.BackColor = System.Drawing.Color.Transparent;
+            this.TotalDaysLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalDaysLabel.Location = new System.Drawing.Point(297, 14);
+            this.TotalDaysLabel.Name = "TotalDaysLabel";
+            this.TotalDaysLabel.Size = new System.Drawing.Size(3, 2);
+            this.TotalDaysLabel.TabIndex = 1;
+            this.TotalDaysLabel.Text = null;
+            // 
+            // guna2HtmlLabel27
+            // 
+            this.guna2HtmlLabel27.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel27.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.guna2HtmlLabel27.Location = new System.Drawing.Point(51, 11);
+            this.guna2HtmlLabel27.Name = "guna2HtmlLabel27";
+            this.guna2HtmlLabel27.Size = new System.Drawing.Size(232, 33);
+            this.guna2HtmlLabel27.TabIndex = 0;
+            this.guna2HtmlLabel27.Text = "Всего дней прошло :";
+            // 
+            // guna2GradientPanel15
+            // 
+            this.guna2GradientPanel15.BorderColor = System.Drawing.Color.Black;
+            this.guna2GradientPanel15.BorderRadius = 12;
+            this.guna2GradientPanel15.BorderThickness = 2;
+            this.guna2GradientPanel15.Controls.Add(this.TotaTimeLabel);
+            this.guna2GradientPanel15.Controls.Add(this.guna2HtmlLabel25);
+            this.guna2GradientPanel15.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
+            this.guna2GradientPanel15.FillColor2 = System.Drawing.Color.Black;
+            this.guna2GradientPanel15.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.guna2GradientPanel15.Location = new System.Drawing.Point(129, 305);
+            this.guna2GradientPanel15.Name = "guna2GradientPanel15";
+            this.guna2GradientPanel15.Size = new System.Drawing.Size(441, 104);
+            this.guna2GradientPanel15.TabIndex = 4;
+            // 
+            // TotaTimeLabel
+            // 
+            this.TotaTimeLabel.BackColor = System.Drawing.Color.Transparent;
+            this.TotaTimeLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotaTimeLabel.Location = new System.Drawing.Point(89, 43);
+            this.TotaTimeLabel.Name = "TotaTimeLabel";
+            this.TotaTimeLabel.Size = new System.Drawing.Size(3, 2);
+            this.TotaTimeLabel.TabIndex = 1;
+            this.TotaTimeLabel.Text = null;
+            // 
+            // guna2HtmlLabel25
+            // 
+            this.guna2HtmlLabel25.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel25.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.guna2HtmlLabel25.Location = new System.Drawing.Point(89, 12);
+            this.guna2HtmlLabel25.Name = "guna2HtmlLabel25";
+            this.guna2HtmlLabel25.Size = new System.Drawing.Size(277, 33);
+            this.guna2HtmlLabel25.TabIndex = 0;
+            this.guna2HtmlLabel25.Text = "Между датами прошло :";
+            // 
+            // guna2GradientPanel14
+            // 
+            this.guna2GradientPanel14.BorderColor = System.Drawing.Color.Black;
+            this.guna2GradientPanel14.BorderRadius = 12;
+            this.guna2GradientPanel14.BorderThickness = 2;
+            this.guna2GradientPanel14.Controls.Add(this.guna2HtmlLabel23);
+            this.guna2GradientPanel14.Controls.Add(this.guna2HtmlLabel19);
+            this.guna2GradientPanel14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
+            this.guna2GradientPanel14.FillColor2 = System.Drawing.Color.Black;
+            this.guna2GradientPanel14.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.guna2GradientPanel14.Location = new System.Drawing.Point(129, 118);
+            this.guna2GradientPanel14.Name = "guna2GradientPanel14";
+            this.guna2GradientPanel14.Size = new System.Drawing.Size(218, 90);
+            this.guna2GradientPanel14.TabIndex = 3;
+            // 
+            // guna2HtmlLabel23
+            // 
+            this.guna2HtmlLabel23.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel23.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.guna2HtmlLabel23.Location = new System.Drawing.Point(16, 3);
+            this.guna2HtmlLabel23.Name = "guna2HtmlLabel23";
+            this.guna2HtmlLabel23.Size = new System.Drawing.Size(187, 33);
+            this.guna2HtmlLabel23.TabIndex = 2;
+            this.guna2HtmlLabel23.Text = "Укажите вторую";
+            // 
+            // guna2HtmlLabel19
+            // 
+            this.guna2HtmlLabel19.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel19.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel19.Location = new System.Drawing.Point(36, 39);
+            this.guna2HtmlLabel19.Name = "guna2HtmlLabel19";
+            this.guna2HtmlLabel19.Size = new System.Drawing.Size(138, 30);
+            this.guna2HtmlLabel19.TabIndex = 2;
+            this.guna2HtmlLabel19.Text = "Дату и Время";
+            // 
+            // guna2GradientPanel13
+            // 
+            this.guna2GradientPanel13.BorderColor = System.Drawing.Color.Black;
+            this.guna2GradientPanel13.BorderRadius = 12;
+            this.guna2GradientPanel13.BorderThickness = 2;
+            this.guna2GradientPanel13.Controls.Add(this.guna2HtmlLabel22);
+            this.guna2GradientPanel13.Controls.Add(this.guna2HtmlLabel18);
+            this.guna2GradientPanel13.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
+            this.guna2GradientPanel13.FillColor2 = System.Drawing.Color.Black;
+            this.guna2GradientPanel13.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.guna2GradientPanel13.Location = new System.Drawing.Point(129, 15);
+            this.guna2GradientPanel13.Name = "guna2GradientPanel13";
+            this.guna2GradientPanel13.Size = new System.Drawing.Size(218, 90);
+            this.guna2GradientPanel13.TabIndex = 2;
+            // 
+            // guna2HtmlLabel22
+            // 
+            this.guna2HtmlLabel22.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel22.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel22.Location = new System.Drawing.Point(36, 42);
+            this.guna2HtmlLabel22.Name = "guna2HtmlLabel22";
+            this.guna2HtmlLabel22.Size = new System.Drawing.Size(138, 30);
+            this.guna2HtmlLabel22.TabIndex = 1;
+            this.guna2HtmlLabel22.Text = "Дату и Время";
+            // 
+            // guna2HtmlLabel18
+            // 
+            this.guna2HtmlLabel18.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel18.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.guna2HtmlLabel18.Location = new System.Drawing.Point(14, 3);
+            this.guna2HtmlLabel18.Name = "guna2HtmlLabel18";
+            this.guna2HtmlLabel18.Size = new System.Drawing.Size(189, 33);
+            this.guna2HtmlLabel18.TabIndex = 0;
+            this.guna2HtmlLabel18.Text = "Укажите первую";
+            // 
+            // DateTime2
+            // 
+            this.DateTime2.Animated = true;
+            this.DateTime2.AutoRoundedCorners = true;
+            this.DateTime2.BackColor = System.Drawing.Color.Transparent;
+            this.DateTime2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DateTime2.BorderRadius = 17;
+            this.DateTime2.BorderThickness = 2;
+            this.DateTime2.Checked = true;
+            this.DateTime2.CustomFormat = "dd.MM.yyyy HH:mm:ss";
+            this.DateTime2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(116)))), ((int)(((byte)(8)))));
+            this.DateTime2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DateTime2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DateTime2.IndicateFocus = true;
+            this.DateTime2.Location = new System.Drawing.Point(370, 151);
+            this.DateTime2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DateTime2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DateTime2.Name = "DateTime2";
+            this.DateTime2.Size = new System.Drawing.Size(200, 36);
+            this.DateTime2.TabIndex = 1;
+            this.DateTime2.UseTransparentBackground = true;
+            this.DateTime2.Value = new System.DateTime(2022, 9, 6, 11, 53, 30, 409);
+            // 
+            // DateTime1
+            // 
+            this.DateTime1.Animated = true;
+            this.DateTime1.AutoRoundedCorners = true;
+            this.DateTime1.BackColor = System.Drawing.Color.Transparent;
+            this.DateTime1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DateTime1.BorderRadius = 17;
+            this.DateTime1.BorderThickness = 2;
+            this.DateTime1.Checked = true;
+            this.DateTime1.CustomFormat = "dd.MM.yyyy HH:mm:ss";
+            this.DateTime1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(116)))), ((int)(((byte)(8)))));
+            this.DateTime1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DateTime1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DateTime1.IndicateFocus = true;
+            this.DateTime1.Location = new System.Drawing.Point(370, 51);
+            this.DateTime1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DateTime1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DateTime1.Name = "DateTime1";
+            this.DateTime1.Size = new System.Drawing.Size(200, 36);
+            this.DateTime1.TabIndex = 0;
+            this.DateTime1.UseTransparentBackground = true;
+            this.DateTime1.Value = new System.DateTime(2022, 9, 6, 11, 47, 58, 215);
             // 
             // PanelInfo
             // 
@@ -553,7 +892,6 @@
             this.guna2HtmlLabel21.Size = new System.Drawing.Size(405, 25);
             this.guna2HtmlLabel21.TabIndex = 3;
             this.guna2HtmlLabel21.Text = "и еще несколько фунций связанных с возрастом";
-            this.guna2HtmlLabel21.Click += new System.EventHandler(this.guna2HtmlLabel21_Click);
             // 
             // guna2HtmlLabel16
             // 
@@ -897,6 +1235,230 @@
             this.guna2HtmlLabel1.TabIndex = 0;
             this.guna2HtmlLabel1.Text = "Добро Пожаловать";
             // 
+            // guna2GradientPanel19
+            // 
+            this.guna2GradientPanel19.BorderColor = System.Drawing.Color.Black;
+            this.guna2GradientPanel19.BorderRadius = 12;
+            this.guna2GradientPanel19.BorderThickness = 2;
+            this.guna2GradientPanel19.Controls.Add(this.guna2CheckBox6);
+            this.guna2GradientPanel19.Controls.Add(this.guna2CheckBox5);
+            this.guna2GradientPanel19.Controls.Add(this.guna2CheckBox4);
+            this.guna2GradientPanel19.Controls.Add(this.guna2CheckBox3);
+            this.guna2GradientPanel19.Controls.Add(this.guna2CheckBox2);
+            this.guna2GradientPanel19.Controls.Add(this.guna2CheckBox1);
+            this.guna2GradientPanel19.Controls.Add(this.guna2CheckBox8);
+            this.guna2GradientPanel19.Controls.Add(this.guna2HtmlLabel28);
+            this.guna2GradientPanel19.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
+            this.guna2GradientPanel19.FillColor2 = System.Drawing.Color.Black;
+            this.guna2GradientPanel19.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.guna2GradientPanel19.Location = new System.Drawing.Point(12, 23);
+            this.guna2GradientPanel19.Name = "guna2GradientPanel19";
+            this.guna2GradientPanel19.Size = new System.Drawing.Size(272, 273);
+            this.guna2GradientPanel19.TabIndex = 7;
+            // 
+            // guna2HtmlLabel28
+            // 
+            this.guna2HtmlLabel28.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel28.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.guna2HtmlLabel28.ForeColor = System.Drawing.Color.Black;
+            this.guna2HtmlLabel28.Location = new System.Drawing.Point(6, 14);
+            this.guna2HtmlLabel28.Name = "guna2HtmlLabel28";
+            this.guna2HtmlLabel28.Size = new System.Drawing.Size(260, 33);
+            this.guna2HtmlLabel28.TabIndex = 0;
+            this.guna2HtmlLabel28.Text = "Укажите рабочии дни :";
+            // 
+            // guna2CheckBox8
+            // 
+            this.guna2CheckBox8.AutoSize = true;
+            this.guna2CheckBox8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CheckBox8.Checked = true;
+            this.guna2CheckBox8.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CheckBox8.CheckedState.BorderRadius = 6;
+            this.guna2CheckBox8.CheckedState.BorderThickness = 0;
+            this.guna2CheckBox8.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CheckBox8.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.guna2CheckBox8.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.guna2CheckBox8.ForeColor = System.Drawing.Color.Black;
+            this.guna2CheckBox8.Location = new System.Drawing.Point(54, 53);
+            this.guna2CheckBox8.Name = "guna2CheckBox8";
+            this.guna2CheckBox8.Size = new System.Drawing.Size(133, 25);
+            this.guna2CheckBox8.TabIndex = 8;
+            this.guna2CheckBox8.Text = "Понедельник";
+            this.guna2CheckBox8.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2CheckBox8.UncheckedState.BorderRadius = 6;
+            this.guna2CheckBox8.UncheckedState.BorderThickness = 0;
+            this.guna2CheckBox8.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2CheckBox8.UseVisualStyleBackColor = false;
+            // 
+            // guna2CheckBox1
+            // 
+            this.guna2CheckBox1.AutoSize = true;
+            this.guna2CheckBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CheckBox1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CheckBox1.CheckedState.BorderRadius = 6;
+            this.guna2CheckBox1.CheckedState.BorderThickness = 0;
+            this.guna2CheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CheckBox1.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.guna2CheckBox1.ForeColor = System.Drawing.Color.Black;
+            this.guna2CheckBox1.Location = new System.Drawing.Point(54, 239);
+            this.guna2CheckBox1.Name = "guna2CheckBox1";
+            this.guna2CheckBox1.Size = new System.Drawing.Size(123, 25);
+            this.guna2CheckBox1.TabIndex = 9;
+            this.guna2CheckBox1.Text = "Воскресенье";
+            this.guna2CheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2CheckBox1.UncheckedState.BorderRadius = 6;
+            this.guna2CheckBox1.UncheckedState.BorderThickness = 0;
+            this.guna2CheckBox1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2CheckBox1.UseVisualStyleBackColor = false;
+            // 
+            // guna2CheckBox2
+            // 
+            this.guna2CheckBox2.AutoSize = true;
+            this.guna2CheckBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CheckBox2.Checked = true;
+            this.guna2CheckBox2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CheckBox2.CheckedState.BorderRadius = 6;
+            this.guna2CheckBox2.CheckedState.BorderThickness = 0;
+            this.guna2CheckBox2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CheckBox2.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.guna2CheckBox2.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.guna2CheckBox2.ForeColor = System.Drawing.Color.Black;
+            this.guna2CheckBox2.Location = new System.Drawing.Point(54, 146);
+            this.guna2CheckBox2.Name = "guna2CheckBox2";
+            this.guna2CheckBox2.Size = new System.Drawing.Size(97, 25);
+            this.guna2CheckBox2.TabIndex = 10;
+            this.guna2CheckBox2.Text = "Четверг";
+            this.guna2CheckBox2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2CheckBox2.UncheckedState.BorderRadius = 6;
+            this.guna2CheckBox2.UncheckedState.BorderThickness = 0;
+            this.guna2CheckBox2.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2CheckBox2.UseVisualStyleBackColor = false;
+            // 
+            // guna2CheckBox3
+            // 
+            this.guna2CheckBox3.AutoSize = true;
+            this.guna2CheckBox3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CheckBox3.Checked = true;
+            this.guna2CheckBox3.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CheckBox3.CheckedState.BorderRadius = 6;
+            this.guna2CheckBox3.CheckedState.BorderThickness = 0;
+            this.guna2CheckBox3.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CheckBox3.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.guna2CheckBox3.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.guna2CheckBox3.ForeColor = System.Drawing.Color.Black;
+            this.guna2CheckBox3.Location = new System.Drawing.Point(54, 115);
+            this.guna2CheckBox3.Name = "guna2CheckBox3";
+            this.guna2CheckBox3.Size = new System.Drawing.Size(74, 25);
+            this.guna2CheckBox3.TabIndex = 11;
+            this.guna2CheckBox3.Text = "Среда";
+            this.guna2CheckBox3.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2CheckBox3.UncheckedState.BorderRadius = 6;
+            this.guna2CheckBox3.UncheckedState.BorderThickness = 0;
+            this.guna2CheckBox3.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2CheckBox3.UseVisualStyleBackColor = false;
+            // 
+            // guna2CheckBox4
+            // 
+            this.guna2CheckBox4.AutoSize = true;
+            this.guna2CheckBox4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CheckBox4.Checked = true;
+            this.guna2CheckBox4.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CheckBox4.CheckedState.BorderRadius = 6;
+            this.guna2CheckBox4.CheckedState.BorderThickness = 0;
+            this.guna2CheckBox4.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CheckBox4.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.guna2CheckBox4.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.guna2CheckBox4.ForeColor = System.Drawing.Color.Black;
+            this.guna2CheckBox4.Location = new System.Drawing.Point(54, 84);
+            this.guna2CheckBox4.Name = "guna2CheckBox4";
+            this.guna2CheckBox4.Size = new System.Drawing.Size(101, 25);
+            this.guna2CheckBox4.TabIndex = 12;
+            this.guna2CheckBox4.Text = "Вторник";
+            this.guna2CheckBox4.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2CheckBox4.UncheckedState.BorderRadius = 6;
+            this.guna2CheckBox4.UncheckedState.BorderThickness = 0;
+            this.guna2CheckBox4.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2CheckBox4.UseVisualStyleBackColor = false;
+            // 
+            // guna2CheckBox5
+            // 
+            this.guna2CheckBox5.AutoSize = true;
+            this.guna2CheckBox5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CheckBox5.Checked = true;
+            this.guna2CheckBox5.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CheckBox5.CheckedState.BorderRadius = 6;
+            this.guna2CheckBox5.CheckedState.BorderThickness = 0;
+            this.guna2CheckBox5.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CheckBox5.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.guna2CheckBox5.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.guna2CheckBox5.ForeColor = System.Drawing.Color.Black;
+            this.guna2CheckBox5.Location = new System.Drawing.Point(54, 177);
+            this.guna2CheckBox5.Name = "guna2CheckBox5";
+            this.guna2CheckBox5.Size = new System.Drawing.Size(104, 25);
+            this.guna2CheckBox5.TabIndex = 13;
+            this.guna2CheckBox5.Text = "Пятница";
+            this.guna2CheckBox5.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2CheckBox5.UncheckedState.BorderRadius = 6;
+            this.guna2CheckBox5.UncheckedState.BorderThickness = 0;
+            this.guna2CheckBox5.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2CheckBox5.UseVisualStyleBackColor = false;
+            // 
+            // guna2CheckBox6
+            // 
+            this.guna2CheckBox6.AutoSize = true;
+            this.guna2CheckBox6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CheckBox6.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CheckBox6.CheckedState.BorderRadius = 6;
+            this.guna2CheckBox6.CheckedState.BorderThickness = 0;
+            this.guna2CheckBox6.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CheckBox6.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.guna2CheckBox6.ForeColor = System.Drawing.Color.Black;
+            this.guna2CheckBox6.Location = new System.Drawing.Point(54, 208);
+            this.guna2CheckBox6.Name = "guna2CheckBox6";
+            this.guna2CheckBox6.Size = new System.Drawing.Size(99, 25);
+            this.guna2CheckBox6.TabIndex = 14;
+            this.guna2CheckBox6.Text = "Суббота";
+            this.guna2CheckBox6.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2CheckBox6.UncheckedState.BorderRadius = 6;
+            this.guna2CheckBox6.UncheckedState.BorderThickness = 0;
+            this.guna2CheckBox6.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2CheckBox6.UseVisualStyleBackColor = false;
+            // 
+            // guna2GradientPanel20
+            // 
+            this.guna2GradientPanel20.BorderColor = System.Drawing.Color.Black;
+            this.guna2GradientPanel20.BorderRadius = 12;
+            this.guna2GradientPanel20.BorderThickness = 2;
+            this.guna2GradientPanel20.Controls.Add(this.guna2HtmlLabel29);
+            this.guna2GradientPanel20.Controls.Add(this.guna2HtmlLabel30);
+            this.guna2GradientPanel20.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
+            this.guna2GradientPanel20.FillColor2 = System.Drawing.Color.Black;
+            this.guna2GradientPanel20.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.guna2GradientPanel20.Location = new System.Drawing.Point(143, 342);
+            this.guna2GradientPanel20.Name = "guna2GradientPanel20";
+            this.guna2GradientPanel20.Size = new System.Drawing.Size(441, 104);
+            this.guna2GradientPanel20.TabIndex = 8;
+            // 
+            // guna2HtmlLabel29
+            // 
+            this.guna2HtmlLabel29.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel29.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel29.Location = new System.Drawing.Point(89, 43);
+            this.guna2HtmlLabel29.Name = "guna2HtmlLabel29";
+            this.guna2HtmlLabel29.Size = new System.Drawing.Size(3, 2);
+            this.guna2HtmlLabel29.TabIndex = 1;
+            this.guna2HtmlLabel29.Text = null;
+            // 
+            // guna2HtmlLabel30
+            // 
+            this.guna2HtmlLabel30.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel30.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.guna2HtmlLabel30.Location = new System.Drawing.Point(89, 12);
+            this.guna2HtmlLabel30.Name = "guna2HtmlLabel30";
+            this.guna2HtmlLabel30.Size = new System.Drawing.Size(277, 33);
+            this.guna2HtmlLabel30.TabIndex = 0;
+            this.guna2HtmlLabel30.Text = "Между датами прошло :";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -913,6 +1475,19 @@
             this.PanelTimeConverter.ResumeLayout(false);
             this.PanelLeapCounter.ResumeLayout(false);
             this.PanelDateWorking.ResumeLayout(false);
+            this.guna2GradientPanel18.ResumeLayout(false);
+            this.guna2GradientPanel18.PerformLayout();
+            this.guna2GradientPanel17.ResumeLayout(false);
+            this.guna2GradientPanel17.PerformLayout();
+            this.PanelDateComparer.ResumeLayout(false);
+            this.guna2GradientPanel16.ResumeLayout(false);
+            this.guna2GradientPanel16.PerformLayout();
+            this.guna2GradientPanel15.ResumeLayout(false);
+            this.guna2GradientPanel15.PerformLayout();
+            this.guna2GradientPanel14.ResumeLayout(false);
+            this.guna2GradientPanel14.PerformLayout();
+            this.guna2GradientPanel13.ResumeLayout(false);
+            this.guna2GradientPanel13.PerformLayout();
             this.PanelInfo.ResumeLayout(false);
             this.guna2GradientPanel7.ResumeLayout(false);
             this.guna2GradientPanel7.PerformLayout();
@@ -938,6 +1513,10 @@
             this.guna2GradientPanel2.PerformLayout();
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
+            this.guna2GradientPanel19.ResumeLayout(false);
+            this.guna2GradientPanel19.PerformLayout();
+            this.guna2GradientPanel20.ResumeLayout(false);
+            this.guna2GradientPanel20.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -968,7 +1547,6 @@
         private Guna.UI2.WinForms.Guna2Panel PanelLeapCounter;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton10;
         private Guna.UI2.WinForms.Guna2Panel PanelDateWorking;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton9;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel7;
@@ -1000,6 +1578,40 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel13;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel17;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
+        private Guna.UI2.WinForms.Guna2DateTimePicker DateTime1;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel15;
+        private Guna.UI2.WinForms.Guna2HtmlLabel TotaTimeLabel;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel25;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel14;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel23;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel19;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel13;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel22;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel18;
+        private Guna.UI2.WinForms.Guna2DateTimePicker DateTime2;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel16;
+        private Guna.UI2.WinForms.Guna2HtmlLabel TotalDaysLabel;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel27;
+        private Guna.UI2.WinForms.Guna2GradientButton ResultDateComparerButton;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel18;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel24;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel17;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel26;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel19;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel28;
+        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
+        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox8;
+        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox6;
+        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox5;
+        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox4;
+        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox3;
+        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox2;
+        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox1;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel20;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel29;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel30;
     }
 }
 

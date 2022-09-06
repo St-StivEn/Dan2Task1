@@ -16,7 +16,6 @@ namespace Dan2Task1
         public Form1()
         {
             InitializeComponent();
-
             
             this.Width -= 17;
             PanelBody.AutoScroll = false;
@@ -58,17 +57,21 @@ namespace Dan2Task1
             PanelBirhday.SendToBack();
         }
 
-        private void guna2HtmlLabel21_Click(object sender, EventArgs e)
+       
+        private void ResultDateComparerButton_Click(object sender, EventArgs e)
         {
+            DateTime a = DateTime1.Value;
+            DateTime b = DateTime2.Value;
+            TimeSpan res = b - a;
+            
+            TotaTimeLabel.Text = "";
+            TotalDaysLabel.Text = "";
 
+            TotaTimeLabel.Text += res.ToString();
+            TotalDaysLabel.Text += res.Days.ToString();
         }
 
-        private void guna2DateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2DateTimePicker1_ValueChanged_1(object sender, EventArgs e)
+        private void guna2CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
 
         }
