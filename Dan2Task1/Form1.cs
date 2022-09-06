@@ -75,5 +75,10 @@ namespace Dan2Task1
         {
 
         }
+
+        private void guna2HtmlLabel39_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
