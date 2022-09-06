@@ -17,6 +17,7 @@ namespace Dan2Task1
         {
             InitializeComponent();
 
+            
             this.Width -= 17;
             PanelBody.AutoScroll = false;
             foreach (var panel in PanelBody.Controls.OfType<Guna2Panel>())
@@ -55,6 +56,21 @@ namespace Dan2Task1
         private void guna2GradientButton2_Click(object sender, EventArgs e)
         {
             PanelBirhday.SendToBack();
+        }
+
+        private void guna2HtmlLabel21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2DateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2DateTimePicker1_ValueChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
