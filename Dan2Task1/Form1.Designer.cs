@@ -854,7 +854,7 @@
             this.DateTime2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.DateTime2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.DateTime2.IndicateFocus = true;
-            this.DateTime2.Location = new System.Drawing.Point(370, 153);
+            this.DateTime2.Location = new System.Drawing.Point(370, 173);
             this.DateTime2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.DateTime2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.DateTime2.Name = "DateTime2";
@@ -877,7 +877,7 @@
             this.DateTime1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.DateTime1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.DateTime1.IndicateFocus = true;
-            this.DateTime1.Location = new System.Drawing.Point(370, 51);
+            this.DateTime1.Location = new System.Drawing.Point(370, 60);
             this.DateTime1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.DateTime1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.DateTime1.Name = "DateTime1";
@@ -2278,7 +2278,7 @@
             // 
             this.guna2HtmlLabel48.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel48.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2HtmlLabel48.Location = new System.Drawing.Point(13, 13);
+            this.guna2HtmlLabel48.Location = new System.Drawing.Point(18, 13);
             this.guna2HtmlLabel48.Name = "guna2HtmlLabel48";
             this.guna2HtmlLabel48.Size = new System.Drawing.Size(296, 33);
             this.guna2HtmlLabel48.TabIndex = 2;
@@ -2288,7 +2288,7 @@
             // 
             this.guna2HtmlLabel49.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel49.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2HtmlLabel49.Location = new System.Drawing.Point(76, 12);
+            this.guna2HtmlLabel49.Location = new System.Drawing.Point(18, 12);
             this.guna2HtmlLabel49.Name = "guna2HtmlLabel49";
             this.guna2HtmlLabel49.Size = new System.Drawing.Size(136, 33);
             this.guna2HtmlLabel49.TabIndex = 0;
@@ -2308,7 +2308,7 @@
             // 
             this.guna2HtmlLabel50.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel50.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2HtmlLabel50.Location = new System.Drawing.Point(12, 14);
+            this.guna2HtmlLabel50.Location = new System.Drawing.Point(18, 14);
             this.guna2HtmlLabel50.Name = "guna2HtmlLabel50";
             this.guna2HtmlLabel50.Size = new System.Drawing.Size(330, 33);
             this.guna2HtmlLabel50.TabIndex = 5;
@@ -2318,7 +2318,7 @@
             // 
             this.guna2HtmlLabel51.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel51.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2HtmlLabel51.Location = new System.Drawing.Point(482, 12);
+            this.guna2HtmlLabel51.Location = new System.Drawing.Point(501, 12);
             this.guna2HtmlLabel51.Name = "guna2HtmlLabel51";
             this.guna2HtmlLabel51.Size = new System.Drawing.Size(42, 33);
             this.guna2HtmlLabel51.TabIndex = 6;
@@ -2339,7 +2339,7 @@
             // 
             this.guna2HtmlLabel52.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel52.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2HtmlLabel52.Location = new System.Drawing.Point(7, 12);
+            this.guna2HtmlLabel52.Location = new System.Drawing.Point(18, 12);
             this.guna2HtmlLabel52.Name = "guna2HtmlLabel52";
             this.guna2HtmlLabel52.Size = new System.Drawing.Size(459, 33);
             this.guna2HtmlLabel52.TabIndex = 8;
