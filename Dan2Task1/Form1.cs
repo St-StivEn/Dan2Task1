@@ -135,9 +135,6 @@ namespace Dan2Task1
                         MS++;
                     }
 
-
-
-
                     break;
                 }
                 catch
@@ -145,91 +142,6 @@ namespace Dan2Task1
 
                 }
             }
-
-            
-
-            //while (((a.Day / 7 == 0) && ((b - a).Days >= 7)) || ((a.Day / 7 != 0) && ((b - a).Days >= 7)))
-            //{
-            //    a = a.AddDays(7);
-            //    Week++;
-            //}
-            //while(((a.Day / 24 ==0)&&((b-a).Hours >= 24))||((a.Day / 24 !=0)&&((b-a).Hours >=24)))
-            //{
-            //    a = a.AddDays(1);
-            //    Days++;
-            //}
-
-
-
-
-            //while (((a.Day / 1 == 0) && ((b - a).Days >= 1)) || ((a.Day / 1 != 0) && ((b - a).Days >= 1)))
-            //{
-            //    a = a.AddDays(1);
-            //    Days++;
-            //}
-            //while (((a.Hour / 1 == 0) && ((b - a).Hours >= 1)) || ((a.Hour / 1 != 0) && ((b - a).Hours >= 1)))
-            //{
-            //    a = a.AddHours(1);
-            //    Hour++;
-            //}
-            //while (((a.Minute / 1 == 0) && ((b - a).Minutes >= 1)) || ((a.Minute / 1 != 0) && ((b - a).Minutes >= 1)))
-            //{
-            //    a = a.AddMinutes(1);
-            //    Hour++;
-            //}
-            //while (((a.Second / 1 == 0) && ((b - a).Seconds >= 1)) || ((a.Second / 1 != 0) && ((b - a).Seconds >= 1)))
-            //{
-            //    a = a.AddSeconds(1);
-            //    Hour++;
-            //}
-
-            //int aa = a.Year;
-            //int bb = b.Year;
-
-
-            //Years = bb - aa;
-
-            //if(a.Month > b.Month)
-            //    Months = a.Month - b.Month;
-            //else if(a.Month < b.Month)
-            //    Months = b.Month - a.Month;
-
-
-            //if(a.Day > b.Day)
-            //    Days = a.Day - b.Day;
-            //else if (a.Day < b.Day)
-            //    Days = b.Day - a.Day;
-
-            //if (Days > 7)
-            //{
-            //    Week = Days / 7;
-            //    Days = Days % 7;
-            //}
-
-
-            //var span = b - a;
-            //var all_day = span.Days;
-
-
-
-            //var all_hours = (int)span.TotalHours;
-            //Hour = all_hours % all_day;
-
-            //var all_minutes = (int)span.TotalMinutes;
-            //Minute = all_minutes % 60; 
-
-            //var all_second = (int)span.TotalSeconds;
-            //Second = all_second % 60;
-
-            //var all_ms = span.TotalMilliseconds;
-            //MS = all_ms % 1000;
-
-
-
-            //while(a.AddSeconds(Second) < b)
-            //    Second++;
-            //while (a.AddMilliseconds(MS) < b)
-            //    MS++;
 
 
             TotalYearsLabel.Text = "";
@@ -247,10 +159,6 @@ namespace Dan2Task1
             GlobalDaysLabel.Text += res.Days.ToString();
 
 
-
-            //TotalDaysLabel.Text +=  res.ToString();
-
-            //GlobalDaysLabel.Text += res.Days.ToString();
         }
 
         private void guna2CheckBox1_CheckedChanged(object sender, EventArgs e)
