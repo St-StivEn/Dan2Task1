@@ -638,7 +638,6 @@
             this.guna2HtmlLabel47.Size = new System.Drawing.Size(42, 33);
             this.guna2HtmlLabel47.TabIndex = 7;
             this.guna2HtmlLabel47.Text = " 123 ";
-            this.guna2HtmlLabel47.Click += new System.EventHandler(this.guna2HtmlLabel47_Click);
             // 
             // guna2GradientPanel30
             // 
@@ -1149,7 +1148,6 @@
             this.guna2HtmlLabel39.Size = new System.Drawing.Size(98, 33);
             this.guna2HtmlLabel39.TabIndex = 15;
             this.guna2HtmlLabel39.Text = "единицу ";
-            this.guna2HtmlLabel39.Click += new System.EventHandler(this.guna2HtmlLabel39_Click);
             // 
             // guna2CheckBox9
             // 
@@ -1961,7 +1959,6 @@
             this.TotalDaysLabel.Size = new System.Drawing.Size(15, 30);
             this.TotalDaysLabel.TabIndex = 1;
             this.TotalDaysLabel.Text = "0";
-            this.TotalDaysLabel.Click += new System.EventHandler(this.TotalDaysLabel_Click);
             // 
             // guna2GradientPanel37
             // 
@@ -2136,7 +2133,6 @@
             this.TotalYearsLabel.Size = new System.Drawing.Size(15, 30);
             this.TotalYearsLabel.TabIndex = 1;
             this.TotalYearsLabel.Text = "0";
-            this.TotalYearsLabel.Click += new System.EventHandler(this.TotaTimeLabel_Click);
             // 
             // guna2GradientPanel35
             // 
@@ -2213,7 +2209,6 @@
             this.guna2GradientPanel13.Name = "guna2GradientPanel13";
             this.guna2GradientPanel13.Size = new System.Drawing.Size(218, 90);
             this.guna2GradientPanel13.TabIndex = 2;
-            this.guna2GradientPanel13.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2GradientPanel13_Paint);
             // 
             // guna2HtmlLabel22
             // 

@@ -76,22 +76,37 @@ namespace Dan2Task1
        
         private void ResultDateComparerButton_Click(object sender, EventArgs e)
         {
-            DateTime a = DateTimeDate1.Value;
-            DateTime b = DateTimeDate2.Value;
-            TimeSpan res = b - a;
-            int Years = 0;
-            int Months = 0;
-            long Week = 0;
-            long Days = 0;
-            long Hour = 0;
-            long Minute = 0;
-            long Second = 0;
-            double MS = 0;
-
             while (true)
             {
                 try
                 {
+                    DateTime a = DateTime.Now;
+                    DateTime b = DateTime.Now;
+                    TimeSpan res = b - a;
+
+
+                    if (DateTimeDate1.Value < DateTimeDate2.Value)
+                    {
+                        a = DateTimeDate1.Value;
+                        b = DateTimeDate2.Value;
+                        res = b - a;
+                    }
+                    else if (DateTimeDate1.Value > DateTimeDate2.Value)
+                    {
+                        b = DateTimeDate1.Value;
+                        a = DateTimeDate2.Value;
+                        res = b - a;
+                    }
+
+                    int Years = 0;
+                    int Months = 0;
+                    long Week = 0;
+                    long Days = 0;
+                    long Hour = 0;
+                    long Minute = 0;
+                    long Second = 0;
+                    double MS = 0;
+
                     while (((a.Year / 4 == 0) && ((b - a).Days >= 366)) || ((a.Year / 4 != 0) && ((b - a).Days >= 365)))
                     {
                         a = a.AddYears(1);
@@ -135,80 +150,53 @@ namespace Dan2Task1
                         MS++;
                     }
 
+                    TotalYearsLabel.Text = "";
+                    TotalMonthLabel.Text = "";
+                    TotalWeekLabel.Text = "";
+                    TotalDaysLabel.Text = "";
+                    TotalTimeLabel.Text = "";
+                    GlobalDaysLabel.Text = "";
+
+                    TotalYearsLabel.Text += Years.ToString();
+                    TotalMonthLabel.Text += Months.ToString();
+                    TotalWeekLabel.Text += Week.ToString();
+                    TotalDaysLabel.Text += Days.ToString();
+                    TotalTimeLabel.Text += $"Часов:{Hour}; Минут:{Minute}; Секунд:{Second}; Милисекунд:{MS}.";
+                    GlobalDaysLabel.Text += res.Days.ToString();
+
                     break;
                 }
-                catch
-                {
-
-                }
+                catch { }   
             }
-
-
-            TotalYearsLabel.Text = "";
-            TotalMonthLabel.Text = "";
-            TotalWeekLabel.Text = "";
-            TotalDaysLabel.Text = "";
-            TotalTimeLabel.Text = "";
-            GlobalDaysLabel.Text = "";
-
-            TotalYearsLabel.Text += Years.ToString();
-            TotalMonthLabel.Text += Months.ToString();
-            TotalWeekLabel.Text += Week.ToString();
-            TotalDaysLabel.Text += Days.ToString();
-            TotalTimeLabel.Text += $"Часов:{Hour}; Минут:{Minute}; Секунд:{Second}; Милисекунд:{MS}.";
-            GlobalDaysLabel.Text += res.Days.ToString();
-
-
         }
-
-        private void guna2CheckBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2HtmlLabel39_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2HtmlLabel47_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2GradientPanel13_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void TotaTimeLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TotalDaysLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void ResultLeapButton_Click(object sender, EventArgs e)
         {
-            LeapLabel.Text = "";
-            
-            DateTime start = DateTimeLeap1.Value;
-            DateTime finish = DateTimeLeap2.Value;
-
-            int Years = 0;
-
-            for(int i = start.Year; i <= finish.Year; i++)
+            while (true)
             {
-                if (DateTime.IsLeapYear(i))
+                try
                 {
-                    Years++;
-                }
-            }
+                    LeapLabel.Text = "";
 
-            LeapLabel.Text += Years;
+                    DateTime start = DateTimeLeap1.Value;
+                    DateTime finish = DateTimeLeap2.Value;
+
+                    int Years = 0;
+
+                    for (int i = start.Year; i <= finish.Year; i++)
+                    {
+                        if (DateTime.IsLeapYear(i))
+                        {
+                            Years++;
+                        }
+                    }
+
+                    LeapLabel.Text += Years;
+
+                    break;
+                }
+                catch { }
+            }
+            
         }
     }
 }
