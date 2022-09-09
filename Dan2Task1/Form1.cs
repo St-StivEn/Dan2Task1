@@ -17,7 +17,14 @@ namespace Dan2Task1
         public Form1()
         {
             InitializeComponent();
-            
+
+            DateTimeDate1.Value = DateTime.Now;
+            DateTimeDate2.Value = DateTime.Now;
+            DateTimeLeap1.Value = DateTime.Now;
+            DateTimeLeap2.Value = DateTime.Now;
+            DateTimeWorking1.Value = DateTime.Now;
+            DateTimeWorking2.Value = DateTime.Now;
+
             this.Width -= 17;
             PanelBody.AutoScroll = false;
             foreach (var panel in PanelBody.Controls.OfType<Guna2Panel>())
@@ -27,6 +34,14 @@ namespace Dan2Task1
 
         }
 
+        public int DaysOfMonths( DateTime a)
+        {
+           a = DateTimeDate1.Value;
+           
+           int MonthsOfA = DateTime.DaysInMonth(a.Year, a.Month);
+           
+            return MonthsOfA;
+        }
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
             //PanelInfo.BringToFront();
@@ -61,8 +76,8 @@ namespace Dan2Task1
        
         private void ResultDateComparerButton_Click(object sender, EventArgs e)
         {
-            DateTime a = DateTime1.Value;
-            DateTime b = DateTime2.Value;
+            DateTime a = DateTimeDate1.Value;
+            DateTime b = DateTimeDate2.Value;
             TimeSpan res = b - a;
             int Years = 0;
             int Months = 0;
@@ -73,26 +88,101 @@ namespace Dan2Task1
             long Second = 0;
             double MS = 0;
 
-            while (((a.Year / 4 == 0) && ((b - a).Days >= 366)) || ((a.Year / 4 != 0) && ((b - a).Days >= 365)))
+            while (true)
             {
-                a = a.AddYears(1);
-                Years++;
+                try
+                {
+                    while (((a.Year / 4 == 0) && ((b - a).Days >= 366)) || ((a.Year / 4 != 0) && ((b - a).Days >= 365)))
+                    {
+                        a = a.AddYears(1);
+                        Years++;
+                    }
+
+                    while((b -a).Days >= DaysOfMonths(a))
+                    {
+                        a = a.AddMonths(1);
+                        Months++;
+                    }
+
+                    while ((a.Day / 7 >= 0) && ((b - a).Days >= 7))
+                    {
+                        a = a.AddDays(7);
+                        Week++;
+                    }
+                    while((a.Day / 1 >= 0) && ((b - a).Days >= 1))
+                    {
+                        a = a.AddDays(1);
+                        Days++;
+                    }
+                    while((a.Hour / 1 >=0) && ((b - a).Hours >= 1))
+                    {
+                        a = a.AddHours(1);
+                        Hour++;
+                    }
+                    while((a.Minute/1>=0)&& ((b - a).Minutes >= 1))
+                    {
+                        a = a.AddMinutes(1);
+                        Minute++;
+                    }
+                    while((a.Second / 1 >=0)&&((b - a ).Seconds >= 1))
+                    {
+                        a = a.AddSeconds(1);
+                        Second++;
+                    }
+                    while((a.Millisecond / 1 >=0)&&((b - a).Milliseconds >= 1))
+                    {
+                        a = a.AddMilliseconds(1);
+                        MS++;
+                    }
+
+
+
+
+                    break;
+                }
+                catch
+                {
+
+                }
             }
-            while (((a.Day / 31 == 0) && ((b - a).Days >= 31)) || ((a.Day / 30 == 0) && ((b - a).Days >= 30)) || ((a.Day / 28 == 0) && ((b - a).Days >= 28)) || ((a.Day / 29 == 0) && ((b - a).Days >= 29)))
-            {
-                a = a.AddMonths(1);
-                Months++;
-            }
-            while(((a.Day / 7 == 0)&&((b-a).Days >= 7)) || ((a.Day / 7 !=0)&&((b -a).Days >= 7))) 
-            {
-                a = a.AddDays(7);
-                Week++;
-            }
-            while(((a.Day / 1 == 0 ) && ((b - a).Days >= 1)) || ((a.Day / 1 !=0)&&((b - a ).Days >= 1)))
-            {
-                a = a.AddDays(1);
-                Days++;
-            }
+
+            
+
+            //while (((a.Day / 7 == 0) && ((b - a).Days >= 7)) || ((a.Day / 7 != 0) && ((b - a).Days >= 7)))
+            //{
+            //    a = a.AddDays(7);
+            //    Week++;
+            //}
+            //while(((a.Day / 24 ==0)&&((b-a).Hours >= 24))||((a.Day / 24 !=0)&&((b-a).Hours >=24)))
+            //{
+            //    a = a.AddDays(1);
+            //    Days++;
+            //}
+
+
+
+
+            //while (((a.Day / 1 == 0) && ((b - a).Days >= 1)) || ((a.Day / 1 != 0) && ((b - a).Days >= 1)))
+            //{
+            //    a = a.AddDays(1);
+            //    Days++;
+            //}
+            //while (((a.Hour / 1 == 0) && ((b - a).Hours >= 1)) || ((a.Hour / 1 != 0) && ((b - a).Hours >= 1)))
+            //{
+            //    a = a.AddHours(1);
+            //    Hour++;
+            //}
+            //while (((a.Minute / 1 == 0) && ((b - a).Minutes >= 1)) || ((a.Minute / 1 != 0) && ((b - a).Minutes >= 1)))
+            //{
+            //    a = a.AddMinutes(1);
+            //    Hour++;
+            //}
+            //while (((a.Second / 1 == 0) && ((b - a).Seconds >= 1)) || ((a.Second / 1 != 0) && ((b - a).Seconds >= 1)))
+            //{
+            //    a = a.AddSeconds(1);
+            //    Hour++;
+            //}
+
             //int aa = a.Year;
             //int bb = b.Year;
 

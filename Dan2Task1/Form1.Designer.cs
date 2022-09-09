@@ -61,7 +61,7 @@
             this.guna2GradientPanel29 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2NumericUpDown2 = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.guna2HtmlLabel45 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2DateTimePicker5 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.DateTimeBirhday = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2GradientPanel28 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2HtmlLabel42 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2GradientButton12 = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -118,8 +118,8 @@
             this.guna2CheckBox2 = new Guna.UI2.WinForms.Guna2CheckBox();
             this.guna2CheckBox8 = new Guna.UI2.WinForms.Guna2CheckBox();
             this.guna2HtmlLabel28 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.DateTimeWorking2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.DateTimeWorking1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2GradientPanel18 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2HtmlLabel24 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2GradientPanel17 = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -154,8 +154,8 @@
             this.guna2GradientPanel13 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2HtmlLabel22 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel18 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.DateTime2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.DateTime1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.DateTimeDate2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.DateTimeDate1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.PanelInfo = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2GradientPanel7 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2HtmlLabel21 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -502,7 +502,7 @@
             this.PanelBirhday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.PanelBirhday.Controls.Add(this.guna2GradientPanel31);
             this.PanelBirhday.Controls.Add(this.guna2GradientPanel29);
-            this.PanelBirhday.Controls.Add(this.guna2DateTimePicker5);
+            this.PanelBirhday.Controls.Add(this.DateTimeBirhday);
             this.PanelBirhday.Controls.Add(this.guna2GradientPanel28);
             this.PanelBirhday.Controls.Add(this.guna2GradientButton12);
             this.PanelBirhday.Dock = System.Windows.Forms.DockStyle.Top;
@@ -733,27 +733,27 @@
             this.guna2HtmlLabel45.TabIndex = 0;
             this.guna2HtmlLabel45.Text = "Через сколько вам исполнится  :";
             // 
-            // guna2DateTimePicker5
+            // DateTimeBirhday
             // 
-            this.guna2DateTimePicker5.Animated = true;
-            this.guna2DateTimePicker5.AutoRoundedCorners = true;
-            this.guna2DateTimePicker5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2DateTimePicker5.BorderRadius = 17;
-            this.guna2DateTimePicker5.BorderThickness = 2;
-            this.guna2DateTimePicker5.Checked = true;
-            this.guna2DateTimePicker5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(116)))), ((int)(((byte)(8)))));
-            this.guna2DateTimePicker5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker5.ForeColor = System.Drawing.Color.Black;
-            this.guna2DateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker5.IndicateFocus = true;
-            this.guna2DateTimePicker5.Location = new System.Drawing.Point(445, 31);
-            this.guna2DateTimePicker5.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker5.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker5.Name = "guna2DateTimePicker5";
-            this.guna2DateTimePicker5.Size = new System.Drawing.Size(165, 36);
-            this.guna2DateTimePicker5.TabIndex = 9;
-            this.guna2DateTimePicker5.UseTransparentBackground = true;
-            this.guna2DateTimePicker5.Value = new System.DateTime(2022, 9, 6, 15, 27, 5, 37);
+            this.DateTimeBirhday.Animated = true;
+            this.DateTimeBirhday.AutoRoundedCorners = true;
+            this.DateTimeBirhday.BackColor = System.Drawing.Color.Transparent;
+            this.DateTimeBirhday.BorderRadius = 17;
+            this.DateTimeBirhday.BorderThickness = 2;
+            this.DateTimeBirhday.Checked = true;
+            this.DateTimeBirhday.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(116)))), ((int)(((byte)(8)))));
+            this.DateTimeBirhday.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DateTimeBirhday.ForeColor = System.Drawing.Color.Black;
+            this.DateTimeBirhday.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.DateTimeBirhday.IndicateFocus = true;
+            this.DateTimeBirhday.Location = new System.Drawing.Point(445, 31);
+            this.DateTimeBirhday.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DateTimeBirhday.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DateTimeBirhday.Name = "DateTimeBirhday";
+            this.DateTimeBirhday.Size = new System.Drawing.Size(165, 36);
+            this.DateTimeBirhday.TabIndex = 9;
+            this.DateTimeBirhday.UseTransparentBackground = true;
+            this.DateTimeBirhday.Value = new System.DateTime(1997, 6, 12, 5, 45, 0, 0);
             // 
             // guna2GradientPanel28
             // 
@@ -1478,8 +1478,8 @@
             this.PanelDateWorking.Controls.Add(this.guna2GradientButton1);
             this.PanelDateWorking.Controls.Add(this.guna2GradientPanel20);
             this.PanelDateWorking.Controls.Add(this.guna2GradientPanel19);
-            this.PanelDateWorking.Controls.Add(this.guna2DateTimePicker2);
-            this.PanelDateWorking.Controls.Add(this.guna2DateTimePicker1);
+            this.PanelDateWorking.Controls.Add(this.DateTimeWorking2);
+            this.PanelDateWorking.Controls.Add(this.DateTimeWorking1);
             this.PanelDateWorking.Controls.Add(this.guna2GradientPanel18);
             this.PanelDateWorking.Controls.Add(this.guna2GradientPanel17);
             this.PanelDateWorking.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -1742,49 +1742,49 @@
             this.guna2HtmlLabel28.TabIndex = 0;
             this.guna2HtmlLabel28.Text = "Укажите рабочии дни :";
             // 
-            // guna2DateTimePicker2
+            // DateTimeWorking2
             // 
-            this.guna2DateTimePicker2.Animated = true;
-            this.guna2DateTimePicker2.AutoRoundedCorners = true;
-            this.guna2DateTimePicker2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2DateTimePicker2.BorderRadius = 17;
-            this.guna2DateTimePicker2.BorderThickness = 2;
-            this.guna2DateTimePicker2.Checked = true;
-            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(116)))), ((int)(((byte)(8)))));
-            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker2.ForeColor = System.Drawing.Color.Black;
-            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker2.IndicateFocus = true;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(487, 258);
-            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(165, 36);
-            this.guna2DateTimePicker2.TabIndex = 6;
-            this.guna2DateTimePicker2.UseTransparentBackground = true;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2022, 9, 6, 15, 27, 5, 37);
+            this.DateTimeWorking2.Animated = true;
+            this.DateTimeWorking2.AutoRoundedCorners = true;
+            this.DateTimeWorking2.BackColor = System.Drawing.Color.Transparent;
+            this.DateTimeWorking2.BorderRadius = 17;
+            this.DateTimeWorking2.BorderThickness = 2;
+            this.DateTimeWorking2.Checked = true;
+            this.DateTimeWorking2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(116)))), ((int)(((byte)(8)))));
+            this.DateTimeWorking2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DateTimeWorking2.ForeColor = System.Drawing.Color.Black;
+            this.DateTimeWorking2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.DateTimeWorking2.IndicateFocus = true;
+            this.DateTimeWorking2.Location = new System.Drawing.Point(487, 258);
+            this.DateTimeWorking2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DateTimeWorking2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DateTimeWorking2.Name = "DateTimeWorking2";
+            this.DateTimeWorking2.Size = new System.Drawing.Size(165, 36);
+            this.DateTimeWorking2.TabIndex = 6;
+            this.DateTimeWorking2.UseTransparentBackground = true;
+            this.DateTimeWorking2.Value = new System.DateTime(2022, 9, 6, 15, 27, 5, 37);
             // 
-            // guna2DateTimePicker1
+            // DateTimeWorking1
             // 
-            this.guna2DateTimePicker1.Animated = true;
-            this.guna2DateTimePicker1.AutoRoundedCorners = true;
-            this.guna2DateTimePicker1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2DateTimePicker1.BorderRadius = 17;
-            this.guna2DateTimePicker1.BorderThickness = 2;
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(116)))), ((int)(((byte)(8)))));
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker1.ForeColor = System.Drawing.Color.Black;
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.IndicateFocus = true;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(487, 107);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(165, 36);
-            this.guna2DateTimePicker1.TabIndex = 5;
-            this.guna2DateTimePicker1.UseTransparentBackground = true;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2022, 9, 6, 15, 27, 5, 37);
+            this.DateTimeWorking1.Animated = true;
+            this.DateTimeWorking1.AutoRoundedCorners = true;
+            this.DateTimeWorking1.BackColor = System.Drawing.Color.Transparent;
+            this.DateTimeWorking1.BorderRadius = 17;
+            this.DateTimeWorking1.BorderThickness = 2;
+            this.DateTimeWorking1.Checked = true;
+            this.DateTimeWorking1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(116)))), ((int)(((byte)(8)))));
+            this.DateTimeWorking1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DateTimeWorking1.ForeColor = System.Drawing.Color.Black;
+            this.DateTimeWorking1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.DateTimeWorking1.IndicateFocus = true;
+            this.DateTimeWorking1.Location = new System.Drawing.Point(487, 107);
+            this.DateTimeWorking1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DateTimeWorking1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DateTimeWorking1.Name = "DateTimeWorking1";
+            this.DateTimeWorking1.Size = new System.Drawing.Size(165, 36);
+            this.DateTimeWorking1.TabIndex = 5;
+            this.DateTimeWorking1.UseTransparentBackground = true;
+            this.DateTimeWorking1.Value = new System.DateTime(2022, 9, 6, 15, 27, 5, 37);
             // 
             // guna2GradientPanel18
             // 
@@ -1843,8 +1843,8 @@
             this.PanelDateComparer.Controls.Add(this.guna2GradientPanel15);
             this.PanelDateComparer.Controls.Add(this.guna2GradientPanel14);
             this.PanelDateComparer.Controls.Add(this.guna2GradientPanel13);
-            this.PanelDateComparer.Controls.Add(this.DateTime2);
-            this.PanelDateComparer.Controls.Add(this.DateTime1);
+            this.PanelDateComparer.Controls.Add(this.DateTimeDate2);
+            this.PanelDateComparer.Controls.Add(this.DateTimeDate1);
             this.PanelDateComparer.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelDateComparer.Location = new System.Drawing.Point(0, 509);
             this.PanelDateComparer.Name = "PanelDateComparer";
@@ -1921,9 +1921,9 @@
             this.GlobalDaysLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GlobalDaysLabel.Location = new System.Drawing.Point(15, 9);
             this.GlobalDaysLabel.Name = "GlobalDaysLabel";
-            this.GlobalDaysLabel.Size = new System.Drawing.Size(39, 30);
+            this.GlobalDaysLabel.Size = new System.Drawing.Size(15, 30);
             this.GlobalDaysLabel.TabIndex = 1;
-            this.GlobalDaysLabel.Text = "123";
+            this.GlobalDaysLabel.Text = "0";
             // 
             // guna2GradientPanel42
             // 
@@ -1958,9 +1958,9 @@
             this.TotalDaysLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalDaysLabel.Location = new System.Drawing.Point(165, 8);
             this.TotalDaysLabel.Name = "TotalDaysLabel";
-            this.TotalDaysLabel.Size = new System.Drawing.Size(39, 30);
+            this.TotalDaysLabel.Size = new System.Drawing.Size(15, 30);
             this.TotalDaysLabel.TabIndex = 1;
-            this.TotalDaysLabel.Text = "123";
+            this.TotalDaysLabel.Text = "0";
             this.TotalDaysLabel.Click += new System.EventHandler(this.TotalDaysLabel_Click);
             // 
             // guna2GradientPanel37
@@ -2022,9 +2022,9 @@
             this.TotalTimeLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalTimeLabel.Location = new System.Drawing.Point(163, 8);
             this.TotalTimeLabel.Name = "TotalTimeLabel";
-            this.TotalTimeLabel.Size = new System.Drawing.Size(39, 30);
+            this.TotalTimeLabel.Size = new System.Drawing.Size(15, 30);
             this.TotalTimeLabel.TabIndex = 1;
-            this.TotalTimeLabel.Text = "123";
+            this.TotalTimeLabel.Text = "0";
             // 
             // guna2GradientPanel40
             // 
@@ -2059,9 +2059,9 @@
             this.TotalWeekLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalWeekLabel.Location = new System.Drawing.Point(163, 8);
             this.TotalWeekLabel.Name = "TotalWeekLabel";
-            this.TotalWeekLabel.Size = new System.Drawing.Size(39, 30);
+            this.TotalWeekLabel.Size = new System.Drawing.Size(15, 30);
             this.TotalWeekLabel.TabIndex = 1;
-            this.TotalWeekLabel.Text = "123";
+            this.TotalWeekLabel.Text = "0";
             // 
             // guna2GradientPanel39
             // 
@@ -2096,9 +2096,9 @@
             this.TotalMonthLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalMonthLabel.Location = new System.Drawing.Point(165, 9);
             this.TotalMonthLabel.Name = "TotalMonthLabel";
-            this.TotalMonthLabel.Size = new System.Drawing.Size(39, 30);
+            this.TotalMonthLabel.Size = new System.Drawing.Size(15, 30);
             this.TotalMonthLabel.TabIndex = 1;
-            this.TotalMonthLabel.Text = "123";
+            this.TotalMonthLabel.Text = "0";
             // 
             // guna2GradientPanel36
             // 
@@ -2133,9 +2133,9 @@
             this.TotalYearsLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalYearsLabel.Location = new System.Drawing.Point(163, 5);
             this.TotalYearsLabel.Name = "TotalYearsLabel";
-            this.TotalYearsLabel.Size = new System.Drawing.Size(39, 30);
+            this.TotalYearsLabel.Size = new System.Drawing.Size(15, 30);
             this.TotalYearsLabel.TabIndex = 1;
-            this.TotalYearsLabel.Text = "123";
+            this.TotalYearsLabel.Text = "0";
             this.TotalYearsLabel.Click += new System.EventHandler(this.TotaTimeLabel_Click);
             // 
             // guna2GradientPanel35
@@ -2235,51 +2235,51 @@
             this.guna2HtmlLabel18.TabIndex = 0;
             this.guna2HtmlLabel18.Text = "Укажите первую";
             // 
-            // DateTime2
+            // DateTimeDate2
             // 
-            this.DateTime2.Animated = true;
-            this.DateTime2.AutoRoundedCorners = true;
-            this.DateTime2.BackColor = System.Drawing.Color.Transparent;
-            this.DateTime2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.DateTime2.BorderRadius = 17;
-            this.DateTime2.BorderThickness = 2;
-            this.DateTime2.Checked = true;
-            this.DateTime2.CustomFormat = "dd.MM.yyyy HH:mm:ss";
-            this.DateTime2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(116)))), ((int)(((byte)(8)))));
-            this.DateTime2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.DateTime2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DateTime2.IndicateFocus = true;
-            this.DateTime2.Location = new System.Drawing.Point(489, 105);
-            this.DateTime2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.DateTime2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.DateTime2.Name = "DateTime2";
-            this.DateTime2.Size = new System.Drawing.Size(200, 36);
-            this.DateTime2.TabIndex = 1;
-            this.DateTime2.UseTransparentBackground = true;
-            this.DateTime2.Value = new System.DateTime(2022, 9, 6, 11, 53, 30, 409);
+            this.DateTimeDate2.Animated = true;
+            this.DateTimeDate2.AutoRoundedCorners = true;
+            this.DateTimeDate2.BackColor = System.Drawing.Color.Transparent;
+            this.DateTimeDate2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DateTimeDate2.BorderRadius = 17;
+            this.DateTimeDate2.BorderThickness = 2;
+            this.DateTimeDate2.Checked = true;
+            this.DateTimeDate2.CustomFormat = "dd.MM.yyyy HH:mm:ss";
+            this.DateTimeDate2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(116)))), ((int)(((byte)(8)))));
+            this.DateTimeDate2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DateTimeDate2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DateTimeDate2.IndicateFocus = true;
+            this.DateTimeDate2.Location = new System.Drawing.Point(489, 105);
+            this.DateTimeDate2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DateTimeDate2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DateTimeDate2.Name = "DateTimeDate2";
+            this.DateTimeDate2.Size = new System.Drawing.Size(200, 36);
+            this.DateTimeDate2.TabIndex = 1;
+            this.DateTimeDate2.UseTransparentBackground = true;
+            this.DateTimeDate2.Value = new System.DateTime(2022, 9, 6, 11, 53, 30, 409);
             // 
-            // DateTime1
+            // DateTimeDate1
             // 
-            this.DateTime1.Animated = true;
-            this.DateTime1.AutoRoundedCorners = true;
-            this.DateTime1.BackColor = System.Drawing.Color.Transparent;
-            this.DateTime1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.DateTime1.BorderRadius = 17;
-            this.DateTime1.BorderThickness = 2;
-            this.DateTime1.Checked = true;
-            this.DateTime1.CustomFormat = "dd.MM.yyyy HH:mm:ss";
-            this.DateTime1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(116)))), ((int)(((byte)(8)))));
-            this.DateTime1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.DateTime1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DateTime1.IndicateFocus = true;
-            this.DateTime1.Location = new System.Drawing.Point(66, 102);
-            this.DateTime1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.DateTime1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.DateTime1.Name = "DateTime1";
-            this.DateTime1.Size = new System.Drawing.Size(200, 36);
-            this.DateTime1.TabIndex = 0;
-            this.DateTime1.UseTransparentBackground = true;
-            this.DateTime1.Value = new System.DateTime(2020, 9, 5, 10, 0, 0, 0);
+            this.DateTimeDate1.Animated = true;
+            this.DateTimeDate1.AutoRoundedCorners = true;
+            this.DateTimeDate1.BackColor = System.Drawing.Color.Transparent;
+            this.DateTimeDate1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DateTimeDate1.BorderRadius = 17;
+            this.DateTimeDate1.BorderThickness = 2;
+            this.DateTimeDate1.Checked = true;
+            this.DateTimeDate1.CustomFormat = "dd.MM.yyyy HH:mm:ss";
+            this.DateTimeDate1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(116)))), ((int)(((byte)(8)))));
+            this.DateTimeDate1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DateTimeDate1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DateTimeDate1.IndicateFocus = true;
+            this.DateTimeDate1.Location = new System.Drawing.Point(66, 102);
+            this.DateTimeDate1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DateTimeDate1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DateTimeDate1.Name = "DateTimeDate1";
+            this.DateTimeDate1.Size = new System.Drawing.Size(200, 36);
+            this.DateTimeDate1.TabIndex = 0;
+            this.DateTimeDate1.UseTransparentBackground = true;
+            this.DateTimeDate1.Value = new System.DateTime(2020, 9, 5, 10, 0, 0, 0);
             // 
             // PanelInfo
             // 
@@ -2822,7 +2822,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel13;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel17;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
-        private Guna.UI2.WinForms.Guna2DateTimePicker DateTime1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker DateTimeDate1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel15;
         private Guna.UI2.WinForms.Guna2HtmlLabel TotalYearsLabel;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel25;
@@ -2832,12 +2832,12 @@
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel13;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel22;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel18;
-        private Guna.UI2.WinForms.Guna2DateTimePicker DateTime2;
+        private Guna.UI2.WinForms.Guna2DateTimePicker DateTimeDate2;
         private Guna.UI2.WinForms.Guna2HtmlLabel GlobalDaysLabel;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel27;
         private Guna.UI2.WinForms.Guna2GradientButton ResultDateComparerButton;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker DateTimeWorking2;
+        private Guna.UI2.WinForms.Guna2DateTimePicker DateTimeWorking1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel18;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel24;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel17;
@@ -2896,7 +2896,7 @@
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel29;
         private Guna.UI2.WinForms.Guna2NumericUpDown guna2NumericUpDown2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel45;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker5;
+        private Guna.UI2.WinForms.Guna2DateTimePicker DateTimeBirhday;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel28;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel42;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel31;
