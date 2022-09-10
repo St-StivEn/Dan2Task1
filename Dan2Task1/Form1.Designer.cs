@@ -67,7 +67,9 @@
             this.guna2GradientButton12 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.PanelTimeConverter = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2GradientPanel27 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2GradientPanel43 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.TimeConverterLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2GradientPanel16 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.TimeConverterLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2GradientPanel26 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.ResNumeric = new Guna.UI2.WinForms.Guna2NumericUpDown();
@@ -179,8 +181,6 @@
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
-            this.guna2GradientPanel16 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2GradientPanel43 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.PanelVkladok.SuspendLayout();
             this.PanelBody.SuspendLayout();
             this.PanelBirhday.SuspendLayout();
@@ -194,6 +194,8 @@
             this.guna2GradientPanel28.SuspendLayout();
             this.PanelTimeConverter.SuspendLayout();
             this.guna2GradientPanel27.SuspendLayout();
+            this.guna2GradientPanel43.SuspendLayout();
+            this.guna2GradientPanel16.SuspendLayout();
             this.guna2GradientPanel26.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ResNumeric)).BeginInit();
             this.guna2GradientPanel25.SuspendLayout();
@@ -232,8 +234,6 @@
             this.guna2GradientPanel8.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
-            this.guna2GradientPanel16.SuspendLayout();
-            this.guna2GradientPanel43.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -846,15 +846,47 @@
             this.guna2GradientPanel27.TabIndex = 14;
             this.guna2GradientPanel27.UseTransparentBackground = true;
             // 
+            // guna2GradientPanel43
+            // 
+            this.guna2GradientPanel43.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel43.BorderColor = System.Drawing.Color.Black;
+            this.guna2GradientPanel43.BorderRadius = 12;
+            this.guna2GradientPanel43.BorderThickness = 2;
+            this.guna2GradientPanel43.Controls.Add(this.TimeConverterLabel2);
+            this.guna2GradientPanel43.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
+            this.guna2GradientPanel43.FillColor2 = System.Drawing.Color.Black;
+            this.guna2GradientPanel43.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.guna2GradientPanel43.Location = new System.Drawing.Point(10, 69);
+            this.guna2GradientPanel43.Name = "guna2GradientPanel43";
+            this.guna2GradientPanel43.Size = new System.Drawing.Size(421, 53);
+            this.guna2GradientPanel43.TabIndex = 16;
+            this.guna2GradientPanel43.UseTransparentBackground = true;
+            // 
             // TimeConverterLabel2
             // 
             this.TimeConverterLabel2.BackColor = System.Drawing.Color.Transparent;
             this.TimeConverterLabel2.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TimeConverterLabel2.Location = new System.Drawing.Point(10, 9);
             this.TimeConverterLabel2.Name = "TimeConverterLabel2";
-            this.TimeConverterLabel2.Size = new System.Drawing.Size(163, 33);
+            this.TimeConverterLabel2.Size = new System.Drawing.Size(112, 33);
             this.TimeConverterLabel2.TabIndex = 2;
-            this.TimeConverterLabel2.Text = "454324 секунд";
+            this.TimeConverterLabel2.Text = "365 Дней.";
+            // 
+            // guna2GradientPanel16
+            // 
+            this.guna2GradientPanel16.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel16.BorderColor = System.Drawing.Color.Black;
+            this.guna2GradientPanel16.BorderRadius = 12;
+            this.guna2GradientPanel16.BorderThickness = 2;
+            this.guna2GradientPanel16.Controls.Add(this.TimeConverterLabel1);
+            this.guna2GradientPanel16.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
+            this.guna2GradientPanel16.FillColor2 = System.Drawing.Color.Black;
+            this.guna2GradientPanel16.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.guna2GradientPanel16.Location = new System.Drawing.Point(10, 10);
+            this.guna2GradientPanel16.Name = "guna2GradientPanel16";
+            this.guna2GradientPanel16.Size = new System.Drawing.Size(421, 53);
+            this.guna2GradientPanel16.TabIndex = 15;
+            this.guna2GradientPanel16.UseTransparentBackground = true;
             // 
             // TimeConverterLabel1
             // 
@@ -862,9 +894,9 @@
             this.TimeConverterLabel1.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TimeConverterLabel1.Location = new System.Drawing.Point(12, 8);
             this.TimeConverterLabel1.Name = "TimeConverterLabel1";
-            this.TimeConverterLabel1.Size = new System.Drawing.Size(123, 33);
+            this.TimeConverterLabel1.Size = new System.Drawing.Size(107, 33);
             this.TimeConverterLabel1.TabIndex = 0;
-            this.TimeConverterLabel1.Text = "В 123 дней";
+            this.TimeConverterLabel1.Text = "В 1 Году :";
             // 
             // guna2GradientPanel26
             // 
@@ -894,8 +926,8 @@
             this.ResNumeric.Location = new System.Drawing.Point(268, 12);
             this.ResNumeric.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ResNumeric.Maximum = new decimal(new int[] {
-            9999999,
-            0,
+            1874919423,
+            2328306,
             0,
             0});
             this.ResNumeric.Minimum = new decimal(new int[] {
@@ -965,8 +997,7 @@
             "День",
             "Час",
             "Минута",
-            "Секунда",
-            "Милисекунда"});
+            "Секунда"});
             this.ComboFinishBox.Location = new System.Drawing.Point(57, 102);
             this.ComboFinishBox.Name = "ComboFinishBox";
             this.ComboFinishBox.Size = new System.Drawing.Size(185, 36);
@@ -1062,8 +1093,7 @@
             "День",
             "Час",
             "Минута",
-            "Секунда",
-            "Милисекунда"});
+            "Секунда"});
             this.ComboStartBox.Location = new System.Drawing.Point(50, 102);
             this.ComboStartBox.Name = "ComboStartBox";
             this.ComboStartBox.Size = new System.Drawing.Size(185, 36);
@@ -1150,9 +1180,8 @@
             this.LeapLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LeapLabel.Location = new System.Drawing.Point(256, 55);
             this.LeapLabel.Name = "LeapLabel";
-            this.LeapLabel.Size = new System.Drawing.Size(39, 30);
+            this.LeapLabel.Size = new System.Drawing.Size(3, 2);
             this.LeapLabel.TabIndex = 1;
-            this.LeapLabel.Text = "123";
             // 
             // guna2HtmlLabel34
             // 
@@ -1740,9 +1769,8 @@
             this.GlobalDaysLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GlobalDaysLabel.Location = new System.Drawing.Point(15, 9);
             this.GlobalDaysLabel.Name = "GlobalDaysLabel";
-            this.GlobalDaysLabel.Size = new System.Drawing.Size(15, 30);
+            this.GlobalDaysLabel.Size = new System.Drawing.Size(3, 2);
             this.GlobalDaysLabel.TabIndex = 1;
-            this.GlobalDaysLabel.Text = "0";
             // 
             // guna2GradientPanel42
             // 
@@ -1777,9 +1805,8 @@
             this.TotalDaysLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalDaysLabel.Location = new System.Drawing.Point(165, 8);
             this.TotalDaysLabel.Name = "TotalDaysLabel";
-            this.TotalDaysLabel.Size = new System.Drawing.Size(15, 30);
+            this.TotalDaysLabel.Size = new System.Drawing.Size(3, 2);
             this.TotalDaysLabel.TabIndex = 1;
-            this.TotalDaysLabel.Text = "0";
             // 
             // guna2GradientPanel37
             // 
@@ -1840,9 +1867,8 @@
             this.TotalTimeLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalTimeLabel.Location = new System.Drawing.Point(163, 8);
             this.TotalTimeLabel.Name = "TotalTimeLabel";
-            this.TotalTimeLabel.Size = new System.Drawing.Size(15, 30);
+            this.TotalTimeLabel.Size = new System.Drawing.Size(3, 2);
             this.TotalTimeLabel.TabIndex = 1;
-            this.TotalTimeLabel.Text = "0";
             // 
             // guna2GradientPanel40
             // 
@@ -1877,9 +1903,8 @@
             this.TotalWeekLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalWeekLabel.Location = new System.Drawing.Point(163, 8);
             this.TotalWeekLabel.Name = "TotalWeekLabel";
-            this.TotalWeekLabel.Size = new System.Drawing.Size(15, 30);
+            this.TotalWeekLabel.Size = new System.Drawing.Size(3, 2);
             this.TotalWeekLabel.TabIndex = 1;
-            this.TotalWeekLabel.Text = "0";
             // 
             // guna2GradientPanel39
             // 
@@ -1914,9 +1939,8 @@
             this.TotalMonthLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalMonthLabel.Location = new System.Drawing.Point(165, 9);
             this.TotalMonthLabel.Name = "TotalMonthLabel";
-            this.TotalMonthLabel.Size = new System.Drawing.Size(15, 30);
+            this.TotalMonthLabel.Size = new System.Drawing.Size(3, 2);
             this.TotalMonthLabel.TabIndex = 1;
-            this.TotalMonthLabel.Text = "0";
             // 
             // guna2GradientPanel36
             // 
@@ -1951,9 +1975,8 @@
             this.TotalYearsLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalYearsLabel.Location = new System.Drawing.Point(163, 5);
             this.TotalYearsLabel.Name = "TotalYearsLabel";
-            this.TotalYearsLabel.Size = new System.Drawing.Size(15, 30);
+            this.TotalYearsLabel.Size = new System.Drawing.Size(3, 2);
             this.TotalYearsLabel.TabIndex = 1;
-            this.TotalYearsLabel.Text = "0";
             // 
             // guna2GradientPanel35
             // 
@@ -2481,38 +2504,6 @@
             this.guna2HtmlLabel1.TabIndex = 0;
             this.guna2HtmlLabel1.Text = "Добро Пожаловать";
             // 
-            // guna2GradientPanel16
-            // 
-            this.guna2GradientPanel16.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel16.BorderColor = System.Drawing.Color.Black;
-            this.guna2GradientPanel16.BorderRadius = 12;
-            this.guna2GradientPanel16.BorderThickness = 2;
-            this.guna2GradientPanel16.Controls.Add(this.TimeConverterLabel1);
-            this.guna2GradientPanel16.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
-            this.guna2GradientPanel16.FillColor2 = System.Drawing.Color.Black;
-            this.guna2GradientPanel16.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.guna2GradientPanel16.Location = new System.Drawing.Point(10, 10);
-            this.guna2GradientPanel16.Name = "guna2GradientPanel16";
-            this.guna2GradientPanel16.Size = new System.Drawing.Size(421, 53);
-            this.guna2GradientPanel16.TabIndex = 15;
-            this.guna2GradientPanel16.UseTransparentBackground = true;
-            // 
-            // guna2GradientPanel43
-            // 
-            this.guna2GradientPanel43.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel43.BorderColor = System.Drawing.Color.Black;
-            this.guna2GradientPanel43.BorderRadius = 12;
-            this.guna2GradientPanel43.BorderThickness = 2;
-            this.guna2GradientPanel43.Controls.Add(this.TimeConverterLabel2);
-            this.guna2GradientPanel43.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
-            this.guna2GradientPanel43.FillColor2 = System.Drawing.Color.Black;
-            this.guna2GradientPanel43.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.guna2GradientPanel43.Location = new System.Drawing.Point(10, 69);
-            this.guna2GradientPanel43.Name = "guna2GradientPanel43";
-            this.guna2GradientPanel43.Size = new System.Drawing.Size(421, 53);
-            this.guna2GradientPanel43.TabIndex = 16;
-            this.guna2GradientPanel43.UseTransparentBackground = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2542,6 +2533,10 @@
             this.guna2GradientPanel28.PerformLayout();
             this.PanelTimeConverter.ResumeLayout(false);
             this.guna2GradientPanel27.ResumeLayout(false);
+            this.guna2GradientPanel43.ResumeLayout(false);
+            this.guna2GradientPanel43.PerformLayout();
+            this.guna2GradientPanel16.ResumeLayout(false);
+            this.guna2GradientPanel16.PerformLayout();
             this.guna2GradientPanel26.ResumeLayout(false);
             this.guna2GradientPanel26.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ResNumeric)).EndInit();
@@ -2612,10 +2607,6 @@
             this.guna2GradientPanel2.PerformLayout();
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
-            this.guna2GradientPanel16.ResumeLayout(false);
-            this.guna2GradientPanel16.PerformLayout();
-            this.guna2GradientPanel43.ResumeLayout(false);
-            this.guna2GradientPanel43.PerformLayout();
             this.ResumeLayout(false);
 
         }
