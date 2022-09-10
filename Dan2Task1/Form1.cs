@@ -198,5 +198,343 @@ namespace Dan2Task1
             }
             
         }
+
+        private void ResultTimeConverterButton_Click(object sender, EventArgs e)
+        {
+            long num = (long)ResNumeric.Value;
+            long res = 0;
+
+            if(ComboStartBox.Text == "Год")
+            {
+                if (ComboFinishBox.Text == "Год")
+                {
+                    res = num;
+                    if(num == 1)
+                    {
+                        TimeConverterLabel1.Text = $"В {num} Году :";
+                        TimeConverterLabel2.Text = $" {res} Год.";
+                    }
+                    else if(num > 1 && num < 5)
+                    {
+                        TimeConverterLabel1.Text = $"В {num} Годах :";
+                        TimeConverterLabel2.Text = $" {res} Года.";
+                    }
+                    else if (num >= 5)
+                    {
+                        TimeConverterLabel1.Text = $"В {num} Годах :";
+                        TimeConverterLabel2.Text = $" {res} Лет.";
+                    }
+                }
+                else if (ComboFinishBox.Text == "Месяц")
+                {
+                    res = num * 12;
+                    if(num == 1)
+                    {
+                            TimeConverterLabel1.Text = $"В {num} Году :";
+                            TimeConverterLabel2.Text = $" {res} Месяцев.";
+                        
+                    }
+                    else
+                    {
+                        TimeConverterLabel1.Text = $"В {num} Годах :";
+                        TimeConverterLabel2.Text = $" {res} Месяцев.";
+                    }                        
+                }
+                else if (ComboFinishBox.Text == "День")
+                {
+                    res = num * 365;
+                    if(num == 1)
+                    {
+                        TimeConverterLabel1.Text = $"В {num} Году :";
+                        TimeConverterLabel2.Text = $" {res} Дней.";
+                    }
+                    else
+                    {
+                        TimeConverterLabel1.Text = $"В {num} Годах :";
+                        TimeConverterLabel2.Text = $" {res} Дней.";
+                    }
+                }
+                else if (ComboFinishBox.Text == "Час")
+                {
+                    res = num * 8760;
+                    if(num == 1)
+                    {
+                        TimeConverterLabel1.Text = $"В {num} Году :";
+                        TimeConverterLabel2.Text = $" {res} Часов.";
+                    }
+                    else
+                    {
+                        TimeConverterLabel1.Text = $"В {num} Годах :";
+                        TimeConverterLabel2.Text = $" {res} Часов.";
+                    }
+                }
+                else if (ComboFinishBox.Text == "Минута")
+                {
+                    res = num * 525600;
+                    if (num == 1)
+                    {
+                        TimeConverterLabel1.Text = $"В {num} Году :";
+                        TimeConverterLabel2.Text = $" {res} Минут.";
+                    }
+                    else
+                    {
+                        TimeConverterLabel1.Text = $"В {num} Годах :";
+                        TimeConverterLabel2.Text = $" {res} Минут.";
+                    }
+                }
+                else if (ComboFinishBox.Text == "Секунда")
+                {
+                    res = num * 31536000;
+                    if (num == 1)
+                    {
+                        TimeConverterLabel1.Text = $"В {num} Году :";
+                        TimeConverterLabel2.Text = $" {res} Секунд.";
+                    }
+                    else
+                    {
+                        TimeConverterLabel1.Text = $"В {num} Годах :";
+                        TimeConverterLabel2.Text = $" {res} Секунд.";
+                    }
+                }
+                else if (ComboFinishBox.Text == "Милисекунда")
+                {
+                    res = num * 31536000000;
+                    if (num == 1)
+                    {
+                        TimeConverterLabel1.Text = $"В {num} Году :";
+                        TimeConverterLabel2.Text = $" {res} Милисекунд.";
+                    }
+                    else
+                    {
+                        TimeConverterLabel1.Text = $"В {num} Годах :";
+                        TimeConverterLabel2.Text = $" {res} Милисекунд.";
+                    }
+                }
+            }
+
+
+            else if (ComboStartBox.Text == "Месяц")
+            {
+                if (ComboFinishBox.Text == "Год")
+                {
+                    res = num / 12;
+                    if(num < 12)
+                    {
+                        if (num == 1)
+                        {
+                            TimeConverterLabel1.Text = $"В {num} Месяце :";
+                            TimeConverterLabel2.Text = $" {res} Лет.";
+                        }
+                        else if (num == 12)
+                        {
+                            TimeConverterLabel1.Text = $"В {num} Месяцах :";
+                            TimeConverterLabel2.Text = $" {res} Год.";
+                        }
+                        
+                        TimeConverterLabel1.Text = $"В {num} Месяцах :";
+                        TimeConverterLabel2.Text = $" {res} Лет.";
+                    }
+                    if(res > 1 && res < 5)
+                    {
+                        TimeConverterLabel1.Text = $"В {num} Месяцах :";
+                        TimeConverterLabel2.Text = $" {res} Года.";
+                    }
+                    else
+                    {
+                        TimeConverterLabel1.Text = $"В {num} Месяцах :";
+                        TimeConverterLabel2.Text = $" {res} Лет.";
+                    }
+                }
+                else if (ComboFinishBox.Text == "Месяц")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "День")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "Час")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "Минута")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "Секунда")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "Милисекунда")
+                {
+
+                }
+            }
+
+
+            else if (ComboStartBox.Text == "День")
+            {
+                if (ComboFinishBox.Text == "Год")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "Месяц")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "День")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "Час")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "Минута")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "Секунда")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "Милисекунда")
+                {
+
+                }
+            }
+
+
+            else if (ComboStartBox.Text == "Час")
+            {
+                if (ComboFinishBox.Text == "Год")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "Месяц")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "День")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "Час")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "Минута")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "Секунда")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "Милисекунда")
+                {
+
+                }
+            }
+
+
+            else if (ComboStartBox.Text == "Минута")
+            {
+                if (ComboFinishBox.Text == "Год")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "Месяц")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "День")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "Час")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "Минута")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "Секунда")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "Милисекунда")
+                {
+
+                }
+            }
+
+
+            else if (ComboStartBox.Text == "Секунда")
+            {
+                if (ComboFinishBox.Text == "Год")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "Месяц")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "День")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "Час")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "Минута")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "Секунда")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "Милисекунда")
+                {
+
+                }
+            }
+
+
+            else if (ComboStartBox.Text == "Милисекунда")
+            {
+                if (ComboFinishBox.Text == "Год")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "Месяц")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "День")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "Час")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "Минута")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "Секунда")
+                {
+
+                }
+                else if (ComboFinishBox.Text == "Милисекунда")
+                {
+
+                }
+            }
+        }
     }
 }
