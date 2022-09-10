@@ -18,6 +18,8 @@ namespace Dan2Task1
         {
             InitializeComponent();
 
+            TimerUnix.Start();
+
             DateTimeDate1.Value = DateTime.Now;
             DateTimeDate2.Value = DateTime.Now;
             DateTimeLeap1.Value = DateTime.Now;
@@ -935,10 +937,33 @@ namespace Dan2Task1
                             }
                         }
                     }
+
                     break;
+
                 }
                 catch { }
             }
+        }
+
+        public long UNIX()
+        {
+            DateTime date = DateTime.Now;
+            long unix =  (long)(date.ToUniversalTime() - new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc)).TotalMilliseconds;
+
+            return unix;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            
+                try
+                {
+                    UnixTimaLabel.Text = UNIX().ToString();
+                   
+                }
+                catch { }
+            
+
         }
     }
 }

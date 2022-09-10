@@ -32,6 +32,10 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.PanelVkladok = new Guna.UI2.WinForms.Guna2Panel();
+            this.UnixPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.UnixTimaLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.UnixLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel41 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.BirthdayButton = new Guna.UI2.WinForms.Guna2GradientButton();
             this.LeapCounterButton = new Guna.UI2.WinForms.Guna2GradientButton();
             this.DateWorkingButton = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -181,7 +185,11 @@
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
+            this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2DragControl3 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.TimerUnix = new System.Windows.Forms.Timer(this.components);
             this.PanelVkladok.SuspendLayout();
+            this.UnixPanel.SuspendLayout();
             this.PanelBody.SuspendLayout();
             this.PanelBirhday.SuspendLayout();
             this.guna2GradientPanel31.SuspendLayout();
@@ -251,6 +259,7 @@
             // PanelVkladok
             // 
             this.PanelVkladok.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.PanelVkladok.Controls.Add(this.UnixPanel);
             this.PanelVkladok.Controls.Add(this.BirthdayButton);
             this.PanelVkladok.Controls.Add(this.LeapCounterButton);
             this.PanelVkladok.Controls.Add(this.DateWorkingButton);
@@ -264,6 +273,52 @@
             this.PanelVkladok.Name = "PanelVkladok";
             this.PanelVkladok.Size = new System.Drawing.Size(771, 91);
             this.PanelVkladok.TabIndex = 0;
+            // 
+            // UnixPanel
+            // 
+            this.UnixPanel.BorderColor = System.Drawing.Color.Black;
+            this.UnixPanel.BorderRadius = 12;
+            this.UnixPanel.BorderThickness = 2;
+            this.UnixPanel.Controls.Add(this.UnixTimaLabel);
+            this.UnixPanel.Controls.Add(this.UnixLabel);
+            this.UnixPanel.Controls.Add(this.guna2HtmlLabel41);
+            this.UnixPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
+            this.UnixPanel.FillColor2 = System.Drawing.Color.Black;
+            this.UnixPanel.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.UnixPanel.Location = new System.Drawing.Point(3, 5);
+            this.UnixPanel.Name = "UnixPanel";
+            this.UnixPanel.Size = new System.Drawing.Size(676, 34);
+            this.UnixPanel.TabIndex = 12;
+            // 
+            // UnixTimaLabel
+            // 
+            this.UnixTimaLabel.BackColor = System.Drawing.Color.Transparent;
+            this.UnixTimaLabel.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.UnixTimaLabel.Location = new System.Drawing.Point(83, 7);
+            this.UnixTimaLabel.Name = "UnixTimaLabel";
+            this.UnixTimaLabel.Size = new System.Drawing.Size(3, 2);
+            this.UnixTimaLabel.TabIndex = 3;
+            this.UnixTimaLabel.Text = null;
+            // 
+            // UnixLabel
+            // 
+            this.UnixLabel.BackColor = System.Drawing.Color.Transparent;
+            this.UnixLabel.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.UnixLabel.Location = new System.Drawing.Point(9, 7);
+            this.UnixLabel.Name = "UnixLabel";
+            this.UnixLabel.Size = new System.Drawing.Size(60, 19);
+            this.UnixLabel.TabIndex = 2;
+            this.UnixLabel.Text = "Unix TS :";
+            // 
+            // guna2HtmlLabel41
+            // 
+            this.guna2HtmlLabel41.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel41.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel41.Location = new System.Drawing.Point(256, 55);
+            this.guna2HtmlLabel41.Name = "guna2HtmlLabel41";
+            this.guna2HtmlLabel41.Size = new System.Drawing.Size(3, 2);
+            this.guna2HtmlLabel41.TabIndex = 1;
+            this.guna2HtmlLabel41.Text = null;
             // 
             // BirthdayButton
             // 
@@ -940,7 +995,6 @@
             this.ResNumeric.TabIndex = 1;
             this.ResNumeric.TextOffset = new System.Drawing.Point(25, 0);
             this.ResNumeric.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(170)))), ((int)(((byte)(8)))));
-            this.ResNumeric.UpDownButtonForeColor = System.Drawing.Color.Black;
             this.ResNumeric.UseTransparentBackground = true;
             this.ResNumeric.Value = new decimal(new int[] {
             1,
@@ -1182,6 +1236,7 @@
             this.LeapLabel.Name = "LeapLabel";
             this.LeapLabel.Size = new System.Drawing.Size(3, 2);
             this.LeapLabel.TabIndex = 1;
+            this.LeapLabel.Text = null;
             // 
             // guna2HtmlLabel34
             // 
@@ -1771,6 +1826,7 @@
             this.GlobalDaysLabel.Name = "GlobalDaysLabel";
             this.GlobalDaysLabel.Size = new System.Drawing.Size(3, 2);
             this.GlobalDaysLabel.TabIndex = 1;
+            this.GlobalDaysLabel.Text = null;
             // 
             // guna2GradientPanel42
             // 
@@ -1807,6 +1863,7 @@
             this.TotalDaysLabel.Name = "TotalDaysLabel";
             this.TotalDaysLabel.Size = new System.Drawing.Size(3, 2);
             this.TotalDaysLabel.TabIndex = 1;
+            this.TotalDaysLabel.Text = null;
             // 
             // guna2GradientPanel37
             // 
@@ -1869,6 +1926,7 @@
             this.TotalTimeLabel.Name = "TotalTimeLabel";
             this.TotalTimeLabel.Size = new System.Drawing.Size(3, 2);
             this.TotalTimeLabel.TabIndex = 1;
+            this.TotalTimeLabel.Text = null;
             // 
             // guna2GradientPanel40
             // 
@@ -1905,6 +1963,7 @@
             this.TotalWeekLabel.Name = "TotalWeekLabel";
             this.TotalWeekLabel.Size = new System.Drawing.Size(3, 2);
             this.TotalWeekLabel.TabIndex = 1;
+            this.TotalWeekLabel.Text = null;
             // 
             // guna2GradientPanel39
             // 
@@ -1941,6 +2000,7 @@
             this.TotalMonthLabel.Name = "TotalMonthLabel";
             this.TotalMonthLabel.Size = new System.Drawing.Size(3, 2);
             this.TotalMonthLabel.TabIndex = 1;
+            this.TotalMonthLabel.Text = null;
             // 
             // guna2GradientPanel36
             // 
@@ -1977,6 +2037,7 @@
             this.TotalYearsLabel.Name = "TotalYearsLabel";
             this.TotalYearsLabel.Size = new System.Drawing.Size(3, 2);
             this.TotalYearsLabel.TabIndex = 1;
+            this.TotalYearsLabel.Text = null;
             // 
             // guna2GradientPanel35
             // 
@@ -2504,6 +2565,23 @@
             this.guna2HtmlLabel1.TabIndex = 0;
             this.guna2HtmlLabel1.Text = "Добро Пожаловать";
             // 
+            // guna2DragControl2
+            // 
+            this.guna2DragControl2.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl2.TargetControl = this.UnixPanel;
+            this.guna2DragControl2.UseTransparentDrag = true;
+            // 
+            // guna2DragControl3
+            // 
+            this.guna2DragControl3.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl3.TargetControl = this.PanelInfo;
+            this.guna2DragControl3.UseTransparentDrag = true;
+            // 
+            // TimerUnix
+            // 
+            this.TimerUnix.Interval = 1;
+            this.TimerUnix.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2515,6 +2593,8 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.PanelVkladok.ResumeLayout(false);
+            this.UnixPanel.ResumeLayout(false);
+            this.UnixPanel.PerformLayout();
             this.PanelBody.ResumeLayout(false);
             this.PanelBirhday.ResumeLayout(false);
             this.guna2GradientPanel31.ResumeLayout(false);
@@ -2765,6 +2845,13 @@
         private Guna.UI2.WinForms.Guna2NumericUpDown guna2NumericUpDown2;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel43;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel16;
+        private Guna.UI2.WinForms.Guna2GradientPanel UnixPanel;
+        private Guna.UI2.WinForms.Guna2HtmlLabel UnixLabel;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel41;
+        private Guna.UI2.WinForms.Guna2HtmlLabel UnixTimaLabel;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl2;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl3;
+        private System.Windows.Forms.Timer TimerUnix;
     }
 }
 
