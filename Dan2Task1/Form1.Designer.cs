@@ -52,16 +52,10 @@
             this.guna2GradientPanel31 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientPanel32 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2HtmlLabel50 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel53 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2GradientPanel33 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2HtmlLabel52 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel51 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2GradientPanel34 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2HtmlLabel48 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel47 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2GradientPanel30 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2HtmlLabel49 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel46 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2GradientPanel29 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2NumericUpDown2 = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.guna2HtmlLabel45 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -188,13 +182,15 @@
             this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl3 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.TimerUnix = new System.Windows.Forms.Timer(this.components);
+            this.guna2GradientPanel33 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2HtmlLabel52 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel33 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PanelVkladok.SuspendLayout();
             this.UnixPanel.SuspendLayout();
             this.PanelBody.SuspendLayout();
             this.PanelBirhday.SuspendLayout();
             this.guna2GradientPanel31.SuspendLayout();
             this.guna2GradientPanel32.SuspendLayout();
-            this.guna2GradientPanel33.SuspendLayout();
             this.guna2GradientPanel34.SuspendLayout();
             this.guna2GradientPanel30.SuspendLayout();
             this.guna2GradientPanel29.SuspendLayout();
@@ -242,6 +238,7 @@
             this.guna2GradientPanel8.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
+            this.guna2GradientPanel33.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -578,9 +575,9 @@
             this.guna2GradientPanel31.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.guna2GradientPanel31.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientPanel31.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.guna2GradientPanel31.Location = new System.Drawing.Point(12, 225);
+            this.guna2GradientPanel31.Location = new System.Drawing.Point(12, 223);
             this.guna2GradientPanel31.Name = "guna2GradientPanel31";
-            this.guna2GradientPanel31.Size = new System.Drawing.Size(725, 281);
+            this.guna2GradientPanel31.Size = new System.Drawing.Size(725, 250);
             this.guna2GradientPanel31.TabIndex = 16;
             // 
             // guna2GradientPanel32
@@ -589,14 +586,13 @@
             this.guna2GradientPanel32.BorderColor = System.Drawing.Color.Black;
             this.guna2GradientPanel32.BorderRadius = 12;
             this.guna2GradientPanel32.BorderThickness = 2;
-            this.guna2GradientPanel32.Controls.Add(this.guna2HtmlLabel50);
-            this.guna2GradientPanel32.Controls.Add(this.guna2HtmlLabel53);
+            this.guna2GradientPanel32.Controls.Add(this.guna2HtmlLabel33);
             this.guna2GradientPanel32.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.guna2GradientPanel32.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientPanel32.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.guna2GradientPanel32.Location = new System.Drawing.Point(36, 206);
+            this.guna2GradientPanel32.Location = new System.Drawing.Point(8, 71);
             this.guna2GradientPanel32.Name = "guna2GradientPanel32";
-            this.guna2GradientPanel32.Size = new System.Drawing.Size(657, 60);
+            this.guna2GradientPanel32.Size = new System.Drawing.Size(709, 52);
             this.guna2GradientPanel32.TabIndex = 16;
             this.guna2GradientPanel32.UseTransparentBackground = true;
             // 
@@ -604,58 +600,12 @@
             // 
             this.guna2HtmlLabel50.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel50.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2HtmlLabel50.Location = new System.Drawing.Point(18, 14);
+            this.guna2HtmlLabel50.Location = new System.Drawing.Point(9, 9);
             this.guna2HtmlLabel50.Name = "guna2HtmlLabel50";
             this.guna2HtmlLabel50.Size = new System.Drawing.Size(330, 33);
             this.guna2HtmlLabel50.TabIndex = 5;
             this.guna2HtmlLabel50.Text = "Вам исполнится N лет через :";
-            // 
-            // guna2HtmlLabel53
-            // 
-            this.guna2HtmlLabel53.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel53.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2HtmlLabel53.Location = new System.Drawing.Point(423, 14);
-            this.guna2HtmlLabel53.Name = "guna2HtmlLabel53";
-            this.guna2HtmlLabel53.Size = new System.Drawing.Size(42, 33);
-            this.guna2HtmlLabel53.TabIndex = 9;
-            this.guna2HtmlLabel53.Text = " 123 ";
-            // 
-            // guna2GradientPanel33
-            // 
-            this.guna2GradientPanel33.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel33.BorderColor = System.Drawing.Color.Black;
-            this.guna2GradientPanel33.BorderRadius = 12;
-            this.guna2GradientPanel33.BorderThickness = 2;
-            this.guna2GradientPanel33.Controls.Add(this.guna2HtmlLabel52);
-            this.guna2GradientPanel33.Controls.Add(this.guna2HtmlLabel51);
-            this.guna2GradientPanel33.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
-            this.guna2GradientPanel33.FillColor2 = System.Drawing.Color.Black;
-            this.guna2GradientPanel33.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.guna2GradientPanel33.Location = new System.Drawing.Point(36, 140);
-            this.guna2GradientPanel33.Name = "guna2GradientPanel33";
-            this.guna2GradientPanel33.Size = new System.Drawing.Size(657, 60);
-            this.guna2GradientPanel33.TabIndex = 17;
-            this.guna2GradientPanel33.UseTransparentBackground = true;
-            // 
-            // guna2HtmlLabel52
-            // 
-            this.guna2HtmlLabel52.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel52.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2HtmlLabel52.Location = new System.Drawing.Point(18, 12);
-            this.guna2HtmlLabel52.Name = "guna2HtmlLabel52";
-            this.guna2HtmlLabel52.Size = new System.Drawing.Size(459, 33);
-            this.guna2HtmlLabel52.TabIndex = 8;
-            this.guna2HtmlLabel52.Text = "До следуйщего дня рождения осталось :";
-            // 
-            // guna2HtmlLabel51
-            // 
-            this.guna2HtmlLabel51.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel51.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2HtmlLabel51.Location = new System.Drawing.Point(501, 12);
-            this.guna2HtmlLabel51.Name = "guna2HtmlLabel51";
-            this.guna2HtmlLabel51.Size = new System.Drawing.Size(42, 33);
-            this.guna2HtmlLabel51.TabIndex = 6;
-            this.guna2HtmlLabel51.Text = " 123 ";
+            this.guna2HtmlLabel50.Click += new System.EventHandler(this.guna2HtmlLabel50_Click);
             // 
             // guna2GradientPanel34
             // 
@@ -663,14 +613,13 @@
             this.guna2GradientPanel34.BorderColor = System.Drawing.Color.Black;
             this.guna2GradientPanel34.BorderRadius = 12;
             this.guna2GradientPanel34.BorderThickness = 2;
-            this.guna2GradientPanel34.Controls.Add(this.guna2HtmlLabel48);
-            this.guna2GradientPanel34.Controls.Add(this.guna2HtmlLabel47);
+            this.guna2GradientPanel34.Controls.Add(this.guna2HtmlLabel50);
             this.guna2GradientPanel34.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.guna2GradientPanel34.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientPanel34.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.guna2GradientPanel34.Location = new System.Drawing.Point(36, 74);
+            this.guna2GradientPanel34.Location = new System.Drawing.Point(6, 187);
             this.guna2GradientPanel34.Name = "guna2GradientPanel34";
-            this.guna2GradientPanel34.Size = new System.Drawing.Size(657, 60);
+            this.guna2GradientPanel34.Size = new System.Drawing.Size(709, 52);
             this.guna2GradientPanel34.TabIndex = 17;
             this.guna2GradientPanel34.UseTransparentBackground = true;
             // 
@@ -678,21 +627,12 @@
             // 
             this.guna2HtmlLabel48.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel48.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2HtmlLabel48.Location = new System.Drawing.Point(18, 13);
+            this.guna2HtmlLabel48.Location = new System.Drawing.Point(7, 6);
             this.guna2HtmlLabel48.Name = "guna2HtmlLabel48";
             this.guna2HtmlLabel48.Size = new System.Drawing.Size(296, 33);
             this.guna2HtmlLabel48.TabIndex = 2;
             this.guna2HtmlLabel48.Text = "Вам исполнится 18 через :";
-            // 
-            // guna2HtmlLabel47
-            // 
-            this.guna2HtmlLabel47.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel47.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2HtmlLabel47.Location = new System.Drawing.Point(354, 13);
-            this.guna2HtmlLabel47.Name = "guna2HtmlLabel47";
-            this.guna2HtmlLabel47.Size = new System.Drawing.Size(42, 33);
-            this.guna2HtmlLabel47.TabIndex = 7;
-            this.guna2HtmlLabel47.Text = " 123 ";
+            this.guna2HtmlLabel48.Click += new System.EventHandler(this.guna2HtmlLabel48_Click);
             // 
             // guna2GradientPanel30
             // 
@@ -701,13 +641,12 @@
             this.guna2GradientPanel30.BorderRadius = 12;
             this.guna2GradientPanel30.BorderThickness = 2;
             this.guna2GradientPanel30.Controls.Add(this.guna2HtmlLabel49);
-            this.guna2GradientPanel30.Controls.Add(this.guna2HtmlLabel46);
             this.guna2GradientPanel30.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.guna2GradientPanel30.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientPanel30.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.guna2GradientPanel30.Location = new System.Drawing.Point(36, 8);
+            this.guna2GradientPanel30.Location = new System.Drawing.Point(6, 13);
             this.guna2GradientPanel30.Name = "guna2GradientPanel30";
-            this.guna2GradientPanel30.Size = new System.Drawing.Size(657, 60);
+            this.guna2GradientPanel30.Size = new System.Drawing.Size(709, 52);
             this.guna2GradientPanel30.TabIndex = 15;
             this.guna2GradientPanel30.UseTransparentBackground = true;
             // 
@@ -715,21 +654,11 @@
             // 
             this.guna2HtmlLabel49.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel49.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2HtmlLabel49.Location = new System.Drawing.Point(18, 12);
+            this.guna2HtmlLabel49.Location = new System.Drawing.Point(9, 8);
             this.guna2HtmlLabel49.Name = "guna2HtmlLabel49";
             this.guna2HtmlLabel49.Size = new System.Drawing.Size(136, 33);
             this.guna2HtmlLabel49.TabIndex = 0;
             this.guna2HtmlLabel49.Text = "Вы живете :";
-            // 
-            // guna2HtmlLabel46
-            // 
-            this.guna2HtmlLabel46.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel46.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2HtmlLabel46.Location = new System.Drawing.Point(244, 12);
-            this.guna2HtmlLabel46.Name = "guna2HtmlLabel46";
-            this.guna2HtmlLabel46.Size = new System.Drawing.Size(42, 33);
-            this.guna2HtmlLabel46.TabIndex = 3;
-            this.guna2HtmlLabel46.Text = " 123 ";
             // 
             // guna2GradientPanel29
             // 
@@ -742,7 +671,7 @@
             this.guna2GradientPanel29.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.guna2GradientPanel29.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientPanel29.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.guna2GradientPanel29.Location = new System.Drawing.Point(120, 80);
+            this.guna2GradientPanel29.Location = new System.Drawing.Point(126, 85);
             this.guna2GradientPanel29.Name = "guna2GradientPanel29";
             this.guna2GradientPanel29.Size = new System.Drawing.Size(490, 60);
             this.guna2GradientPanel29.TabIndex = 14;
@@ -807,7 +736,7 @@
             this.DateTimeBirhday.ForeColor = System.Drawing.Color.Black;
             this.DateTimeBirhday.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.DateTimeBirhday.IndicateFocus = true;
-            this.DateTimeBirhday.Location = new System.Drawing.Point(445, 31);
+            this.DateTimeBirhday.Location = new System.Drawing.Point(451, 38);
             this.DateTimeBirhday.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.DateTimeBirhday.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.DateTimeBirhday.Name = "DateTimeBirhday";
@@ -826,7 +755,7 @@
             this.guna2GradientPanel28.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.guna2GradientPanel28.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientPanel28.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.guna2GradientPanel28.Location = new System.Drawing.Point(120, 24);
+            this.guna2GradientPanel28.Location = new System.Drawing.Point(126, 29);
             this.guna2GradientPanel28.Name = "guna2GradientPanel28";
             this.guna2GradientPanel28.Size = new System.Drawing.Size(309, 50);
             this.guna2GradientPanel28.TabIndex = 7;
@@ -863,7 +792,7 @@
             this.guna2GradientButton12.HoverState.FillColor = System.Drawing.Color.Black;
             this.guna2GradientButton12.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.guna2GradientButton12.HoverState.Font = new System.Drawing.Font("Segoe UI", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.guna2GradientButton12.Location = new System.Drawing.Point(353, 161);
+            this.guna2GradientButton12.Location = new System.Drawing.Point(328, 163);
             this.guna2GradientButton12.Name = "guna2GradientButton12";
             this.guna2GradientButton12.Size = new System.Drawing.Size(89, 45);
             this.guna2GradientButton12.TabIndex = 4;
@@ -995,6 +924,7 @@
             this.ResNumeric.TabIndex = 1;
             this.ResNumeric.TextOffset = new System.Drawing.Point(25, 0);
             this.ResNumeric.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(170)))), ((int)(((byte)(8)))));
+            this.ResNumeric.UpDownButtonForeColor = System.Drawing.Color.Black;
             this.ResNumeric.UseTransparentBackground = true;
             this.ResNumeric.Value = new decimal(new int[] {
             1,
@@ -2582,6 +2512,42 @@
             this.TimerUnix.Interval = 1;
             this.TimerUnix.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // guna2GradientPanel33
+            // 
+            this.guna2GradientPanel33.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel33.BorderColor = System.Drawing.Color.Black;
+            this.guna2GradientPanel33.BorderRadius = 12;
+            this.guna2GradientPanel33.BorderThickness = 2;
+            this.guna2GradientPanel33.Controls.Add(this.guna2HtmlLabel48);
+            this.guna2GradientPanel33.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
+            this.guna2GradientPanel33.FillColor2 = System.Drawing.Color.Black;
+            this.guna2GradientPanel33.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.guna2GradientPanel33.Location = new System.Drawing.Point(8, 129);
+            this.guna2GradientPanel33.Name = "guna2GradientPanel33";
+            this.guna2GradientPanel33.Size = new System.Drawing.Size(709, 52);
+            this.guna2GradientPanel33.TabIndex = 17;
+            this.guna2GradientPanel33.UseTransparentBackground = true;
+            // 
+            // guna2HtmlLabel52
+            // 
+            this.guna2HtmlLabel52.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel52.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.guna2HtmlLabel52.Location = new System.Drawing.Point(9, 8);
+            this.guna2HtmlLabel52.Name = "guna2HtmlLabel52";
+            this.guna2HtmlLabel52.Size = new System.Drawing.Size(459, 33);
+            this.guna2HtmlLabel52.TabIndex = 8;
+            this.guna2HtmlLabel52.Text = "До следуйщего дня рождения осталось :";
+            // 
+            // guna2HtmlLabel33
+            // 
+            this.guna2HtmlLabel33.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel33.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.guna2HtmlLabel33.Location = new System.Drawing.Point(7, 9);
+            this.guna2HtmlLabel33.Name = "guna2HtmlLabel33";
+            this.guna2HtmlLabel33.Size = new System.Drawing.Size(354, 33);
+            this.guna2HtmlLabel33.TabIndex = 6;
+            this.guna2HtmlLabel33.Text = "До следуйщего дня рождения :";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2600,8 +2566,6 @@
             this.guna2GradientPanel31.ResumeLayout(false);
             this.guna2GradientPanel32.ResumeLayout(false);
             this.guna2GradientPanel32.PerformLayout();
-            this.guna2GradientPanel33.ResumeLayout(false);
-            this.guna2GradientPanel33.PerformLayout();
             this.guna2GradientPanel34.ResumeLayout(false);
             this.guna2GradientPanel34.PerformLayout();
             this.guna2GradientPanel30.ResumeLayout(false);
@@ -2687,6 +2651,8 @@
             this.guna2GradientPanel2.PerformLayout();
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
+            this.guna2GradientPanel33.ResumeLayout(false);
+            this.guna2GradientPanel33.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2813,16 +2779,10 @@
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel31;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel32;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel50;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel53;
-        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel33;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel52;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel51;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel34;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel48;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel47;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel30;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel49;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel46;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel38;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel37;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel36;
@@ -2852,6 +2812,9 @@
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl2;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl3;
         private System.Windows.Forms.Timer TimerUnix;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel33;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel33;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel52;
     }
 }
 

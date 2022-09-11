@@ -381,7 +381,7 @@ namespace Dan2Task1
                         }
                         else if (ComboFinishBox.Text == "Час")
                         {
-                            res = num * (30 * 24);
+                            res = num * 720;
                             if (num == 1)
                             {
                                 TimeConverterLabel1.Text = $"В {num} Месяце :";
@@ -396,7 +396,7 @@ namespace Dan2Task1
                         }
                         else if (ComboFinishBox.Text == "Минута")
                         {
-                            res = num * (30 * (24 * 60));
+                            res = num * 43200;
                             if (num == 1)
                             {
                                 TimeConverterLabel1.Text = $"В {num} Месяце :";
@@ -411,7 +411,7 @@ namespace Dan2Task1
                         }
                         else if (ComboFinishBox.Text == "Секунда")
                         {
-                            res = num * (30 * (24 * (60 * 60)));
+                            res = num * 2592000;
                             if (num == 1)
                             {
                                 TimeConverterLabel1.Text = $"В {num} Месяце :";
@@ -522,7 +522,7 @@ namespace Dan2Task1
                         }
                         else if (ComboFinishBox.Text == "Минута")
                         {
-                            res = num * (24 * 60);
+                            res = num * 1440;
                             if (num == 1)
                             {
                                 TimeConverterLabel1.Text = $"В {num} Дне :";
@@ -536,7 +536,7 @@ namespace Dan2Task1
                         }
                         else if (ComboFinishBox.Text == "Секунда")
                         {
-                            res = num * (24 * (60 * 60));
+                            res = num * 86400;
                             if (num == 1)
                             {
                                 TimeConverterLabel1.Text = $"В {num} Дне :";
@@ -580,7 +580,7 @@ namespace Dan2Task1
                         }
                         else if (ComboFinishBox.Text == "Месяц")
                         {
-                            res = num / 760;
+                            res = num / 720;
                             if (num == 1)
                             {
                                 TimeConverterLabel1.Text = $"В {num} Часу :";
@@ -661,7 +661,7 @@ namespace Dan2Task1
                         }
                         else if (ComboFinishBox.Text == "Секунда")
                         {
-                            res = num * (60 * 60);
+                            res = num * 3600;
                             if (num == 1)
                             {
                                 TimeConverterLabel1.Text = $"В {num} Часе :";
@@ -883,7 +883,7 @@ namespace Dan2Task1
                         }
                         else if (ComboFinishBox.Text == "Час")
                         {
-                            res = num / 36000;
+                            res = num / 3600;
                             if (num == 1)
                             {
                                 TimeConverterLabel1.Text = $"В {num} Секунде :";
@@ -963,6 +963,21 @@ namespace Dan2Task1
                 }
                 catch { }
             
+
+        }
+
+        private void guna2HtmlLabel48_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel50_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }
