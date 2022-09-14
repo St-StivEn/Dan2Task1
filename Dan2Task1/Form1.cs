@@ -432,7 +432,7 @@ namespace Dan2Task1
         }
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
-            //PanelInfo.BringToFront();
+            
             PanelInfo.SendToBack();
         }
 
