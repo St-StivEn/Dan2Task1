@@ -49,20 +49,27 @@
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.PanelBody = new System.Windows.Forms.Panel();
             this.PanelBirhday = new Guna.UI2.WinForms.Guna2Panel();
+            this.DateTimeBirthday = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2GradientPanel31 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientPanel32 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2HtmlLabel50 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.NextBirthdLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel44 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel33 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2GradientPanel33 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.Years18Label = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.Years18TextLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2GradientPanel34 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2HtmlLabel48 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.NYearsLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.NYearsTextLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2GradientPanel30 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.LifeLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel49 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2GradientPanel29 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2NumericUpDown2 = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.NyearsNumeric = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.guna2HtmlLabel45 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.DateTimeBirhday = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2GradientPanel28 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2HtmlLabel42 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2GradientButton12 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.StartBirthdButton = new Guna.UI2.WinForms.Guna2GradientButton();
             this.PanelTimeConverter = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2GradientPanel27 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientPanel43 = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -182,19 +189,22 @@
             this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl3 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.TimerUnix = new System.Windows.Forms.Timer(this.components);
-            this.guna2GradientPanel33 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2HtmlLabel52 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel33 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.TimerLifeFromBirth = new System.Windows.Forms.Timer(this.components);
+            this.TimerNextBirthd = new System.Windows.Forms.Timer(this.components);
+            this.Timer18Years = new System.Windows.Forms.Timer(this.components);
+            this.TimerNYears = new System.Windows.Forms.Timer(this.components);
             this.PanelVkladok.SuspendLayout();
             this.UnixPanel.SuspendLayout();
             this.PanelBody.SuspendLayout();
             this.PanelBirhday.SuspendLayout();
             this.guna2GradientPanel31.SuspendLayout();
             this.guna2GradientPanel32.SuspendLayout();
+            this.guna2GradientPanel33.SuspendLayout();
             this.guna2GradientPanel34.SuspendLayout();
             this.guna2GradientPanel30.SuspendLayout();
             this.guna2GradientPanel29.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NyearsNumeric)).BeginInit();
             this.guna2GradientPanel28.SuspendLayout();
             this.PanelTimeConverter.SuspendLayout();
             this.guna2GradientPanel27.SuspendLayout();
@@ -238,7 +248,6 @@
             this.guna2GradientPanel8.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
-            this.guna2GradientPanel33.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -552,16 +561,40 @@
             // PanelBirhday
             // 
             this.PanelBirhday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.PanelBirhday.Controls.Add(this.DateTimeBirthday);
             this.PanelBirhday.Controls.Add(this.guna2GradientPanel31);
             this.PanelBirhday.Controls.Add(this.guna2GradientPanel29);
-            this.PanelBirhday.Controls.Add(this.DateTimeBirhday);
             this.PanelBirhday.Controls.Add(this.guna2GradientPanel28);
-            this.PanelBirhday.Controls.Add(this.guna2GradientButton12);
+            this.PanelBirhday.Controls.Add(this.StartBirthdButton);
             this.PanelBirhday.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelBirhday.Location = new System.Drawing.Point(0, 2545);
             this.PanelBirhday.Name = "PanelBirhday";
             this.PanelBirhday.Size = new System.Drawing.Size(754, 509);
             this.PanelBirhday.TabIndex = 5;
+            // 
+            // DateTimeBirthday
+            // 
+            this.DateTimeBirthday.Animated = true;
+            this.DateTimeBirthday.AutoRoundedCorners = true;
+            this.DateTimeBirthday.BackColor = System.Drawing.Color.Transparent;
+            this.DateTimeBirthday.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DateTimeBirthday.BorderRadius = 17;
+            this.DateTimeBirthday.BorderThickness = 2;
+            this.DateTimeBirthday.Checked = true;
+            this.DateTimeBirthday.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DateTimeBirthday.CustomFormat = "dd.MM.yyyy HH:mm:ss";
+            this.DateTimeBirthday.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(116)))), ((int)(((byte)(8)))));
+            this.DateTimeBirthday.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DateTimeBirthday.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DateTimeBirthday.IndicateFocus = true;
+            this.DateTimeBirthday.Location = new System.Drawing.Point(445, 37);
+            this.DateTimeBirthday.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DateTimeBirthday.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DateTimeBirthday.Name = "DateTimeBirthday";
+            this.DateTimeBirthday.Size = new System.Drawing.Size(171, 36);
+            this.DateTimeBirthday.TabIndex = 17;
+            this.DateTimeBirthday.UseTransparentBackground = true;
+            this.DateTimeBirthday.Value = new System.DateTime(1997, 6, 12, 5, 45, 0, 0);
             // 
             // guna2GradientPanel31
             // 
@@ -586,6 +619,8 @@
             this.guna2GradientPanel32.BorderColor = System.Drawing.Color.Black;
             this.guna2GradientPanel32.BorderRadius = 12;
             this.guna2GradientPanel32.BorderThickness = 2;
+            this.guna2GradientPanel32.Controls.Add(this.NextBirthdLabel);
+            this.guna2GradientPanel32.Controls.Add(this.guna2HtmlLabel44);
             this.guna2GradientPanel32.Controls.Add(this.guna2HtmlLabel33);
             this.guna2GradientPanel32.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.guna2GradientPanel32.FillColor2 = System.Drawing.Color.Black;
@@ -596,16 +631,70 @@
             this.guna2GradientPanel32.TabIndex = 16;
             this.guna2GradientPanel32.UseTransparentBackground = true;
             // 
-            // guna2HtmlLabel50
+            // NextBirthdLabel
             // 
-            this.guna2HtmlLabel50.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel50.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2HtmlLabel50.Location = new System.Drawing.Point(9, 9);
-            this.guna2HtmlLabel50.Name = "guna2HtmlLabel50";
-            this.guna2HtmlLabel50.Size = new System.Drawing.Size(330, 33);
-            this.guna2HtmlLabel50.TabIndex = 5;
-            this.guna2HtmlLabel50.Text = "Вам исполнится N лет через :";
-            this.guna2HtmlLabel50.Click += new System.EventHandler(this.guna2HtmlLabel50_Click);
+            this.NextBirthdLabel.BackColor = System.Drawing.Color.Transparent;
+            this.NextBirthdLabel.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NextBirthdLabel.Location = new System.Drawing.Point(388, 9);
+            this.NextBirthdLabel.Name = "NextBirthdLabel";
+            this.NextBirthdLabel.Size = new System.Drawing.Size(3, 2);
+            this.NextBirthdLabel.TabIndex = 8;
+            // 
+            // guna2HtmlLabel44
+            // 
+            this.guna2HtmlLabel44.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel44.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.guna2HtmlLabel44.Location = new System.Drawing.Point(358, -8);
+            this.guna2HtmlLabel44.Name = "guna2HtmlLabel44";
+            this.guna2HtmlLabel44.Size = new System.Drawing.Size(3, 2);
+            this.guna2HtmlLabel44.TabIndex = 7;
+            this.guna2HtmlLabel44.Text = null;
+            // 
+            // guna2HtmlLabel33
+            // 
+            this.guna2HtmlLabel33.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel33.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.guna2HtmlLabel33.Location = new System.Drawing.Point(7, 9);
+            this.guna2HtmlLabel33.Name = "guna2HtmlLabel33";
+            this.guna2HtmlLabel33.Size = new System.Drawing.Size(354, 33);
+            this.guna2HtmlLabel33.TabIndex = 6;
+            this.guna2HtmlLabel33.Text = "До следуйщего дня рождения :";
+            // 
+            // guna2GradientPanel33
+            // 
+            this.guna2GradientPanel33.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel33.BorderColor = System.Drawing.Color.Black;
+            this.guna2GradientPanel33.BorderRadius = 12;
+            this.guna2GradientPanel33.BorderThickness = 2;
+            this.guna2GradientPanel33.Controls.Add(this.Years18Label);
+            this.guna2GradientPanel33.Controls.Add(this.Years18TextLabel);
+            this.guna2GradientPanel33.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
+            this.guna2GradientPanel33.FillColor2 = System.Drawing.Color.Black;
+            this.guna2GradientPanel33.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.guna2GradientPanel33.Location = new System.Drawing.Point(8, 129);
+            this.guna2GradientPanel33.Name = "guna2GradientPanel33";
+            this.guna2GradientPanel33.Size = new System.Drawing.Size(709, 52);
+            this.guna2GradientPanel33.TabIndex = 17;
+            this.guna2GradientPanel33.UseTransparentBackground = true;
+            // 
+            // Years18Label
+            // 
+            this.Years18Label.BackColor = System.Drawing.Color.Transparent;
+            this.Years18Label.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Years18Label.Location = new System.Drawing.Point(388, 10);
+            this.Years18Label.Name = "Years18Label";
+            this.Years18Label.Size = new System.Drawing.Size(3, 2);
+            this.Years18Label.TabIndex = 3;
+            // 
+            // Years18TextLabel
+            // 
+            this.Years18TextLabel.BackColor = System.Drawing.Color.Transparent;
+            this.Years18TextLabel.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Years18TextLabel.Location = new System.Drawing.Point(7, 10);
+            this.Years18TextLabel.Name = "Years18TextLabel";
+            this.Years18TextLabel.Size = new System.Drawing.Size(296, 33);
+            this.Years18TextLabel.TabIndex = 2;
+            this.Years18TextLabel.Text = "Вам исполнится 18 через :";
             // 
             // guna2GradientPanel34
             // 
@@ -613,7 +702,8 @@
             this.guna2GradientPanel34.BorderColor = System.Drawing.Color.Black;
             this.guna2GradientPanel34.BorderRadius = 12;
             this.guna2GradientPanel34.BorderThickness = 2;
-            this.guna2GradientPanel34.Controls.Add(this.guna2HtmlLabel50);
+            this.guna2GradientPanel34.Controls.Add(this.NYearsLabel);
+            this.guna2GradientPanel34.Controls.Add(this.NYearsTextLabel);
             this.guna2GradientPanel34.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.guna2GradientPanel34.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientPanel34.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
@@ -623,16 +713,24 @@
             this.guna2GradientPanel34.TabIndex = 17;
             this.guna2GradientPanel34.UseTransparentBackground = true;
             // 
-            // guna2HtmlLabel48
+            // NYearsLabel
             // 
-            this.guna2HtmlLabel48.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel48.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2HtmlLabel48.Location = new System.Drawing.Point(7, 6);
-            this.guna2HtmlLabel48.Name = "guna2HtmlLabel48";
-            this.guna2HtmlLabel48.Size = new System.Drawing.Size(296, 33);
-            this.guna2HtmlLabel48.TabIndex = 2;
-            this.guna2HtmlLabel48.Text = "Вам исполнится 18 через :";
-            this.guna2HtmlLabel48.Click += new System.EventHandler(this.guna2HtmlLabel48_Click);
+            this.NYearsLabel.BackColor = System.Drawing.Color.Transparent;
+            this.NYearsLabel.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NYearsLabel.Location = new System.Drawing.Point(390, 8);
+            this.NYearsLabel.Name = "NYearsLabel";
+            this.NYearsLabel.Size = new System.Drawing.Size(3, 2);
+            this.NYearsLabel.TabIndex = 6;
+            // 
+            // NYearsTextLabel
+            // 
+            this.NYearsTextLabel.BackColor = System.Drawing.Color.Transparent;
+            this.NYearsTextLabel.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NYearsTextLabel.Location = new System.Drawing.Point(9, 8);
+            this.NYearsTextLabel.Name = "NYearsTextLabel";
+            this.NYearsTextLabel.Size = new System.Drawing.Size(330, 33);
+            this.NYearsTextLabel.TabIndex = 5;
+            this.NYearsTextLabel.Text = "Вам исполнится N лет через :";
             // 
             // guna2GradientPanel30
             // 
@@ -640,6 +738,7 @@
             this.guna2GradientPanel30.BorderColor = System.Drawing.Color.Black;
             this.guna2GradientPanel30.BorderRadius = 12;
             this.guna2GradientPanel30.BorderThickness = 2;
+            this.guna2GradientPanel30.Controls.Add(this.LifeLabel);
             this.guna2GradientPanel30.Controls.Add(this.guna2HtmlLabel49);
             this.guna2GradientPanel30.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.guna2GradientPanel30.FillColor2 = System.Drawing.Color.Black;
@@ -649,6 +748,15 @@
             this.guna2GradientPanel30.Size = new System.Drawing.Size(709, 52);
             this.guna2GradientPanel30.TabIndex = 15;
             this.guna2GradientPanel30.UseTransparentBackground = true;
+            // 
+            // LifeLabel
+            // 
+            this.LifeLabel.BackColor = System.Drawing.Color.Transparent;
+            this.LifeLabel.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LifeLabel.Location = new System.Drawing.Point(390, 8);
+            this.LifeLabel.Name = "LifeLabel";
+            this.LifeLabel.Size = new System.Drawing.Size(3, 2);
+            this.LifeLabel.TabIndex = 1;
             // 
             // guna2HtmlLabel49
             // 
@@ -666,7 +774,7 @@
             this.guna2GradientPanel29.BorderColor = System.Drawing.Color.Black;
             this.guna2GradientPanel29.BorderRadius = 12;
             this.guna2GradientPanel29.BorderThickness = 2;
-            this.guna2GradientPanel29.Controls.Add(this.guna2NumericUpDown2);
+            this.guna2GradientPanel29.Controls.Add(this.NyearsNumeric);
             this.guna2GradientPanel29.Controls.Add(this.guna2HtmlLabel45);
             this.guna2GradientPanel29.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.guna2GradientPanel29.FillColor2 = System.Drawing.Color.Black;
@@ -677,36 +785,36 @@
             this.guna2GradientPanel29.TabIndex = 14;
             this.guna2GradientPanel29.UseTransparentBackground = true;
             // 
-            // guna2NumericUpDown2
+            // NyearsNumeric
             // 
-            this.guna2NumericUpDown2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2NumericUpDown2.BorderColor = System.Drawing.Color.Black;
-            this.guna2NumericUpDown2.BorderRadius = 8;
-            this.guna2NumericUpDown2.BorderThickness = 2;
-            this.guna2NumericUpDown2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2NumericUpDown2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(132)))), ((int)(((byte)(8)))));
-            this.guna2NumericUpDown2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
-            this.guna2NumericUpDown2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2NumericUpDown2.Location = new System.Drawing.Point(383, 12);
-            this.guna2NumericUpDown2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2NumericUpDown2.Maximum = new decimal(new int[] {
-            9999999,
+            this.NyearsNumeric.BackColor = System.Drawing.Color.Transparent;
+            this.NyearsNumeric.BorderColor = System.Drawing.Color.Black;
+            this.NyearsNumeric.BorderRadius = 8;
+            this.NyearsNumeric.BorderThickness = 2;
+            this.NyearsNumeric.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.NyearsNumeric.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(132)))), ((int)(((byte)(8)))));
+            this.NyearsNumeric.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
+            this.NyearsNumeric.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NyearsNumeric.Location = new System.Drawing.Point(383, 12);
+            this.NyearsNumeric.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NyearsNumeric.Maximum = new decimal(new int[] {
+            150,
             0,
             0,
             0});
-            this.guna2NumericUpDown2.Minimum = new decimal(new int[] {
+            this.NyearsNumeric.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.guna2NumericUpDown2.Name = "guna2NumericUpDown2";
-            this.guna2NumericUpDown2.Size = new System.Drawing.Size(95, 36);
-            this.guna2NumericUpDown2.TabIndex = 2;
-            this.guna2NumericUpDown2.TextOffset = new System.Drawing.Point(25, 0);
-            this.guna2NumericUpDown2.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(170)))), ((int)(((byte)(8)))));
-            this.guna2NumericUpDown2.UseTransparentBackground = true;
-            this.guna2NumericUpDown2.Value = new decimal(new int[] {
-            1,
+            this.NyearsNumeric.Name = "NyearsNumeric";
+            this.NyearsNumeric.Size = new System.Drawing.Size(95, 36);
+            this.NyearsNumeric.TabIndex = 2;
+            this.NyearsNumeric.TextOffset = new System.Drawing.Point(25, 0);
+            this.NyearsNumeric.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(170)))), ((int)(((byte)(8)))));
+            this.NyearsNumeric.UseTransparentBackground = true;
+            this.NyearsNumeric.Value = new decimal(new int[] {
+            33,
             0,
             0,
             0});
@@ -721,29 +829,6 @@
             this.guna2HtmlLabel45.Size = new System.Drawing.Size(363, 33);
             this.guna2HtmlLabel45.TabIndex = 0;
             this.guna2HtmlLabel45.Text = "Через сколько вам исполнится  :";
-            // 
-            // DateTimeBirhday
-            // 
-            this.DateTimeBirhday.Animated = true;
-            this.DateTimeBirhday.AutoRoundedCorners = true;
-            this.DateTimeBirhday.BackColor = System.Drawing.Color.Transparent;
-            this.DateTimeBirhday.BorderRadius = 17;
-            this.DateTimeBirhday.BorderThickness = 2;
-            this.DateTimeBirhday.Checked = true;
-            this.DateTimeBirhday.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DateTimeBirhday.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(116)))), ((int)(((byte)(8)))));
-            this.DateTimeBirhday.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.DateTimeBirhday.ForeColor = System.Drawing.Color.Black;
-            this.DateTimeBirhday.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.DateTimeBirhday.IndicateFocus = true;
-            this.DateTimeBirhday.Location = new System.Drawing.Point(451, 38);
-            this.DateTimeBirhday.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.DateTimeBirhday.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.DateTimeBirhday.Name = "DateTimeBirhday";
-            this.DateTimeBirhday.Size = new System.Drawing.Size(165, 36);
-            this.DateTimeBirhday.TabIndex = 9;
-            this.DateTimeBirhday.UseTransparentBackground = true;
-            this.DateTimeBirhday.Value = new System.DateTime(1997, 6, 12, 5, 45, 0, 0);
             // 
             // guna2GradientPanel28
             // 
@@ -772,32 +857,33 @@
             this.guna2HtmlLabel42.TabIndex = 0;
             this.guna2HtmlLabel42.Text = "Укажите дату рождения :";
             // 
-            // guna2GradientButton12
+            // StartBirthdButton
             // 
-            this.guna2GradientButton12.Animated = true;
-            this.guna2GradientButton12.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton12.BorderRadius = 8;
-            this.guna2GradientButton12.BorderThickness = 2;
-            this.guna2GradientButton12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2GradientButton12.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton12.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton12.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton12.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton12.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton12.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
-            this.guna2GradientButton12.FillColor2 = System.Drawing.Color.Black;
-            this.guna2GradientButton12.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.guna2GradientButton12.ForeColor = System.Drawing.Color.Black;
-            this.guna2GradientButton12.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.guna2GradientButton12.HoverState.FillColor = System.Drawing.Color.Black;
-            this.guna2GradientButton12.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
-            this.guna2GradientButton12.HoverState.Font = new System.Drawing.Font("Segoe UI", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.guna2GradientButton12.Location = new System.Drawing.Point(328, 163);
-            this.guna2GradientButton12.Name = "guna2GradientButton12";
-            this.guna2GradientButton12.Size = new System.Drawing.Size(89, 45);
-            this.guna2GradientButton12.TabIndex = 4;
-            this.guna2GradientButton12.Text = "OK";
-            this.guna2GradientButton12.UseTransparentBackground = true;
+            this.StartBirthdButton.Animated = true;
+            this.StartBirthdButton.BackColor = System.Drawing.Color.Transparent;
+            this.StartBirthdButton.BorderRadius = 8;
+            this.StartBirthdButton.BorderThickness = 2;
+            this.StartBirthdButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.StartBirthdButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.StartBirthdButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.StartBirthdButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.StartBirthdButton.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.StartBirthdButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.StartBirthdButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
+            this.StartBirthdButton.FillColor2 = System.Drawing.Color.Black;
+            this.StartBirthdButton.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.StartBirthdButton.ForeColor = System.Drawing.Color.Black;
+            this.StartBirthdButton.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.StartBirthdButton.HoverState.FillColor = System.Drawing.Color.Black;
+            this.StartBirthdButton.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
+            this.StartBirthdButton.HoverState.Font = new System.Drawing.Font("Segoe UI", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.StartBirthdButton.Location = new System.Drawing.Point(340, 163);
+            this.StartBirthdButton.Name = "StartBirthdButton";
+            this.StartBirthdButton.Size = new System.Drawing.Size(89, 45);
+            this.StartBirthdButton.TabIndex = 4;
+            this.StartBirthdButton.Text = "OK";
+            this.StartBirthdButton.UseTransparentBackground = true;
+            this.StartBirthdButton.Click += new System.EventHandler(this.guna2GradientButton12_Click);
             // 
             // PanelTimeConverter
             // 
@@ -2512,22 +2598,6 @@
             this.TimerUnix.Interval = 1;
             this.TimerUnix.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // guna2GradientPanel33
-            // 
-            this.guna2GradientPanel33.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel33.BorderColor = System.Drawing.Color.Black;
-            this.guna2GradientPanel33.BorderRadius = 12;
-            this.guna2GradientPanel33.BorderThickness = 2;
-            this.guna2GradientPanel33.Controls.Add(this.guna2HtmlLabel48);
-            this.guna2GradientPanel33.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
-            this.guna2GradientPanel33.FillColor2 = System.Drawing.Color.Black;
-            this.guna2GradientPanel33.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.guna2GradientPanel33.Location = new System.Drawing.Point(8, 129);
-            this.guna2GradientPanel33.Name = "guna2GradientPanel33";
-            this.guna2GradientPanel33.Size = new System.Drawing.Size(709, 52);
-            this.guna2GradientPanel33.TabIndex = 17;
-            this.guna2GradientPanel33.UseTransparentBackground = true;
-            // 
             // guna2HtmlLabel52
             // 
             this.guna2HtmlLabel52.BackColor = System.Drawing.Color.Transparent;
@@ -2538,15 +2608,25 @@
             this.guna2HtmlLabel52.TabIndex = 8;
             this.guna2HtmlLabel52.Text = "До следуйщего дня рождения осталось :";
             // 
-            // guna2HtmlLabel33
+            // TimerLifeFromBirth
             // 
-            this.guna2HtmlLabel33.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel33.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2HtmlLabel33.Location = new System.Drawing.Point(7, 9);
-            this.guna2HtmlLabel33.Name = "guna2HtmlLabel33";
-            this.guna2HtmlLabel33.Size = new System.Drawing.Size(354, 33);
-            this.guna2HtmlLabel33.TabIndex = 6;
-            this.guna2HtmlLabel33.Text = "До следуйщего дня рождения :";
+            this.TimerLifeFromBirth.Interval = 1000;
+            this.TimerLifeFromBirth.Tick += new System.EventHandler(this.TimerLife_Tick);
+            // 
+            // TimerNextBirthd
+            // 
+            this.TimerNextBirthd.Interval = 1000;
+            this.TimerNextBirthd.Tick += new System.EventHandler(this.TimerNextBirthd_Tick);
+            // 
+            // Timer18Years
+            // 
+            this.Timer18Years.Interval = 1000;
+            this.Timer18Years.Tick += new System.EventHandler(this.Timer18Years_Tick);
+            // 
+            // TimerNYears
+            // 
+            this.TimerNYears.Interval = 1000;
+            this.TimerNYears.Tick += new System.EventHandler(this.TimerNYears_Tick);
             // 
             // Form1
             // 
@@ -2566,13 +2646,15 @@
             this.guna2GradientPanel31.ResumeLayout(false);
             this.guna2GradientPanel32.ResumeLayout(false);
             this.guna2GradientPanel32.PerformLayout();
+            this.guna2GradientPanel33.ResumeLayout(false);
+            this.guna2GradientPanel33.PerformLayout();
             this.guna2GradientPanel34.ResumeLayout(false);
             this.guna2GradientPanel34.PerformLayout();
             this.guna2GradientPanel30.ResumeLayout(false);
             this.guna2GradientPanel30.PerformLayout();
             this.guna2GradientPanel29.ResumeLayout(false);
             this.guna2GradientPanel29.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NyearsNumeric)).EndInit();
             this.guna2GradientPanel28.ResumeLayout(false);
             this.guna2GradientPanel28.PerformLayout();
             this.PanelTimeConverter.ResumeLayout(false);
@@ -2651,8 +2733,6 @@
             this.guna2GradientPanel2.PerformLayout();
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
-            this.guna2GradientPanel33.ResumeLayout(false);
-            this.guna2GradientPanel33.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2677,7 +2757,7 @@
         private Guna.UI2.WinForms.Guna2Panel PanelInfo;
         private Guna.UI2.WinForms.Guna2Panel PanelDateComparer;
         private Guna.UI2.WinForms.Guna2Panel PanelBirhday;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton12;
+        private Guna.UI2.WinForms.Guna2GradientButton StartBirthdButton;
         private Guna.UI2.WinForms.Guna2Panel PanelTimeConverter;
         private Guna.UI2.WinForms.Guna2Panel PanelLeapCounter;
         private Guna.UI2.WinForms.Guna2Panel PanelDateWorking;
@@ -2773,14 +2853,13 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel43;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel29;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel45;
-        private Guna.UI2.WinForms.Guna2DateTimePicker DateTimeBirhday;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel28;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel42;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel31;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel32;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel50;
+        private Guna.UI2.WinForms.Guna2HtmlLabel NYearsTextLabel;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel34;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel48;
+        private Guna.UI2.WinForms.Guna2HtmlLabel Years18TextLabel;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel30;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel49;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel38;
@@ -2802,7 +2881,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel TotalMonthLabel;
         private Guna.UI2.WinForms.Guna2ComboBox ComboStartBox;
         private Guna.UI2.WinForms.Guna2ComboBox ComboFinishBox;
-        private Guna.UI2.WinForms.Guna2NumericUpDown guna2NumericUpDown2;
+        private Guna.UI2.WinForms.Guna2NumericUpDown NyearsNumeric;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel43;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel16;
         private Guna.UI2.WinForms.Guna2GradientPanel UnixPanel;
@@ -2815,6 +2894,16 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel33;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel33;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel52;
+        private Guna.UI2.WinForms.Guna2HtmlLabel LifeLabel;
+        private Guna.UI2.WinForms.Guna2DateTimePicker DateTimeBirthday;
+        private System.Windows.Forms.Timer TimerLifeFromBirth;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel44;
+        private Guna.UI2.WinForms.Guna2HtmlLabel NextBirthdLabel;
+        private Guna.UI2.WinForms.Guna2HtmlLabel Years18Label;
+        private Guna.UI2.WinForms.Guna2HtmlLabel NYearsLabel;
+        private System.Windows.Forms.Timer TimerNextBirthd;
+        private System.Windows.Forms.Timer Timer18Years;
+        private System.Windows.Forms.Timer TimerNYears;
     }
 }
 

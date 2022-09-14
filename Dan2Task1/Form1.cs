@@ -9,6 +9,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.AxHost;
 
 namespace Dan2Task1
 {
@@ -35,7 +36,7 @@ namespace Dan2Task1
             }
 
         }
-
+        public DateTime date = DateTime.Now;
         public int DaysOfMonths(DateTime a)
         {
             a = DateTimeDate1.Value;
@@ -44,39 +45,7 @@ namespace Dan2Task1
 
             return MonthsOfA;
         }
-        private void guna2GradientButton1_Click(object sender, EventArgs e)
-        {
-            //PanelInfo.BringToFront();
-            PanelInfo.SendToBack();
-        }
-
-        private void guna2GradientButton5_Click(object sender, EventArgs e)
-        {
-            PanelDateComparer.SendToBack();
-        }
-
-        private void guna2GradientButton4_Click(object sender, EventArgs e)
-        {
-            PanelDateWorking.SendToBack();
-        }
-
-        private void guna2GradientButton3_Click(object sender, EventArgs e)
-        {
-            PanelLeapCounter.SendToBack();
-        }
-
-        private void guna2GradientButton6_Click(object sender, EventArgs e)
-        {
-            PanelTimeConverter.SendToBack();
-        }
-
-        private void guna2GradientButton2_Click(object sender, EventArgs e)
-        {
-            PanelBirhday.SendToBack();
-        }
-
-
-        private void ResultDateComparerButton_Click(object sender, EventArgs e)
+        public void FromDateToDate()
         {
             while (true)
             {
@@ -170,6 +139,219 @@ namespace Dan2Task1
                 }
                 catch { }
             }
+        }
+        public void LifeFromBirth()
+        {
+            try
+            {
+                LifeLabel.Text = "";
+                NextBirthdLabel.Text = "";
+                Years18Label.Text = "";
+                NYearsLabel.Text = "";
+
+
+
+                DateTime a = DateTimeBirthday.Value;
+                DateTime Years18 = a.AddYears(18);
+                date = DateTime.Now;
+
+                int NYears =(int)NyearsNumeric.Value;
+                DateTime ValueYears = a.AddYears(NYears);
+                NYearsTextLabel.Text = $"Вам исполнится {NYears}  через :";
+
+
+
+
+                int Years = 0;
+                int Months = 0;
+                int Days = 0;
+                int Hour = 0;
+                int Minute = 0;
+                int Second = 0;
+
+
+                while (((a.Year / 4 == 0) && ((date - a).Days >= 366)) || ((a.Year / 4 != 0) && ((date - a).Days >= 365)))
+                {
+                    a = a.AddYears(1);
+                    Years++;
+                }
+
+                while ((date - a).Days >= DaysOfMonths(a))
+                {
+                    a = a.AddMonths(1);
+                    Months++;
+                }
+
+                while ((a.Day / 1 >= 0) && ((date - a).Days >= 1))
+                {
+                    a = a.AddDays(1);
+                    Days++;
+                }
+                while ((a.Hour / 1 >= 0) && ((date - a).Hours >= 1))
+                {
+                    a = a.AddHours(1);
+                    Hour++;
+                }
+                while ((a.Minute / 1 >= 0) && ((date - a).Minutes >= 1))
+                {
+                    a = a.AddMinutes(1);
+                    Minute++;
+                }
+                while ((a.Second / 1 >= 0) && ((date - a).Seconds >= 1))
+                {
+                    a = a.AddSeconds(1);
+                    Second++;
+                }
+                
+                LifeLabel.Text = $"{Years}л.{Months}м.{Days}д.{Hour}ч.{Minute}м.{Second}с.";
+
+               
+                
+
+               if (Years > 18)
+                {
+                    Years18TextLabel.Text = "Вам исполнилось 18 лет :";
+
+                    Years = 0;
+                    Months = 0;
+                    Days = 0;
+                    Hour = 0;
+                    Minute = 0;
+                    Second = 0;
+
+
+                    while (((Years18.Year / 4 == 0) && ((date - Years18).Days >= 366)) || ((Years18.Year / 4 != 0) && ((date - Years18).Days >= 365)))
+                    {
+                        Years18 = Years18.AddYears(1);
+                        Years++;
+                    }
+
+                    while ((date - Years18).Days >= DaysOfMonths(Years18))
+                    {
+                        Years18 = Years18.AddMonths(1);
+                        Months++;
+                    }
+
+                    while ((Years18.Day / 1 >= 0) && ((date - Years18).Days >= 1))
+                    {
+                        Years18 = Years18.AddDays(1);
+                        Days++;
+                    }
+                    while ((Years18.Hour / 1 >= 0) && ((date - Years18).Hours >= 1))
+                    {
+                        Years18 = Years18.AddHours(1);
+                        Hour++;
+                    }
+                    while ((Years18.Minute / 1 >= 0) && ((date - Years18).Minutes >= 1))
+                    {
+                        Years18 = Years18.AddMinutes(1);
+                        Minute++;
+                    }
+                    while ((Years18.Second / 1 >= 0) && ((date - Years18).Seconds >= 1))
+                    {
+                        Years18 = Years18.AddSeconds(1);
+                        Second++;
+                    }
+
+                    Years18Label.Text = $"{Years}л.{Months}м.{Days}д.{Hour}ч.{Minute}м.{Second}с.";
+
+                }
+
+
+                else if (Years < 18)
+                {
+                    Years18TextLabel.Text = "Вам исполниться 18 лет :";
+
+                    Years = 0;
+                    Months = 0;
+                    Days = 0;
+                    Hour = 0;
+                    Minute = 0;
+                    Second = 0;
+
+                    while (((Years18.Year / 4 == 0) && ((Years18 - date).Days >= 366)) || ((Years18.Year / 4 != 0) && ((Years18 - date).Days >= 365)))
+                    {
+                        date = date.AddYears(1);
+                        Years++;
+                    }
+
+                    while ((Years18 - date).Days >= DaysOfMonths(Years18))
+                    {
+                        date = date.AddMonths(1);
+                        Months++;
+                    }
+
+                    while ((Years18.Day / 1 >= 0) && ((Years18 - date).Days >= 1))
+                    {
+                        date = date.AddDays(1);
+                        Days++;
+                    }
+                    while ((Years18.Hour / 1 >= 0) && ((Years18 - date).Hours >= 1))
+                    {
+                        date = date.AddHours(1);
+                        Hour++;
+                    }
+                    while ((Years18.Minute / 1 >= 0) && ((Years18 - date).Minutes >= 1))
+                    {
+                        date = date.AddMinutes(1);
+                        Minute++;
+                    }
+                    while ((Years18.Second / 1 >= 0) && ((Years18 - date).Seconds >= 1))
+                    {
+                        date = date.AddSeconds(1);
+                        Second++;
+                    }
+
+                    Years18Label.Text = $"{Years}л.{Months}м.{Days}д.{Hour}ч.{Minute}м.{Second}с.";
+
+
+                }
+
+               
+
+
+            }
+            catch { }
+        }
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            //PanelInfo.BringToFront();
+            PanelInfo.SendToBack();
+        }
+
+        private void guna2GradientButton5_Click(object sender, EventArgs e)
+        {
+            PanelDateComparer.SendToBack();
+        }
+
+        private void guna2GradientButton4_Click(object sender, EventArgs e)
+        {
+            PanelDateWorking.SendToBack();
+        }
+
+        private void guna2GradientButton3_Click(object sender, EventArgs e)
+        {
+            PanelLeapCounter.SendToBack();
+        }
+
+        private void guna2GradientButton6_Click(object sender, EventArgs e)
+        {
+            PanelTimeConverter.SendToBack();
+        }
+
+        private void guna2GradientButton2_Click(object sender, EventArgs e)
+        {
+            PanelBirhday.SendToBack();
+        }
+
+
+        private void ResultDateComparerButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FromDateToDate();
+            }
+            catch { }
         }
         private void ResultLeapButton_Click(object sender, EventArgs e)
         {
@@ -947,7 +1129,7 @@ namespace Dan2Task1
 
         public long UNIX()
         {
-            DateTime date = DateTime.Now;
+            date = DateTime.Now;
             long unix =  (long)(date.ToUniversalTime() - new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc)).TotalMilliseconds;
 
             return unix;
@@ -961,24 +1143,47 @@ namespace Dan2Task1
                     UnixTimaLabel.Text = UNIX().ToString();
                    
                 }
-                catch { }
+                catch { }  
+
+        }
+  
+
+        private void guna2GradientButton12_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                TimerLifeFromBirth.Start();
+            }
+            catch { }
+                 
+        }
+
+        private void TimerLife_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                LifeFromBirth();
+            }
+            catch { }
             
-
+            
         }
 
-        private void guna2HtmlLabel48_Click(object sender, EventArgs e)
+        private void TimerNextBirthd_Tick(object sender, EventArgs e)
         {
 
         }
 
-        private void guna2HtmlLabel50_Click(object sender, EventArgs e)
+        private void Timer18Years_Tick(object sender, EventArgs e)
         {
 
         }
 
-        private void guna2ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        private void TimerNYears_Tick(object sender, EventArgs e)
         {
 
         }
+
+       
     }
 }
