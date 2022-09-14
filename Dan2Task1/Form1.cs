@@ -155,10 +155,15 @@ namespace Dan2Task1
                 DateTime Years18 = a.AddYears(18);
                 date = DateTime.Now;
 
-                int NYears =(int)NyearsNumeric.Value;
+                int NYears = (int)NyearsNumeric.Value;
                 DateTime ValueYears = a.AddYears(NYears);
-                NYearsTextLabel.Text = $"Вам исполнится {NYears}  через :";
 
+                DateTime NextBirthday = new DateTime(DateTime.Now.Year, a.Month, a.Day);
+
+                if (NextBirthday < DateTime.Now)
+                    NextBirthday = new DateTime(DateTime.Now.Year + 1, a.Month, a.Day);
+
+                NYearsTextLabel.Text = $"Вам исполнится {NYears}  через :";
 
 
 
@@ -168,6 +173,7 @@ namespace Dan2Task1
                 int Hour = 0;
                 int Minute = 0;
                 int Second = 0;
+
 
 
                 while (((a.Year / 4 == 0) && ((date - a).Days >= 366)) || ((a.Year / 4 != 0) && ((date - a).Days >= 365)))
@@ -202,13 +208,12 @@ namespace Dan2Task1
                     a = a.AddSeconds(1);
                     Second++;
                 }
-                
+
                 LifeLabel.Text = $"{Years}л.{Months}м.{Days}д.{Hour}ч.{Minute}м.{Second}с.";
 
-               
-                
 
-               if (Years > 18)
+
+                if (Years >= 18)
                 {
                     Years18TextLabel.Text = "Вам исполнилось 18 лет :";
 
@@ -306,12 +311,124 @@ namespace Dan2Task1
 
 
                 }
+                
 
-               
+                if (Years < NYears)
+                {
+
+                    date = DateTime.Now;
+
+                    Years = 0;
+                    Months = 0;
+                    Days = 0;
+                    Hour = 0;
+                    Minute = 0;
+                    Second = 0;
+
+                    while (((ValueYears.Year / 4 == 0) && ((ValueYears - date).Days >= 366)) || ((ValueYears.Year / 4 != 0) && ((ValueYears - date).Days >= 365)))
+                    {
+                        date = date.AddYears(1);
+                        Years++;
+                    }
+
+                    while ((ValueYears - date).Days >= DaysOfMonths(ValueYears))
+                    {
+                        date = date.AddMonths(1);
+                        Months++;
+                    }
+
+                    while ((ValueYears.Day / 1 >= 0) && ((ValueYears - date).Days >= 1))
+                    {
+                        date = date.AddDays(1);
+                        Days++;
+                    }
+                    while ((ValueYears.Hour / 1 >= 0) && ((ValueYears - date).Hours >= 1))
+                    {
+                        date = date.AddHours(1);
+                        Hour++;
+                    }
+                    while ((ValueYears.Minute / 1 >= 0) && ((ValueYears - date).Minutes >= 1))
+                    {
+                        date = date.AddMinutes(1);
+                        Minute++;
+                    }
+                    while ((ValueYears.Second / 1 >= 0) && ((ValueYears - date).Seconds >= 1))
+                    {
+                        date = date.AddSeconds(1);
+                        Second++;
+                    }
+
+                    NYearsLabel.Text = $"{Years}л.{Months}м.{Days}д.{Hour}ч.{Minute}м.{Second}с.";
+
+                    
+                }
+                
+
+
+
+
+
+
+
+
+                if (true)
+                {
+
+
+                    date = DateTime.Now;
+
+                    Years = 0;
+                    Months = 0;
+                    Days = 0;
+                    Hour = 0;
+                    Minute = 0;
+                    Second = 0;
+
+                    while (((NextBirthday.Year / 4 == 0) && ((NextBirthday - date).Days >= 366)) || ((NextBirthday.Year / 4 != 0) && ((NextBirthday - date).Days >= 365)))
+                    {
+                        date = date.AddYears(1);
+                        Years++;
+                    }
+
+                    while ((NextBirthday - date).Days >= DaysOfMonths(NextBirthday))
+                    {
+                        date = date.AddMonths(1);
+                        Months++;
+                    }
+
+                    while ((NextBirthday.Day / 1 >= 0) && ((NextBirthday - date).Days >= 1))
+                    {
+                        date = date.AddDays(1);
+                        Days++;
+                    }
+                    while ((NextBirthday.Hour / 1 >= 0) && ((NextBirthday - date).Hours >= 1))
+                    {
+                        date = date.AddHours(1);
+                        Hour++;
+                    }
+                    while ((NextBirthday.Minute / 1 >= 0) && ((NextBirthday - date).Minutes >= 1))
+                    {
+                        date = date.AddMinutes(1);
+                        Minute++;
+                    }
+                    while ((NextBirthday.Second / 1 >= 0) && ((NextBirthday - date).Seconds >= 1))
+                    {
+                        date = date.AddSeconds(1);
+                        Second++;
+                    }
+
+                    NextBirthdLabel.Text = $"{Months}м.{Days}д.{Hour}ч.{Minute}м.{Second}с.";
+                }
+
+
+
 
 
             }
-            catch { }
+            catch
+            {
+
+            }
         }
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
@@ -1169,21 +1286,13 @@ namespace Dan2Task1
             
         }
 
-        private void TimerNextBirthd_Tick(object sender, EventArgs e)
+
+        private void guna2GradientButton1_Click_1(object sender, EventArgs e)
         {
+            
+            
+
 
         }
-
-        private void Timer18Years_Tick(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TimerNYears_Tick(object sender, EventArgs e)
-        {
-
-        }
-
-       
     }
 }

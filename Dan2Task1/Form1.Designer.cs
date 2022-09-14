@@ -104,16 +104,16 @@
             this.PanelDateWorking = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientPanel20 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2HtmlLabel29 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.WorkDayLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel30 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2GradientPanel19 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.guna2CheckBox6 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.guna2CheckBox5 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.guna2CheckBox4 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.guna2CheckBox3 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.guna2CheckBox2 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.guna2CheckBox8 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.SundayChek = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.SaturdayChek = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.FridayChek = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.TuesdayChek = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.WednesdayChek = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.ThurdayChek = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.MondayChek = new Guna.UI2.WinForms.Guna2CheckBox();
             this.guna2HtmlLabel28 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.DateTimeWorking2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.DateTimeWorking1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -191,9 +191,6 @@
             this.TimerUnix = new System.Windows.Forms.Timer(this.components);
             this.guna2HtmlLabel52 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.TimerLifeFromBirth = new System.Windows.Forms.Timer(this.components);
-            this.TimerNextBirthd = new System.Windows.Forms.Timer(this.components);
-            this.Timer18Years = new System.Windows.Forms.Timer(this.components);
-            this.TimerNYears = new System.Windows.Forms.Timer(this.components);
             this.PanelVkladok.SuspendLayout();
             this.UnixPanel.SuspendLayout();
             this.PanelBody.SuspendLayout();
@@ -639,6 +636,7 @@
             this.NextBirthdLabel.Name = "NextBirthdLabel";
             this.NextBirthdLabel.Size = new System.Drawing.Size(3, 2);
             this.NextBirthdLabel.TabIndex = 8;
+            this.NextBirthdLabel.Text = null;
             // 
             // guna2HtmlLabel44
             // 
@@ -685,6 +683,7 @@
             this.Years18Label.Name = "Years18Label";
             this.Years18Label.Size = new System.Drawing.Size(3, 2);
             this.Years18Label.TabIndex = 3;
+            this.Years18Label.Text = null;
             // 
             // Years18TextLabel
             // 
@@ -721,6 +720,7 @@
             this.NYearsLabel.Name = "NYearsLabel";
             this.NYearsLabel.Size = new System.Drawing.Size(3, 2);
             this.NYearsLabel.TabIndex = 6;
+            this.NYearsLabel.Text = null;
             // 
             // NYearsTextLabel
             // 
@@ -757,6 +757,7 @@
             this.LifeLabel.Name = "LifeLabel";
             this.LifeLabel.Size = new System.Drawing.Size(3, 2);
             this.LifeLabel.TabIndex = 1;
+            this.LifeLabel.Text = null;
             // 
             // guna2HtmlLabel49
             // 
@@ -1120,7 +1121,7 @@
             this.ResultTimeConverterButton.Name = "ResultTimeConverterButton";
             this.ResultTimeConverterButton.Size = new System.Drawing.Size(129, 45);
             this.ResultTimeConverterButton.TabIndex = 11;
-            this.ResultTimeConverterButton.Text = "Result";
+            this.ResultTimeConverterButton.Text = "GO";
             this.ResultTimeConverterButton.UseTransparentBackground = true;
             this.ResultTimeConverterButton.Click += new System.EventHandler(this.ResultTimeConverterButton_Click);
             // 
@@ -1288,7 +1289,7 @@
             this.ResultLeapButton.Name = "ResultLeapButton";
             this.ResultLeapButton.Size = new System.Drawing.Size(129, 45);
             this.ResultLeapButton.TabIndex = 10;
-            this.ResultLeapButton.Text = "Result";
+            this.ResultLeapButton.Text = "GO";
             this.ResultLeapButton.UseTransparentBackground = true;
             this.ResultLeapButton.Click += new System.EventHandler(this.ResultLeapButton_Click);
             // 
@@ -1431,15 +1432,16 @@
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.Size = new System.Drawing.Size(129, 45);
             this.guna2GradientButton1.TabIndex = 9;
-            this.guna2GradientButton1.Text = "Result";
+            this.guna2GradientButton1.Text = "GO";
             this.guna2GradientButton1.UseTransparentBackground = true;
+            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click_1);
             // 
             // guna2GradientPanel20
             // 
             this.guna2GradientPanel20.BorderColor = System.Drawing.Color.Black;
             this.guna2GradientPanel20.BorderRadius = 12;
             this.guna2GradientPanel20.BorderThickness = 2;
-            this.guna2GradientPanel20.Controls.Add(this.guna2HtmlLabel29);
+            this.guna2GradientPanel20.Controls.Add(this.WorkDayLabel);
             this.guna2GradientPanel20.Controls.Add(this.guna2HtmlLabel30);
             this.guna2GradientPanel20.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.guna2GradientPanel20.FillColor2 = System.Drawing.Color.Black;
@@ -1449,16 +1451,16 @@
             this.guna2GradientPanel20.Size = new System.Drawing.Size(441, 104);
             this.guna2GradientPanel20.TabIndex = 8;
             // 
-            // guna2HtmlLabel29
+            // WorkDayLabel
             // 
-            this.guna2HtmlLabel29.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel29.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel29.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel29.Location = new System.Drawing.Point(89, 52);
-            this.guna2HtmlLabel29.Name = "guna2HtmlLabel29";
-            this.guna2HtmlLabel29.Size = new System.Drawing.Size(183, 30);
-            this.guna2HtmlLabel29.TabIndex = 1;
-            this.guna2HtmlLabel29.Text = "123 робочих дней";
+            this.WorkDayLabel.BackColor = System.Drawing.Color.Transparent;
+            this.WorkDayLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WorkDayLabel.ForeColor = System.Drawing.Color.Black;
+            this.WorkDayLabel.Location = new System.Drawing.Point(89, 52);
+            this.WorkDayLabel.Name = "WorkDayLabel";
+            this.WorkDayLabel.Size = new System.Drawing.Size(183, 30);
+            this.WorkDayLabel.TabIndex = 1;
+            this.WorkDayLabel.Text = "123 робочих дней";
             // 
             // guna2HtmlLabel30
             // 
@@ -1476,13 +1478,13 @@
             this.guna2GradientPanel19.BorderColor = System.Drawing.Color.Black;
             this.guna2GradientPanel19.BorderRadius = 12;
             this.guna2GradientPanel19.BorderThickness = 2;
-            this.guna2GradientPanel19.Controls.Add(this.guna2CheckBox1);
-            this.guna2GradientPanel19.Controls.Add(this.guna2CheckBox6);
-            this.guna2GradientPanel19.Controls.Add(this.guna2CheckBox5);
-            this.guna2GradientPanel19.Controls.Add(this.guna2CheckBox4);
-            this.guna2GradientPanel19.Controls.Add(this.guna2CheckBox3);
-            this.guna2GradientPanel19.Controls.Add(this.guna2CheckBox2);
-            this.guna2GradientPanel19.Controls.Add(this.guna2CheckBox8);
+            this.guna2GradientPanel19.Controls.Add(this.SundayChek);
+            this.guna2GradientPanel19.Controls.Add(this.SaturdayChek);
+            this.guna2GradientPanel19.Controls.Add(this.FridayChek);
+            this.guna2GradientPanel19.Controls.Add(this.TuesdayChek);
+            this.guna2GradientPanel19.Controls.Add(this.WednesdayChek);
+            this.guna2GradientPanel19.Controls.Add(this.ThurdayChek);
+            this.guna2GradientPanel19.Controls.Add(this.MondayChek);
             this.guna2GradientPanel19.Controls.Add(this.guna2HtmlLabel28);
             this.guna2GradientPanel19.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.guna2GradientPanel19.FillColor2 = System.Drawing.Color.Black;
@@ -1492,162 +1494,162 @@
             this.guna2GradientPanel19.Size = new System.Drawing.Size(272, 273);
             this.guna2GradientPanel19.TabIndex = 7;
             // 
-            // guna2CheckBox1
+            // SundayChek
             // 
-            this.guna2CheckBox1.AutoSize = true;
-            this.guna2CheckBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CheckBox1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox1.CheckedState.BorderRadius = 6;
-            this.guna2CheckBox1.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox1.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2CheckBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2CheckBox1.Location = new System.Drawing.Point(54, 239);
-            this.guna2CheckBox1.Name = "guna2CheckBox1";
-            this.guna2CheckBox1.Size = new System.Drawing.Size(123, 25);
-            this.guna2CheckBox1.TabIndex = 15;
-            this.guna2CheckBox1.Text = "Воскресенье";
-            this.guna2CheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CheckBox1.UncheckedState.BorderRadius = 6;
-            this.guna2CheckBox1.UncheckedState.BorderThickness = 0;
-            this.guna2CheckBox1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CheckBox1.UseVisualStyleBackColor = false;
+            this.SundayChek.AutoSize = true;
+            this.SundayChek.BackColor = System.Drawing.Color.Transparent;
+            this.SundayChek.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.SundayChek.CheckedState.BorderRadius = 6;
+            this.SundayChek.CheckedState.BorderThickness = 0;
+            this.SundayChek.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.SundayChek.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SundayChek.ForeColor = System.Drawing.Color.Black;
+            this.SundayChek.Location = new System.Drawing.Point(54, 239);
+            this.SundayChek.Name = "SundayChek";
+            this.SundayChek.Size = new System.Drawing.Size(123, 25);
+            this.SundayChek.TabIndex = 15;
+            this.SundayChek.Text = "Воскресенье";
+            this.SundayChek.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.SundayChek.UncheckedState.BorderRadius = 6;
+            this.SundayChek.UncheckedState.BorderThickness = 0;
+            this.SundayChek.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.SundayChek.UseVisualStyleBackColor = false;
             // 
-            // guna2CheckBox6
+            // SaturdayChek
             // 
-            this.guna2CheckBox6.AutoSize = true;
-            this.guna2CheckBox6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CheckBox6.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox6.CheckedState.BorderRadius = 6;
-            this.guna2CheckBox6.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox6.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox6.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2CheckBox6.ForeColor = System.Drawing.Color.Black;
-            this.guna2CheckBox6.Location = new System.Drawing.Point(54, 208);
-            this.guna2CheckBox6.Name = "guna2CheckBox6";
-            this.guna2CheckBox6.Size = new System.Drawing.Size(99, 25);
-            this.guna2CheckBox6.TabIndex = 14;
-            this.guna2CheckBox6.Text = "Суббота";
-            this.guna2CheckBox6.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CheckBox6.UncheckedState.BorderRadius = 6;
-            this.guna2CheckBox6.UncheckedState.BorderThickness = 0;
-            this.guna2CheckBox6.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CheckBox6.UseVisualStyleBackColor = false;
+            this.SaturdayChek.AutoSize = true;
+            this.SaturdayChek.BackColor = System.Drawing.Color.Transparent;
+            this.SaturdayChek.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.SaturdayChek.CheckedState.BorderRadius = 6;
+            this.SaturdayChek.CheckedState.BorderThickness = 0;
+            this.SaturdayChek.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.SaturdayChek.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SaturdayChek.ForeColor = System.Drawing.Color.Black;
+            this.SaturdayChek.Location = new System.Drawing.Point(54, 208);
+            this.SaturdayChek.Name = "SaturdayChek";
+            this.SaturdayChek.Size = new System.Drawing.Size(99, 25);
+            this.SaturdayChek.TabIndex = 14;
+            this.SaturdayChek.Text = "Суббота";
+            this.SaturdayChek.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.SaturdayChek.UncheckedState.BorderRadius = 6;
+            this.SaturdayChek.UncheckedState.BorderThickness = 0;
+            this.SaturdayChek.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.SaturdayChek.UseVisualStyleBackColor = false;
             // 
-            // guna2CheckBox5
+            // FridayChek
             // 
-            this.guna2CheckBox5.AutoSize = true;
-            this.guna2CheckBox5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CheckBox5.Checked = true;
-            this.guna2CheckBox5.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox5.CheckedState.BorderRadius = 6;
-            this.guna2CheckBox5.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox5.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox5.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.guna2CheckBox5.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2CheckBox5.ForeColor = System.Drawing.Color.Black;
-            this.guna2CheckBox5.Location = new System.Drawing.Point(54, 177);
-            this.guna2CheckBox5.Name = "guna2CheckBox5";
-            this.guna2CheckBox5.Size = new System.Drawing.Size(104, 25);
-            this.guna2CheckBox5.TabIndex = 13;
-            this.guna2CheckBox5.Text = "Пятница";
-            this.guna2CheckBox5.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CheckBox5.UncheckedState.BorderRadius = 6;
-            this.guna2CheckBox5.UncheckedState.BorderThickness = 0;
-            this.guna2CheckBox5.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CheckBox5.UseVisualStyleBackColor = false;
+            this.FridayChek.AutoSize = true;
+            this.FridayChek.BackColor = System.Drawing.Color.Transparent;
+            this.FridayChek.Checked = true;
+            this.FridayChek.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.FridayChek.CheckedState.BorderRadius = 6;
+            this.FridayChek.CheckedState.BorderThickness = 0;
+            this.FridayChek.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.FridayChek.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.FridayChek.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.FridayChek.ForeColor = System.Drawing.Color.Black;
+            this.FridayChek.Location = new System.Drawing.Point(54, 177);
+            this.FridayChek.Name = "FridayChek";
+            this.FridayChek.Size = new System.Drawing.Size(104, 25);
+            this.FridayChek.TabIndex = 13;
+            this.FridayChek.Text = "Пятница";
+            this.FridayChek.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.FridayChek.UncheckedState.BorderRadius = 6;
+            this.FridayChek.UncheckedState.BorderThickness = 0;
+            this.FridayChek.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.FridayChek.UseVisualStyleBackColor = false;
             // 
-            // guna2CheckBox4
+            // TuesdayChek
             // 
-            this.guna2CheckBox4.AutoSize = true;
-            this.guna2CheckBox4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CheckBox4.Checked = true;
-            this.guna2CheckBox4.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox4.CheckedState.BorderRadius = 6;
-            this.guna2CheckBox4.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox4.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox4.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.guna2CheckBox4.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2CheckBox4.ForeColor = System.Drawing.Color.Black;
-            this.guna2CheckBox4.Location = new System.Drawing.Point(54, 84);
-            this.guna2CheckBox4.Name = "guna2CheckBox4";
-            this.guna2CheckBox4.Size = new System.Drawing.Size(101, 25);
-            this.guna2CheckBox4.TabIndex = 12;
-            this.guna2CheckBox4.Text = "Вторник";
-            this.guna2CheckBox4.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CheckBox4.UncheckedState.BorderRadius = 6;
-            this.guna2CheckBox4.UncheckedState.BorderThickness = 0;
-            this.guna2CheckBox4.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CheckBox4.UseVisualStyleBackColor = false;
+            this.TuesdayChek.AutoSize = true;
+            this.TuesdayChek.BackColor = System.Drawing.Color.Transparent;
+            this.TuesdayChek.Checked = true;
+            this.TuesdayChek.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TuesdayChek.CheckedState.BorderRadius = 6;
+            this.TuesdayChek.CheckedState.BorderThickness = 0;
+            this.TuesdayChek.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TuesdayChek.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.TuesdayChek.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TuesdayChek.ForeColor = System.Drawing.Color.Black;
+            this.TuesdayChek.Location = new System.Drawing.Point(54, 84);
+            this.TuesdayChek.Name = "TuesdayChek";
+            this.TuesdayChek.Size = new System.Drawing.Size(101, 25);
+            this.TuesdayChek.TabIndex = 12;
+            this.TuesdayChek.Text = "Вторник";
+            this.TuesdayChek.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.TuesdayChek.UncheckedState.BorderRadius = 6;
+            this.TuesdayChek.UncheckedState.BorderThickness = 0;
+            this.TuesdayChek.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.TuesdayChek.UseVisualStyleBackColor = false;
             // 
-            // guna2CheckBox3
+            // WednesdayChek
             // 
-            this.guna2CheckBox3.AutoSize = true;
-            this.guna2CheckBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CheckBox3.Checked = true;
-            this.guna2CheckBox3.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox3.CheckedState.BorderRadius = 6;
-            this.guna2CheckBox3.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox3.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox3.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.guna2CheckBox3.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2CheckBox3.ForeColor = System.Drawing.Color.Black;
-            this.guna2CheckBox3.Location = new System.Drawing.Point(54, 115);
-            this.guna2CheckBox3.Name = "guna2CheckBox3";
-            this.guna2CheckBox3.Size = new System.Drawing.Size(74, 25);
-            this.guna2CheckBox3.TabIndex = 11;
-            this.guna2CheckBox3.Text = "Среда";
-            this.guna2CheckBox3.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CheckBox3.UncheckedState.BorderRadius = 6;
-            this.guna2CheckBox3.UncheckedState.BorderThickness = 0;
-            this.guna2CheckBox3.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CheckBox3.UseVisualStyleBackColor = false;
+            this.WednesdayChek.AutoSize = true;
+            this.WednesdayChek.BackColor = System.Drawing.Color.Transparent;
+            this.WednesdayChek.Checked = true;
+            this.WednesdayChek.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.WednesdayChek.CheckedState.BorderRadius = 6;
+            this.WednesdayChek.CheckedState.BorderThickness = 0;
+            this.WednesdayChek.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.WednesdayChek.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.WednesdayChek.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.WednesdayChek.ForeColor = System.Drawing.Color.Black;
+            this.WednesdayChek.Location = new System.Drawing.Point(54, 115);
+            this.WednesdayChek.Name = "WednesdayChek";
+            this.WednesdayChek.Size = new System.Drawing.Size(74, 25);
+            this.WednesdayChek.TabIndex = 11;
+            this.WednesdayChek.Text = "Среда";
+            this.WednesdayChek.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.WednesdayChek.UncheckedState.BorderRadius = 6;
+            this.WednesdayChek.UncheckedState.BorderThickness = 0;
+            this.WednesdayChek.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.WednesdayChek.UseVisualStyleBackColor = false;
             // 
-            // guna2CheckBox2
+            // ThurdayChek
             // 
-            this.guna2CheckBox2.AutoSize = true;
-            this.guna2CheckBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CheckBox2.Checked = true;
-            this.guna2CheckBox2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox2.CheckedState.BorderRadius = 6;
-            this.guna2CheckBox2.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox2.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.guna2CheckBox2.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2CheckBox2.ForeColor = System.Drawing.Color.Black;
-            this.guna2CheckBox2.Location = new System.Drawing.Point(54, 146);
-            this.guna2CheckBox2.Name = "guna2CheckBox2";
-            this.guna2CheckBox2.Size = new System.Drawing.Size(97, 25);
-            this.guna2CheckBox2.TabIndex = 10;
-            this.guna2CheckBox2.Text = "Четверг";
-            this.guna2CheckBox2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CheckBox2.UncheckedState.BorderRadius = 6;
-            this.guna2CheckBox2.UncheckedState.BorderThickness = 0;
-            this.guna2CheckBox2.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CheckBox2.UseVisualStyleBackColor = false;
+            this.ThurdayChek.AutoSize = true;
+            this.ThurdayChek.BackColor = System.Drawing.Color.Transparent;
+            this.ThurdayChek.Checked = true;
+            this.ThurdayChek.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ThurdayChek.CheckedState.BorderRadius = 6;
+            this.ThurdayChek.CheckedState.BorderThickness = 0;
+            this.ThurdayChek.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ThurdayChek.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ThurdayChek.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ThurdayChek.ForeColor = System.Drawing.Color.Black;
+            this.ThurdayChek.Location = new System.Drawing.Point(54, 146);
+            this.ThurdayChek.Name = "ThurdayChek";
+            this.ThurdayChek.Size = new System.Drawing.Size(97, 25);
+            this.ThurdayChek.TabIndex = 10;
+            this.ThurdayChek.Text = "Четверг";
+            this.ThurdayChek.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.ThurdayChek.UncheckedState.BorderRadius = 6;
+            this.ThurdayChek.UncheckedState.BorderThickness = 0;
+            this.ThurdayChek.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.ThurdayChek.UseVisualStyleBackColor = false;
             // 
-            // guna2CheckBox8
+            // MondayChek
             // 
-            this.guna2CheckBox8.AutoSize = true;
-            this.guna2CheckBox8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CheckBox8.Checked = true;
-            this.guna2CheckBox8.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox8.CheckedState.BorderRadius = 6;
-            this.guna2CheckBox8.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox8.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox8.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.guna2CheckBox8.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2CheckBox8.ForeColor = System.Drawing.Color.Black;
-            this.guna2CheckBox8.Location = new System.Drawing.Point(54, 53);
-            this.guna2CheckBox8.Name = "guna2CheckBox8";
-            this.guna2CheckBox8.Size = new System.Drawing.Size(133, 25);
-            this.guna2CheckBox8.TabIndex = 8;
-            this.guna2CheckBox8.Text = "Понедельник";
-            this.guna2CheckBox8.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CheckBox8.UncheckedState.BorderRadius = 6;
-            this.guna2CheckBox8.UncheckedState.BorderThickness = 0;
-            this.guna2CheckBox8.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CheckBox8.UseVisualStyleBackColor = false;
+            this.MondayChek.AutoSize = true;
+            this.MondayChek.BackColor = System.Drawing.Color.Transparent;
+            this.MondayChek.Checked = true;
+            this.MondayChek.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.MondayChek.CheckedState.BorderRadius = 6;
+            this.MondayChek.CheckedState.BorderThickness = 0;
+            this.MondayChek.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.MondayChek.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.MondayChek.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.MondayChek.ForeColor = System.Drawing.Color.Black;
+            this.MondayChek.Location = new System.Drawing.Point(54, 53);
+            this.MondayChek.Name = "MondayChek";
+            this.MondayChek.Size = new System.Drawing.Size(133, 25);
+            this.MondayChek.TabIndex = 8;
+            this.MondayChek.Text = "Понедельник";
+            this.MondayChek.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.MondayChek.UncheckedState.BorderRadius = 6;
+            this.MondayChek.UncheckedState.BorderThickness = 0;
+            this.MondayChek.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.MondayChek.UseVisualStyleBackColor = false;
             // 
             // guna2HtmlLabel28
             // 
@@ -1793,7 +1795,7 @@
             this.ResultDateComparerButton.Name = "ResultDateComparerButton";
             this.ResultDateComparerButton.Size = new System.Drawing.Size(129, 45);
             this.ResultDateComparerButton.TabIndex = 6;
-            this.ResultDateComparerButton.Text = "Result";
+            this.ResultDateComparerButton.Text = "GO";
             this.ResultDateComparerButton.UseTransparentBackground = true;
             this.ResultDateComparerButton.Click += new System.EventHandler(this.ResultDateComparerButton_Click);
             // 
@@ -2613,21 +2615,6 @@
             this.TimerLifeFromBirth.Interval = 1000;
             this.TimerLifeFromBirth.Tick += new System.EventHandler(this.TimerLife_Tick);
             // 
-            // TimerNextBirthd
-            // 
-            this.TimerNextBirthd.Interval = 1000;
-            this.TimerNextBirthd.Tick += new System.EventHandler(this.TimerNextBirthd_Tick);
-            // 
-            // Timer18Years
-            // 
-            this.Timer18Years.Interval = 1000;
-            this.Timer18Years.Tick += new System.EventHandler(this.Timer18Years_Tick);
-            // 
-            // TimerNYears
-            // 
-            this.TimerNYears.Interval = 1000;
-            this.TimerNYears.Tick += new System.EventHandler(this.TimerNYears_Tick);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2815,16 +2802,16 @@
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel19;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel28;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
-        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox8;
-        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox6;
-        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox5;
-        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox4;
-        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox3;
-        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox2;
+        private Guna.UI2.WinForms.Guna2CheckBox MondayChek;
+        private Guna.UI2.WinForms.Guna2CheckBox SaturdayChek;
+        private Guna.UI2.WinForms.Guna2CheckBox FridayChek;
+        private Guna.UI2.WinForms.Guna2CheckBox TuesdayChek;
+        private Guna.UI2.WinForms.Guna2CheckBox WednesdayChek;
+        private Guna.UI2.WinForms.Guna2CheckBox ThurdayChek;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel20;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel29;
+        private Guna.UI2.WinForms.Guna2HtmlLabel WorkDayLabel;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel30;
-        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox1;
+        private Guna.UI2.WinForms.Guna2CheckBox SundayChek;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel23;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel35;
         private Guna.UI2.WinForms.Guna2HtmlLabel LeapLabel;
@@ -2901,9 +2888,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel NextBirthdLabel;
         private Guna.UI2.WinForms.Guna2HtmlLabel Years18Label;
         private Guna.UI2.WinForms.Guna2HtmlLabel NYearsLabel;
-        private System.Windows.Forms.Timer TimerNextBirthd;
-        private System.Windows.Forms.Timer Timer18Years;
-        private System.Windows.Forms.Timer TimerNYears;
     }
 }
 
