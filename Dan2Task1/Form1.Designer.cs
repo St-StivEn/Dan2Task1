@@ -191,6 +191,11 @@
             this.TimerUnix = new System.Windows.Forms.Timer(this.components);
             this.guna2HtmlLabel52 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.TimerLifeFromBirth = new System.Windows.Forms.Timer(this.components);
+            this.guna2DragControl4 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2DragControl5 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2DragControl6 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2DragControl7 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2DragControl8 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.PanelVkladok.SuspendLayout();
             this.UnixPanel.SuspendLayout();
             this.PanelBody.SuspendLayout();
@@ -285,7 +290,7 @@
             this.UnixPanel.Controls.Add(this.UnixTimaLabel);
             this.UnixPanel.Controls.Add(this.UnixLabel);
             this.UnixPanel.Controls.Add(this.guna2HtmlLabel41);
-            this.UnixPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
+            this.UnixPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.UnixPanel.FillColor2 = System.Drawing.Color.Black;
             this.UnixPanel.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
             this.UnixPanel.Location = new System.Drawing.Point(3, 5);
@@ -506,13 +511,13 @@
             this.ButtonInfo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.ButtonInfo.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.ButtonInfo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.ButtonInfo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
+            this.ButtonInfo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.ButtonInfo.FillColor2 = System.Drawing.Color.Black;
             this.ButtonInfo.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.ButtonInfo.ForeColor = System.Drawing.Color.Black;
             this.ButtonInfo.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
             this.ButtonInfo.HoverState.FillColor = System.Drawing.Color.Black;
-            this.ButtonInfo.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
+            this.ButtonInfo.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.ButtonInfo.HoverState.Font = new System.Drawing.Font("Segoe UI", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.ButtonInfo.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.ButtonInfo.Location = new System.Drawing.Point(1, 43);
@@ -2223,7 +2228,7 @@
             this.guna2GradientPanel7.Controls.Add(this.guna2HtmlLabel21);
             this.guna2GradientPanel7.Controls.Add(this.guna2HtmlLabel16);
             this.guna2GradientPanel7.Controls.Add(this.guna2GradientPanel12);
-            this.guna2GradientPanel7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
+            this.guna2GradientPanel7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.guna2GradientPanel7.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientPanel7.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
             this.guna2GradientPanel7.Location = new System.Drawing.Point(12, 435);
@@ -2294,7 +2299,7 @@
             this.guna2GradientPanel6.Controls.Add(this.guna2HtmlLabel20);
             this.guna2GradientPanel6.Controls.Add(this.guna2HtmlLabel15);
             this.guna2GradientPanel6.Controls.Add(this.guna2GradientPanel11);
-            this.guna2GradientPanel6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
+            this.guna2GradientPanel6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.guna2GradientPanel6.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientPanel6.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
             this.guna2GradientPanel6.Location = new System.Drawing.Point(12, 367);
@@ -2353,7 +2358,7 @@
             this.guna2GradientPanel5.BorderRadius = 8;
             this.guna2GradientPanel5.Controls.Add(this.guna2HtmlLabel14);
             this.guna2GradientPanel5.Controls.Add(this.guna2GradientPanel10);
-            this.guna2GradientPanel5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
+            this.guna2GradientPanel5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.guna2GradientPanel5.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientPanel5.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
             this.guna2GradientPanel5.Location = new System.Drawing.Point(12, 299);
@@ -2402,7 +2407,7 @@
             this.guna2GradientPanel4.BorderRadius = 8;
             this.guna2GradientPanel4.Controls.Add(this.guna2HtmlLabel13);
             this.guna2GradientPanel4.Controls.Add(this.guna2GradientPanel9);
-            this.guna2GradientPanel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
+            this.guna2GradientPanel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.guna2GradientPanel4.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientPanel4.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
             this.guna2GradientPanel4.Location = new System.Drawing.Point(12, 231);
@@ -2463,7 +2468,7 @@
             this.guna2GradientPanel3.Controls.Add(this.guna2HtmlLabel17);
             this.guna2GradientPanel3.Controls.Add(this.guna2HtmlLabel12);
             this.guna2GradientPanel3.Controls.Add(this.guna2GradientPanel8);
-            this.guna2GradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
+            this.guna2GradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientPanel3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
             this.guna2GradientPanel3.Location = new System.Drawing.Point(12, 163);
@@ -2523,7 +2528,7 @@
             this.guna2GradientPanel2.Controls.Add(this.guna2HtmlLabel4);
             this.guna2GradientPanel2.Controls.Add(this.guna2HtmlLabel3);
             this.guna2GradientPanel2.Controls.Add(this.guna2HtmlLabel2);
-            this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
+            this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(231)))), ((int)(((byte)(15)))));
             this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.Black;
             this.guna2GradientPanel2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
             this.guna2GradientPanel2.Location = new System.Drawing.Point(12, 63);
@@ -2614,6 +2619,36 @@
             // 
             this.TimerLifeFromBirth.Interval = 1000;
             this.TimerLifeFromBirth.Tick += new System.EventHandler(this.TimerLife_Tick);
+            // 
+            // guna2DragControl4
+            // 
+            this.guna2DragControl4.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl4.TargetControl = this.PanelDateWorking;
+            this.guna2DragControl4.UseTransparentDrag = true;
+            // 
+            // guna2DragControl5
+            // 
+            this.guna2DragControl5.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl5.TargetControl = this.PanelLeapCounter;
+            this.guna2DragControl5.UseTransparentDrag = true;
+            // 
+            // guna2DragControl6
+            // 
+            this.guna2DragControl6.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl6.TargetControl = this.PanelBirhday;
+            this.guna2DragControl6.UseTransparentDrag = true;
+            // 
+            // guna2DragControl7
+            // 
+            this.guna2DragControl7.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl7.TargetControl = this.PanelDateComparer;
+            this.guna2DragControl7.UseTransparentDrag = true;
+            // 
+            // guna2DragControl8
+            // 
+            this.guna2DragControl8.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl8.TargetControl = this.PanelTimeConverter;
+            this.guna2DragControl8.UseTransparentDrag = true;
             // 
             // Form1
             // 
@@ -2888,6 +2923,11 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel NextBirthdLabel;
         private Guna.UI2.WinForms.Guna2HtmlLabel Years18Label;
         private Guna.UI2.WinForms.Guna2HtmlLabel NYearsLabel;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl4;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl5;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl6;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl7;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl8;
     }
 }
 

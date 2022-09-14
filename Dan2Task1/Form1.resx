@@ -150,4 +150,19 @@
   <metadata name="TimerLifeFromBirth.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>222, 55</value>
   </metadata>
+  <metadata name="guna2DragControl4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>553, 57</value>
+  </metadata>
+  <metadata name="guna2DragControl5.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>769, 57</value>
+  </metadata>
+  <metadata name="guna2DragControl6.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>985, 57</value>
+  </metadata>
+  <metadata name="guna2DragControl7.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1201, 57</value>
+  </metadata>
+  <metadata name="guna2DragControl8.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 105</value>
+  </metadata>
 </root>
