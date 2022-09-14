@@ -1352,7 +1352,7 @@ namespace Dan2Task1
                     }
                     else if (StartDay == FinishDay)
                     {
-                        MessageBox.Show("Даты не могут быть одинкавыми!");
+                        MessageBox.Show("Даты не могут быть одинаковыми!");
 
                         break;
                     }
