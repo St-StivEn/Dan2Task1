@@ -1303,14 +1303,14 @@ namespace Dan2Task1
 
                     if (StartDay < FinishDay)
                     {
-                        while ((StartDay.Day / 1 >= 0) && ((FinishDay - StartDay).Days >= 1))
+                        while(StartDay <= FinishDay)
                         {
 
                             if (MondayChek.Checked == true && StartDay.DayOfWeek == DayOfWeek.Monday)
                             {
                                 day++;
                             }
-                            if (TuesdayChek.Checked == true && StartDay.DayOfWeek == DayOfWeek.Thursday)
+                            if (TuesdayChek.Checked == true && StartDay.DayOfWeek == DayOfWeek.Tuesday)
                             {
                                 day++;
                             }
