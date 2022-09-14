@@ -1343,6 +1343,12 @@ namespace Dan2Task1
 
                         break;
                     }
+                    else if (StartDay > FinishDay)
+                    {
+                        MessageBox.Show("Первое число не может быть больше второго !");
+
+                        break;
+                    }
                 }
                 catch { }
             }
