@@ -1289,8 +1289,54 @@ namespace Dan2Task1
 
         private void guna2GradientButton1_Click_1(object sender, EventArgs e)
         {
-            
-            
+            WorkDayLabel.Text = "";
+
+
+            DateTime StartDay = DateTimeWorking1.Value;
+            DateTime FinishDay = DateTimeWorking2.Value;
+            int day = 0;
+
+            if (StartDay < FinishDay)
+            {
+                while ((StartDay.Day / 1 >= 0) && ((FinishDay - StartDay).Days >= 1))
+                {
+
+                    if (MondayChek.Checked == true && StartDay.DayOfWeek == DayOfWeek.Monday)
+                    {
+                        day++;
+                    }
+                    if (TuesdayChek.Checked == true && StartDay.DayOfWeek == DayOfWeek.Thursday)
+                    {
+                        day++;
+                    }
+                    if (WednesdayChek.Checked == true && StartDay.DayOfWeek == DayOfWeek.Wednesday)
+                    {
+                        day++;
+                    }
+                    if (ThurdayChek.Checked == true && StartDay.DayOfWeek == DayOfWeek.Thursday)
+                    {
+                        day++;
+                    }
+                    if (FridayChek.Checked == true && StartDay.DayOfWeek == DayOfWeek.Friday)
+                    {
+                        day++;
+                    }
+                    if (SaturdayChek.Checked == true && StartDay.DayOfWeek == DayOfWeek.Saturday)
+                    {
+                        day++;
+                    }
+                    if (SundayChek.Checked == true && StartDay.DayOfWeek == DayOfWeek.Sunday)
+                    {
+                        day++;
+                    }
+
+                    StartDay = StartDay.AddDays(1);
+
+                }
+
+                WorkDayLabel.Text = $"{day} рабочих дней.";
+            }
+
 
 
         }
