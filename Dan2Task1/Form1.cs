@@ -1336,16 +1336,23 @@ namespace Dan2Task1
                             }
 
                             StartDay = StartDay.AddDays(1);
+                            
 
                         }
 
                         WorkDayLabel.Text = $"{day} рабочих дней.";
-
+                        
                         break;
                     }
                     else if (StartDay > FinishDay)
                     {
                         MessageBox.Show("Первое число не может быть больше второго !");
+
+                        break;
+                    }
+                    else if (StartDay == FinishDay)
+                    {
+                        MessageBox.Show("Даты не могут быть одинкавыми!");
 
                         break;
                     }
